@@ -1,0 +1,71 @@
+{
+  "data": {
+    "games": [
+      {
+        "title": "Pats_Steelers_2017_12_17_14_M7"
+      },
+      {
+        "title": "Pats_Steelers_2017_12_17_14_M6"
+      },
+      {
+        "title": "Pats_Steelers_2017_12_17_14_M5"
+      },
+      {
+        "title": "Pats_Steelers_2017_12_17_14_M4"
+      },
+      {
+        "title": "Pats_Steelers_2017_12_17_14_M3"
+      },
+      {
+        "title": "Pats_Steelers_2017_12_17_14_M2"
+      },
+      {
+        "title": "Pats_Steelers_2017_12_17_14_M1"
+      },
+      {
+        "title": "Pats_Steelers_2017_12_17_14_M0"
+      },
+      {
+        "title": "Pats_Steelers_2017_12_17_14_P7"
+      },
+      {
+        "title": "Pats_Steelers_2017_12_17_14_P6"
+      },
+      {
+        "title": "Pats_Steelers_2017_12_17_14_P5"
+      },
+      {
+        "title": "Pats_Steelers_2017_12_17_14_P4"
+      },
+      {
+        "title": "Pats_Steelers_2017_12_17_14_P3"
+      }
+    ],
+    "authors": [
+      {
+        "id": "d85577ea34ae50f2dac5347b5219aa23",
+        "firstName": "Andrew",
+        "lastName": "Clark",
+        "website": "https://twitter.com/acdlite"
+      },
+      {
+        "id": "2c6aa2cfe3449467d329fa17d6ea230f",
+        "firstName": "Keyan",
+        "lastName": "Zhang",
+        "website": "https://twitter.com/keyanzhang"
+      },
+      {
+        "id": "78ae672985c41fae0ecde0133f41bbfa",
+        "firstName": "Dan",
+        "lastName": "Abramov",
+        "website": "https://twitter.com/dan_abramov"
+      },
+      {
+        "id": "335fb02ec8f76c8515821ac9f266d276",
+        "firstName": "Joseph",
+        "lastName": "Savona",
+        "website": "https://twitter.com/en_JS"
+      }
+    ]
+  }
+}
