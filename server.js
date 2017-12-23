@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
   res.render('index.html');
 });
 
+app.all('*', function(req, res) {
+  res.redirect('index.html');
+});
+
 app.listen(config.port, function listenHandler() {
   console.info('Running on xxxxx  %O', config);
 });
