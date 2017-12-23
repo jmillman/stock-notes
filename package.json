@@ -4,7 +4,7 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "dev": "pm2 start lib/server.js --watch",
+    "dev": "pm2 start server.js --watch",
     "webpack": "webpack -wd",
     "test": "jest --watchAll"
   },
