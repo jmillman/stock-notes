@@ -1,7 +1,7 @@
 const path = require('path');
 
 const config = {
-  entry: './lib/index.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'static'),
     filename: 'bundle.js'
