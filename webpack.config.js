@@ -11,7 +11,8 @@ const config = {
       { test: /\.(js)$/, exclude: /node_modules/, use: 'babel-loader' },
       {test: /(\.css)$/, use: ['style', 'css']},
     ]
-  }
+  },
+  mode: 'development',
 };
 
 module.exports = config;
