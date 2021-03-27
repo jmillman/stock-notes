@@ -6,29 +6,40 @@ import os
 import time
 import glob
 import requests
+import re
 
 api = Flask(__name__)
-
 
 def check_dir(directory_name):
   if not os.path.exists(directory_name):
     os.makedirs(directory_name)
 
+# @app.errorhandler(404)
+# def errorhandler(e)
+#     return xyz
+
 
 @api.route('/stock_notes', methods=['GET'])
-def post_companies():
+def get_stock_notes():
     directory_name = "stock_notes/"
     check_dir(directory_name)
     files = sorted(glob.glob("{}*.json".format(directory_name)))
-    results = []
-    print(files)
+    stock_notes = {}
+    date=None
     for i in range(len(files)):
         with open(files[i], 'r') as myfile:
-            print(files[i])
-            results.append(myfile.read())
-
-
-    return json.dumps(results), 200
+            r = re.compile('.*\/(.*)\-(.*).json')
+            m = r.search(files[i])
+            if m:
+                date = m.group(1)
+                symbol = m.group(2)
+                file_contents = myfile.read()
+                stock_note = json.loads(file_contents)
+                stock_notes[symbol] = stock_note
+    data = {
+        date: stock_notes
+    }
+    return data, 200
 
 @api.route('/lookup_symbol', methods=['GET'])
 def lookup_symbol():
