@@ -3091,7 +3091,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "loginUserResponseSuccess": () => (/* binding */ loginUserResponseSuccess),
 /* harmony export */   "loginUserResponseFail": () => (/* binding */ loginUserResponseFail),
 /* harmony export */   "getNotesForDate": () => (/* binding */ getNotesForDate),
-/* harmony export */   "getNotesForDateResponse": () => (/* binding */ getNotesForDateResponse)
+/* harmony export */   "getNotesForDateResponse": () => (/* binding */ getNotesForDateResponse),
+/* harmony export */   "lookupSymbol": () => (/* binding */ lookupSymbol),
+/* harmony export */   "lookupSymbolResponse": () => (/* binding */ lookupSymbolResponse)
 /* harmony export */ });
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants */ "./lib/constants.js");
 /* harmony import */ var _footballBetActions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footballBetActions */ "./lib/actions/footballBetActions.js");
@@ -3135,6 +3137,18 @@ function getNotesForDate(notesDate) {
 function getNotesForDateResponse(data) {
   return {
     type: _constants__WEBPACK_IMPORTED_MODULE_0__.GET_DAILY_STOCK_NOTES_RESPONSE,
+    data: data
+  };
+}
+function lookupSymbol(symbol) {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__.LOOKUP_SYMBOL,
+    symbol: symbol
+  };
+}
+function lookupSymbolResponse(data) {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__.LOOKUP_SYMBOL_RESPONSE,
     data: data
   };
 }
@@ -3280,7 +3294,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _AppRoutes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppRoutes */ "./lib/components/AppRoutes.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _Daily_AddSymbol__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Daily/AddSymbol */ "./lib/components/Daily/AddSymbol.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -3307,6 +3323,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
+
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -3321,9 +3339,10 @@ var App = /*#__PURE__*/function (_React$Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
+      var status = this.props.state.status;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "navbar navbar-expand-md navbar-dark fixed-top bg-dark"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
         to: "/",
         className: "navbar-brand"
       }, "Stock Notes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
@@ -3343,10 +3362,46 @@ var App = /*#__PURE__*/function (_React$Component) {
         className: "navbar-nav mr-auto"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
         className: "nav-item"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
         to: "/daily",
         className: "nav-link active"
-      }, "Daily"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", {
+      }, "Daily")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+        to: "/football",
+        className: "nav-link active"
+      }, "Football")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+        to: "/profile",
+        className: "nav-link active"
+      }, "Profile")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+        to: "/users",
+        className: "nav-link"
+      }, "Users")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+        to: "/tickets",
+        className: "nav-link"
+      }, "Tickets")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+        to: "/bets",
+        className: "nav-link"
+      }, "Bets")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+        to: "/stats",
+        className: "nav-link"
+      }, "Stats")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Daily_AddSymbol__WEBPACK_IMPORTED_MODULE_3__.default, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: "nav-link active"
+      }, JSON.stringify(status)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", {
         role: "main",
         className: "container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_AppRoutes__WEBPACK_IMPORTED_MODULE_1__.default, null)));
@@ -3356,7 +3411,11 @@ var App = /*#__PURE__*/function (_React$Component) {
   return App;
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_2__.connect)(function (state) {
+  return {
+    state: state
+  };
+})(App));
 
 /***/ }),
 
@@ -3520,6 +3579,111 @@ var BetsPage = /*#__PURE__*/function (_React$Component) {
     state: state
   };
 })(BetsPage));
+
+/***/ }),
+
+/***/ "./lib/components/Daily/AddSymbol.js":
+/*!*******************************************!*\
+  !*** ./lib/components/Daily/AddSymbol.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _actions_action__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../actions/action */ "./lib/actions/action.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+var AddSymbol = /*#__PURE__*/function (_React$Component) {
+  _inherits(AddSymbol, _React$Component);
+
+  var _super = _createSuper(AddSymbol);
+
+  function AddSymbol(props, context) {
+    var _this;
+
+    _classCallCheck(this, AddSymbol);
+
+    _this = _super.call(this, props, context);
+    _this.state = {
+      symbol: ''
+    };
+    return _this;
+  }
+
+  _createClass(AddSymbol, [{
+    key: "lookupSymbol",
+    value: function lookupSymbol() {
+      this.props.dispatch((0,_actions_action__WEBPACK_IMPORTED_MODULE_2__.lookupSymbol)(this.state.symbol));
+    }
+  }, {
+    key: "changeSymbol",
+    value: function changeSymbol(e) {
+      var symbol = e.target.value;
+      this.setState({
+        symbol: symbol
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$props = this.props,
+          dispatch = _this$props.dispatch,
+          state = _this$props.state;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "text",
+        value: this.state.symbol,
+        onChange: function onChange(e) {
+          _this2.changeSymbol(e);
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+        type: "button",
+        className: "btn btn-secondary",
+        onClick: function onClick() {
+          _this2.lookupSymbol();
+        }
+      }, "Lookup"));
+    }
+  }]);
+
+  return AddSymbol;
+}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(function (state) {
+  return {
+    state: state
+  };
+})(AddSymbol));
 
 /***/ }),
 
@@ -4703,6 +4867,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "GET_ALL_STATS_RESPONSE": () => (/* binding */ GET_ALL_STATS_RESPONSE),
 /* harmony export */   "GET_DAILY_STOCK_NOTES": () => (/* binding */ GET_DAILY_STOCK_NOTES),
 /* harmony export */   "GET_DAILY_STOCK_NOTES_RESPONSE": () => (/* binding */ GET_DAILY_STOCK_NOTES_RESPONSE),
+/* harmony export */   "LOOKUP_SYMBOL": () => (/* binding */ LOOKUP_SYMBOL),
+/* harmony export */   "LOOKUP_SYMBOL_RESPONSE": () => (/* binding */ LOOKUP_SYMBOL_RESPONSE),
 /* harmony export */   "SET_BET_VIEW_OPTIONS_FOOTBALL_DATE": () => (/* binding */ SET_BET_VIEW_OPTIONS_FOOTBALL_DATE),
 /* harmony export */   "SET_BET_VIEW_OPTIONS_FOOTBALL_GAME": () => (/* binding */ SET_BET_VIEW_OPTIONS_FOOTBALL_GAME),
 /* harmony export */   "SET_BET_VIEW_OPTIONS_BET_TYPE": () => (/* binding */ SET_BET_VIEW_OPTIONS_BET_TYPE),
@@ -4735,6 +4901,8 @@ var GET_ALL_STATS_RESPONSE = 'GET_ALL_STATS_RESPONSE'; //
 
 var GET_DAILY_STOCK_NOTES = 'GET_DAILY_STOCK_NOTES';
 var GET_DAILY_STOCK_NOTES_RESPONSE = 'GET_DAILY_STOCK_NOTES_RESPONSE';
+var LOOKUP_SYMBOL = 'LOOKUP_SYMBOL';
+var LOOKUP_SYMBOL_RESPONSE = 'LOOKUP_SYMBOL_RESPONSE';
 var SET_BET_VIEW_OPTIONS_FOOTBALL_DATE = 'SET_BET_VIEW_OPTIONS_FOOTBALL_DATE';
 var SET_BET_VIEW_OPTIONS_FOOTBALL_GAME = 'SET_BET_VIEW_OPTIONS_FOOTBALL_GAME';
 var SET_BET_VIEW_OPTIONS_BET_TYPE = 'SET_BET_VIEW_OPTIONS_BET_TYPE';
@@ -4970,6 +5138,19 @@ function notesReducer() {
   }
 }
 
+function statusReducer() {
+  var status = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case _constants__WEBPACK_IMPORTED_MODULE_0__.LOOKUP_SYMBOL_RESPONSE:
+      return action.data;
+
+    default:
+      return status;
+  }
+}
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,redux__WEBPACK_IMPORTED_MODULE_1__.combineReducers)({
   loggedInUser: loggedInUserReducer,
   allUsers: allUsersReducer,
@@ -4979,7 +5160,8 @@ function notesReducer() {
   apiFailResponses: apiFailResponsesReducer,
   allBetsData: allBetsReducer,
   allStatsData: allStatsReducer,
-  notesData: notesReducer
+  notesData: notesReducer,
+  status: statusReducer
 }));
 
 /***/ }),
@@ -4993,7 +5175,13 @@ function notesReducer() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getDailyNotesTakeEverySaga": () => (/* binding */ getDailyNotesTakeEverySaga)
+/* harmony export */   "getDailyNotesTakeEverySaga": () => (/* binding */ getDailyNotesTakeEverySaga),
+/* harmony export */   "lookupSymbolTakeEverySaga": () => (/* binding */ lookupSymbolTakeEverySaga),
+/* harmony export */   "getAllBetsTakeEverySaga": () => (/* binding */ getAllBetsTakeEverySaga),
+/* harmony export */   "getAllStatsTakeEverySaga": () => (/* binding */ getAllStatsTakeEverySaga),
+/* harmony export */   "getAllTicketsTakeEverySaga": () => (/* binding */ getAllTicketsTakeEverySaga),
+/* harmony export */   "loginUserTakeEverySaga": () => (/* binding */ loginUserTakeEverySaga),
+/* harmony export */   "submitBetTakeEverySaga": () => (/* binding */ submitBetTakeEverySaga)
 /* harmony export */ });
 /* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-saga/effects */ "./node_modules/redux-saga/dist/redux-saga-effects-npm-proxy.esm.js");
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */ "./lib/constants.js");
@@ -5001,7 +5189,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-fetch */ "./node_modules/isomorphic-fetch/fetch-npm-browserify.js");
 /* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_fetch__WEBPACK_IMPORTED_MODULE_3__);
 var _marked = /*#__PURE__*/regeneratorRuntime.mark(getDailyNotesTakeEverySaga),
-    _marked2 = /*#__PURE__*/regeneratorRuntime.mark(getDailyNotesSaga);
+    _marked2 = /*#__PURE__*/regeneratorRuntime.mark(getDailyNotesSaga),
+    _marked3 = /*#__PURE__*/regeneratorRuntime.mark(lookupSymbolTakeEverySaga),
+    _marked4 = /*#__PURE__*/regeneratorRuntime.mark(lookupSymbolSaga),
+    _marked5 = /*#__PURE__*/regeneratorRuntime.mark(getAllBetsTakeEverySaga),
+    _marked6 = /*#__PURE__*/regeneratorRuntime.mark(getAllBetsSaga),
+    _marked7 = /*#__PURE__*/regeneratorRuntime.mark(getAllStatsTakeEverySaga),
+    _marked8 = /*#__PURE__*/regeneratorRuntime.mark(getAllStatsSaga),
+    _marked9 = /*#__PURE__*/regeneratorRuntime.mark(getAllTicketsTakeEverySaga),
+    _marked10 = /*#__PURE__*/regeneratorRuntime.mark(getAllTicketsSaga),
+    _marked11 = /*#__PURE__*/regeneratorRuntime.mark(loginUserTakeEverySaga),
+    _marked12 = /*#__PURE__*/regeneratorRuntime.mark(loginUser),
+    _marked13 = /*#__PURE__*/regeneratorRuntime.mark(submitBetTakeEverySaga),
+    _marked14 = /*#__PURE__*/regeneratorRuntime.mark(submitBet);
 
 
 
@@ -5030,90 +5230,326 @@ function getDailyNotesSaga() {
     while (1) {
       switch (_context2.prev = _context2.next) {
         case 0:
-          console.error("getDailyNotesSaga*****");
-          _context2.next = 3;
+          _context2.next = 2;
           return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.call((isomorphic_fetch__WEBPACK_IMPORTED_MODULE_3___default()), 'http://localhost:5000/stock_notes?date=2021-03-23');
 
-        case 3:
+        case 2:
           response = _context2.sent;
-          _context2.next = 6;
+          _context2.next = 5;
           return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.apply(response, response.json);
 
-        case 6:
+        case 5:
           data = _context2.sent;
           console.error(data);
-          _context2.next = 10;
+          _context2.next = 9;
           return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.put(_actions_action__WEBPACK_IMPORTED_MODULE_2__.getNotesForDateResponse(data));
 
-        case 10:
+        case 9:
         case "end":
           return _context2.stop();
       }
     }
   }, _marked2);
-} // export function * getAllBetsTakeEverySaga () {
-//   console.error("getAllBetsTakeEverySaga");
-//   yield effects.takeEvery(constants.GET_ALL_BETS_REQUEST, getAllBetsSaga);
-// }
-// function * getAllBetsSaga () {
-//   console.error("getAllBetsSaga");
-//   const response = yield effects.call(fetch, 'http://localhost:4444/getallbets');
-//   const data = yield effects.apply(response, response.json);
-//   yield effects.put(actions.getAllBetsResponse(data));
-// }
-// export function * getAllStatsTakeEverySaga () {
-//   console.error("getAllStatsTakeEverySaga");
-//   yield effects.takeEvery(constants.GET_ALL_STATS_REQUEST, getAllStatsSaga);
-// }
-// function * getAllStatsSaga () {
-//   console.error("getAllStatsSaga");
-//   const response = yield effects.call(fetch, 'http://localhost:4444/getallstats');
-//   const data = yield effects.apply(response, response.json);
-//   yield effects.put(actions.getAllStatsResponse(data));
-// }
-// export function * getAllTicketsTakeEverySaga () {
-//   console.error("getAllTicketsTakeEverySaga");
-//   yield effects.takeEvery(constants.GET_ALL_TICKETS_REQUEST, getAllTicketsSaga);
-// }
-// function * getAllTicketsSaga () {
-//   console.error("getAllTicketsSaga");
-//   const response = yield effects.call(fetch, 'http://localhost:4444/getalltickets');
-//   const data = yield effects.apply(response, response.json);
-//   yield effects.put(actions.getAllTicketsResponse(data));
-// }
-// export function * loginUserTakeEverySaga () {
-//   console.error("loginUserTakeEverySaga");
-//   yield effects.takeEvery(constants.LOGIN_USER_REQUEST, loginUser);
-// }
-// function* loginUser(action) {
-//   console.error("loginUser");
-//   const response = yield effects.call(fetch, 'http://localhost:4444/loginuser?email=' + action.user.name + '&password=' + action.user.password);
-//   const data = yield effects.apply(response, response.json);
-//   yield effects.put(actions.loginUserResponseSuccess(data));
-// }
-// export function * submitBetTakeEverySaga () {
-//   console.error("submitBetTakeEverySaga");
-//   yield effects.takeEvery(constants.SUBMIT_BET, submitBet);
-// }
-// function* submitBet(action) {
-//   console.error("submitBet");
-//   const {betType, side, game, price, user, homeScore} = action.bet;
-//   const {date, home, away} = game;
-//   const {userId} = user;
-//   const quantity = 1;
-//   const ticket = [betType, date, home, away, homeScore, side].join('_');
-//   const url = 'http://localhost:4444/createticket?ticket=' + ticket + '&betType=' + betType + '&side=' + side + '&price=' + price + '&userId=' + userId + '&quantity=' + quantity;
-//   const response = yield effects.call(fetch, url);
-//   const data = yield effects.apply(response, response.json);
-//   if(data.error == false){
-//     yield effects.put(actions.submitBetResponseSuccess(data));
-//     yield effects.put(actions.cancelBet());
-//     yield effects.put(actions.refreshAllTickets());
-//   }
-//   else {
-//     yield effects.put(actions.submitBetResponseFail(data));
-//   }
-// }
+}
+
+function lookupSymbolTakeEverySaga() {
+  return regeneratorRuntime.wrap(function lookupSymbolTakeEverySaga$(_context3) {
+    while (1) {
+      switch (_context3.prev = _context3.next) {
+        case 0:
+          _context3.next = 2;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.takeEvery(_constants__WEBPACK_IMPORTED_MODULE_1__.LOOKUP_SYMBOL, lookupSymbolSaga);
+
+        case 2:
+        case "end":
+          return _context3.stop();
+      }
+    }
+  }, _marked3);
+}
+
+function lookupSymbolSaga(action) {
+  var response, data;
+  return regeneratorRuntime.wrap(function lookupSymbolSaga$(_context4) {
+    while (1) {
+      switch (_context4.prev = _context4.next) {
+        case 0:
+          console.error("lookupSymbolSaga*****");
+          _context4.next = 3;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.call((isomorphic_fetch__WEBPACK_IMPORTED_MODULE_3___default()), "http://localhost:5000/lookup_symbol?symbol=".concat(action.symbol));
+
+        case 3:
+          response = _context4.sent;
+          _context4.next = 6;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.apply(response, response.json);
+
+        case 6:
+          data = _context4.sent;
+          console.error(data);
+          _context4.next = 10;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.put(_actions_action__WEBPACK_IMPORTED_MODULE_2__.lookupSymbolResponse(data));
+
+        case 10:
+        case "end":
+          return _context4.stop();
+      }
+    }
+  }, _marked4);
+}
+
+function getAllBetsTakeEverySaga() {
+  return regeneratorRuntime.wrap(function getAllBetsTakeEverySaga$(_context5) {
+    while (1) {
+      switch (_context5.prev = _context5.next) {
+        case 0:
+          console.error("getAllBetsTakeEverySaga");
+          _context5.next = 3;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.takeEvery(_constants__WEBPACK_IMPORTED_MODULE_1__.GET_ALL_BETS_REQUEST, getAllBetsSaga);
+
+        case 3:
+        case "end":
+          return _context5.stop();
+      }
+    }
+  }, _marked5);
+}
+
+function getAllBetsSaga() {
+  var response, data;
+  return regeneratorRuntime.wrap(function getAllBetsSaga$(_context6) {
+    while (1) {
+      switch (_context6.prev = _context6.next) {
+        case 0:
+          console.error("getAllBetsSaga");
+          _context6.next = 3;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.call((isomorphic_fetch__WEBPACK_IMPORTED_MODULE_3___default()), 'http://localhost:4444/getallbets');
+
+        case 3:
+          response = _context6.sent;
+          _context6.next = 6;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.apply(response, response.json);
+
+        case 6:
+          data = _context6.sent;
+          _context6.next = 9;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.put(_actions_action__WEBPACK_IMPORTED_MODULE_2__.getAllBetsResponse(data));
+
+        case 9:
+        case "end":
+          return _context6.stop();
+      }
+    }
+  }, _marked6);
+}
+
+function getAllStatsTakeEverySaga() {
+  return regeneratorRuntime.wrap(function getAllStatsTakeEverySaga$(_context7) {
+    while (1) {
+      switch (_context7.prev = _context7.next) {
+        case 0:
+          console.error("getAllStatsTakeEverySaga");
+          _context7.next = 3;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.takeEvery(_constants__WEBPACK_IMPORTED_MODULE_1__.GET_ALL_STATS_REQUEST, getAllStatsSaga);
+
+        case 3:
+        case "end":
+          return _context7.stop();
+      }
+    }
+  }, _marked7);
+}
+
+function getAllStatsSaga() {
+  var response, data;
+  return regeneratorRuntime.wrap(function getAllStatsSaga$(_context8) {
+    while (1) {
+      switch (_context8.prev = _context8.next) {
+        case 0:
+          console.error("getAllStatsSaga");
+          _context8.next = 3;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.call((isomorphic_fetch__WEBPACK_IMPORTED_MODULE_3___default()), 'http://localhost:4444/getallstats');
+
+        case 3:
+          response = _context8.sent;
+          _context8.next = 6;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.apply(response, response.json);
+
+        case 6:
+          data = _context8.sent;
+          _context8.next = 9;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.put(_actions_action__WEBPACK_IMPORTED_MODULE_2__.getAllStatsResponse(data));
+
+        case 9:
+        case "end":
+          return _context8.stop();
+      }
+    }
+  }, _marked8);
+}
+
+function getAllTicketsTakeEverySaga() {
+  return regeneratorRuntime.wrap(function getAllTicketsTakeEverySaga$(_context9) {
+    while (1) {
+      switch (_context9.prev = _context9.next) {
+        case 0:
+          console.error("getAllTicketsTakeEverySaga");
+          _context9.next = 3;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.takeEvery(_constants__WEBPACK_IMPORTED_MODULE_1__.GET_ALL_TICKETS_REQUEST, getAllTicketsSaga);
+
+        case 3:
+        case "end":
+          return _context9.stop();
+      }
+    }
+  }, _marked9);
+}
+
+function getAllTicketsSaga() {
+  var response, data;
+  return regeneratorRuntime.wrap(function getAllTicketsSaga$(_context10) {
+    while (1) {
+      switch (_context10.prev = _context10.next) {
+        case 0:
+          console.error("getAllTicketsSaga");
+          _context10.next = 3;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.call((isomorphic_fetch__WEBPACK_IMPORTED_MODULE_3___default()), 'http://localhost:4444/getalltickets');
+
+        case 3:
+          response = _context10.sent;
+          _context10.next = 6;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.apply(response, response.json);
+
+        case 6:
+          data = _context10.sent;
+          _context10.next = 9;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.put(_actions_action__WEBPACK_IMPORTED_MODULE_2__.getAllTicketsResponse(data));
+
+        case 9:
+        case "end":
+          return _context10.stop();
+      }
+    }
+  }, _marked10);
+}
+
+function loginUserTakeEverySaga() {
+  return regeneratorRuntime.wrap(function loginUserTakeEverySaga$(_context11) {
+    while (1) {
+      switch (_context11.prev = _context11.next) {
+        case 0:
+          console.error("loginUserTakeEverySaga");
+          _context11.next = 3;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.takeEvery(_constants__WEBPACK_IMPORTED_MODULE_1__.LOGIN_USER_REQUEST, loginUser);
+
+        case 3:
+        case "end":
+          return _context11.stop();
+      }
+    }
+  }, _marked11);
+}
+
+function loginUser(action) {
+  var response, data;
+  return regeneratorRuntime.wrap(function loginUser$(_context12) {
+    while (1) {
+      switch (_context12.prev = _context12.next) {
+        case 0:
+          console.error("loginUser");
+          _context12.next = 3;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.call((isomorphic_fetch__WEBPACK_IMPORTED_MODULE_3___default()), 'http://localhost:4444/loginuser?email=' + action.user.name + '&password=' + action.user.password);
+
+        case 3:
+          response = _context12.sent;
+          _context12.next = 6;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.apply(response, response.json);
+
+        case 6:
+          data = _context12.sent;
+          _context12.next = 9;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.put(_actions_action__WEBPACK_IMPORTED_MODULE_2__.loginUserResponseSuccess(data));
+
+        case 9:
+        case "end":
+          return _context12.stop();
+      }
+    }
+  }, _marked12);
+}
+
+function submitBetTakeEverySaga() {
+  return regeneratorRuntime.wrap(function submitBetTakeEverySaga$(_context13) {
+    while (1) {
+      switch (_context13.prev = _context13.next) {
+        case 0:
+          console.error("submitBetTakeEverySaga");
+          _context13.next = 3;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.takeEvery(_constants__WEBPACK_IMPORTED_MODULE_1__.SUBMIT_BET, submitBet);
+
+        case 3:
+        case "end":
+          return _context13.stop();
+      }
+    }
+  }, _marked13);
+}
+
+function submitBet(action) {
+  var _action$bet, betType, side, game, price, user, homeScore, date, home, away, userId, quantity, ticket, url, response, data;
+
+  return regeneratorRuntime.wrap(function submitBet$(_context14) {
+    while (1) {
+      switch (_context14.prev = _context14.next) {
+        case 0:
+          console.error("submitBet");
+          _action$bet = action.bet, betType = _action$bet.betType, side = _action$bet.side, game = _action$bet.game, price = _action$bet.price, user = _action$bet.user, homeScore = _action$bet.homeScore;
+          date = game.date, home = game.home, away = game.away;
+          userId = user.userId;
+          quantity = 1;
+          ticket = [betType, date, home, away, homeScore, side].join('_');
+          url = 'http://localhost:4444/createticket?ticket=' + ticket + '&betType=' + betType + '&side=' + side + '&price=' + price + '&userId=' + userId + '&quantity=' + quantity;
+          _context14.next = 9;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.call((isomorphic_fetch__WEBPACK_IMPORTED_MODULE_3___default()), url);
+
+        case 9:
+          response = _context14.sent;
+          _context14.next = 12;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.apply(response, response.json);
+
+        case 12:
+          data = _context14.sent;
+
+          if (!(data.error == false)) {
+            _context14.next = 22;
+            break;
+          }
+
+          _context14.next = 16;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.put(_actions_action__WEBPACK_IMPORTED_MODULE_2__.submitBetResponseSuccess(data));
+
+        case 16:
+          _context14.next = 18;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.put(_actions_action__WEBPACK_IMPORTED_MODULE_2__.cancelBet());
+
+        case 18:
+          _context14.next = 20;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.put(_actions_action__WEBPACK_IMPORTED_MODULE_2__.refreshAllTickets());
+
+        case 20:
+          _context14.next = 24;
+          break;
+
+        case 22:
+          _context14.next = 24;
+          return redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__.put(_actions_action__WEBPACK_IMPORTED_MODULE_2__.submitBetResponseFail(data));
+
+        case 24:
+        case "end":
+          return _context14.stop();
+      }
+    }
+  }, _marked14);
+}
 
 /***/ }),
 

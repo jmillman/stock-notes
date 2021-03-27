@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "pm2 start server.js --watch",
+    "start": "python3 server.py",
     "webpack": "webpack -w -d 'source-map'",
     "test": "jest --watchAll"
   },
