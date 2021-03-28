@@ -12,13 +12,11 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
-        "indent": [
-            "error",
-            "tab"
-        ],
+        "prettier/prettier": "error",
         "linebreak-style": [
             "error",
             "unix"
