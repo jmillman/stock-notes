@@ -3,16 +3,42 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
-    "lodash": "^4.17.11",
-    "moment": "^2.24.0",
+    "axios": "^0.21.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "bootstrap": "^4.6.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
     "react-cookie": "^3.1.2",
-    "react-dom": "^16.8.6",
+    "react-dom": "^17.0.0",
     "react-scripts": "2.1.8",
-    "semantic-ui-calendar-react": "^0.14.4",
-    "semantic-ui-react": "^0.86.0"
+    "semantic-ui-react": "^2.0.3",
+    "webpack": "^5.28.0"
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ],
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "babel-eslint": "^8.0.3",
+    "eslint": "^7.23.0",
+    "eslint-plugin-react": "^7.23.1",
+    "webpack-cli": "^4.6.0"
   },
   "scripts": {
     "start:server": "python3 server.py",
@@ -21,7 +47,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "python3 server.py & npm start",
-    "webpack": "webpack -w -d 'source-map'"
+    "webpack": "webpack -w -d 'source-map'",
+    "lint:fix": "eslint lib/. --fix"
   },
   "eslintConfig": {
     "extends": "react-app"

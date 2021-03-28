@@ -1,6 +1,6 @@
 import React, { useContext, useState, useRef} from 'react';
 import GlobalContext from '../store/GlobalContext';
-import { DatesRangeInput } from 'semantic-ui-calendar-react';
+// import { DatesRangeInput } from 'semantic-ui-calendar-react';
 import CompletedItem from './CompletedItem';
 import ItemTypeCheckboxes from './ItemTypeCheckboxes';
 import SelectList from './SelectList';
@@ -125,7 +125,7 @@ function CreateViewsPage() {
             <Grid.Column width={4}>
                 <Container width='100%'>
                         {getForm()}
-                        <DatesRangeInput
+                        {/* <DatesRangeInput
                             inline
                             name="date"
                             placeholder="Date"
@@ -134,7 +134,7 @@ function CreateViewsPage() {
                             onChange={handleChange}
                             closable={true}
                             clearable
-                        />
+                        /> */}
                         <ItemTypeCheckboxes callback={handleSetSelectedItemTypes} selectedItems={selectedItemTypes}/>
                 </Container>
             </Grid.Column>

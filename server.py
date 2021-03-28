@@ -7,6 +7,7 @@ import time
 import glob
 import requests
 import re
+import time
 
 api = Flask(__name__)
 
@@ -43,23 +44,29 @@ def get_stock_notes():
 
 @api.route('/lookup_symbol', methods=['GET'])
 def lookup_symbol():
-    directory_name = "stock_notes/"
-    check_dir(directory_name)
-    symbol = request.args.get('symbol')
-    if(symbol):
-        page = requests.get('https://api.filingspro.com/sec?ticker=' + symbol)
-
-        stock_data = json.loads(page.content)
-
+    try:
+        directory_name = "stock_notes/"
         check_dir(directory_name)
-        file_name = "{}/{}-{}.json".format(directory_name, datetime.datetime.now().strftime("%Y-%m-%d"), symbol)
+        symbol = request.args.get('symbol')
+        if(symbol):
+            page = requests.get('https://api.filingspro.com/sec?ticker=' + symbol)
 
-        with open(file_name, 'w') as json_file:
-            json.dump(stock_data, json_file)
+            stock_data = json.loads(page.content)
 
-        return json.dumps({'status': 'OK'}), 200
-    else:
-        return json.dumps({'status': 'No Symbol'}), 400
+            if(stock_data['stockInfo']['name']):
+                check_dir(directory_name)
+                file_name = "{}/{}-{}.json".format(directory_name, datetime.datetime.now().strftime("%Y-%m-%d"), symbol)
+
+                with open(file_name, 'w') as json_file:
+                    json.dump(stock_data, json_file)
+
+                return json.dumps({'status': 'success', 'message': 'Symbol Saved'}), 200
+            else:
+                return json.dumps({'status': 'error', 'message': 'Symbol not found'}), 200
+        else:
+            return json.dumps({'status': 'error', 'message': 'No Symbol'}), 200
+    except Exception as err:
+        return json.dumps({'status': 'error', 'message': repr(err)}), 200
 
 
 

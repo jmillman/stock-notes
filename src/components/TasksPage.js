@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import GlobalContext from '../store/GlobalContext';
 import AddMultiple from './AddMultiple';
 import SelectList from './SelectList';
-import { DateInput } from 'semantic-ui-calendar-react';
+// import { DateInput } from 'semantic-ui-calendar-react';
 import moment from 'moment';
 
 
@@ -59,7 +59,7 @@ function getCalendar() {
     return(
       <Grid.Row key={'Calendar'}>
         <Grid.Column width={15}>
-          <DateInput
+          {/* <DateInput
               inline
               name="date"
               placeholder="Date"
@@ -68,7 +68,7 @@ function getCalendar() {
               iconPosition="left"
               onChange={handleChangeDate}
               closable={true}
-          />
+          /> */}
         </Grid.Column>
       </Grid.Row>
     );  

@@ -20,18 +20,14 @@ function AddSymbol(props) {
     }
 
     async function saveCallback(result) {
+        setFormStatus({status: result.status, message: result.message});
         if(result.status === 'success') {
-            setFormStatus({status: 'success', message: 'Item Type Saved'});
             setTimeout(resetForm, 1000);
-        }
-        else {
-            // const obj = {status: result.status, message: result.message}
-            setFormStatus({status: result.status, message: result.message});
         }
     }
 
     async function handleClickCreate() {
-        debugger;
+        setFormStatus({status: 'success', message: 'Saving symbol.....'});
         api.addSymbolFromApp(symbol, saveCallback);
     }
  
