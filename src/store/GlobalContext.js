@@ -9,7 +9,7 @@ import React, { useReducer, useEffect } from 'react';
 import { createContext } from 'react';
 import reducer from '../store/reducer';
 import { fetchItems, deleteItem, addItemType, fetchUsers, fetchItemTypes, deleteItemType, AddItemInput, AddUserInput } from '../api/restApi';
-import { addSymbol } from '../api/stockApi';
+import { addSymbol , fetchStockNotes} from '../api/stockApi';
 import { useCookies } from 'react-cookie';
 import moment from 'moment';
 
@@ -66,6 +66,14 @@ export function withGlobalContext(Component) {
 
         const addSymbolFromApp = (symbol, successCallback) => {
             addSymbol(symbol,
+                (result) => {
+                    successCallback(result);
+                }   
+            );
+        };
+
+        const fetchStockNotesFromApp = (date, successCallback) => {
+            fetchStockNotes(date,
                 (result) => {
                     successCallback(result);
                 }   
@@ -170,6 +178,7 @@ export function withGlobalContext(Component) {
             editListFromApp,
             userIdCookie,
             addSymbolFromApp,
+            fetchStockNotesFromApp,
         }
 
         return (

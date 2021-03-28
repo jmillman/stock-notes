@@ -37,10 +37,8 @@ def get_stock_notes():
                 file_contents = myfile.read()
                 stock_note = json.loads(file_contents)
                 stock_notes[symbol] = stock_note
-    data = {
-        date: stock_notes
-    }
-    return data, 200
+    return json.dumps({'status': 'success', 'data': stock_notes}), 200
+
 
 @api.route('/lookup_symbol', methods=['GET'])
 def lookup_symbol():

@@ -19,11 +19,11 @@ const tabs = {
 function PageMobile() {
     const [state , ,] = useContext(GlobalContext);
 
-  const [ selectedTab, setSelectedTab ] = useState(tabs.LOGIN);
+  const [ selectedTab, setSelectedTab ] = useState(tabs.STOCK_NOTES);
 
   useEffect(() => {
     if(state.loggedInUser) {
-        setSelectedTab(tabs.COMPLETE_TASKS);
+        setSelectedTab(tabs.STOCK_NOTES);
     }
   }, [state.loggedInUser]);  
 
