@@ -1,8 +1,8 @@
 export const ItemDataTypes = {
-    EVENT: 'EVENT',
-    NUMBER: 'NUMBER',
-    TEXT: 'TEXT',
-    TIME: 'TIME',
+  EVENT: 'EVENT',
+  NUMBER: 'NUMBER',
+  TEXT: 'TEXT',
+  TIME: 'TIME',
 };
 
 // class ItemType {
