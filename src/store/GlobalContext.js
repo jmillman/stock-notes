@@ -18,7 +18,12 @@ import {
   AddItemInput,
   AddUserInput,
 } from '../api/restApi';
-import { addSymbol, fetchStockNotes } from '../api/stockApi';
+import {
+  addSymbol,
+  fetchStockNotes,
+  saveNote,
+  fetchMyNotes,
+} from '../api/stockApi';
 import { useCookies } from 'react-cookie';
 import moment from 'moment';
 
@@ -34,6 +39,8 @@ export function withGlobalContext(Component) {
       views: [],
       users: [],
       symbolAddedTimeStamp: null,
+      noteAddedTimeStamp: null,
+      notes: [],
     });
     const [userIdCookie, setUserIDCookie] = useCookies(['userId']);
 
@@ -108,6 +115,20 @@ export function withGlobalContext(Component) {
 
     const fetchStockNotesFromApp = (date, successCallback) => {
       fetchStockNotes(date, (result) => {
+        // dispatch({ type: 'notesLoaded', data: result['data'] });
+        successCallback(result);
+      });
+    };
+
+    const fetchMyNotesFromApp = () => {
+      fetchMyNotes((data) => {
+        dispatch({ type: 'notesLoaded', data });
+      });
+    };
+
+    const saveNoteFromApp = (symbol, title, body, successCallback) => {
+      saveNote(symbol, title, body, (result) => {
+        dispatch({ type: 'noteCreated' });
         successCallback(result);
       });
     };
@@ -239,6 +260,8 @@ export function withGlobalContext(Component) {
       userIdCookie,
       addSymbolFromApp,
       fetchStockNotesFromApp,
+      saveNoteFromApp,
+      fetchMyNotesFromApp,
     };
 
     return (

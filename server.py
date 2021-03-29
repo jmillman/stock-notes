@@ -8,6 +8,8 @@ import glob
 import requests
 import re
 import time
+from pathlib import Path
+
 
 api = Flask(__name__)
 
@@ -20,11 +22,53 @@ def check_dir(directory_name):
 #     return xyz
 
 
+@api.route('/get_notes', methods=['GET'])
+def get_note():
+    directory_name = 'data_notes'
+    check_dir(directory_name)
+    file_name = "{}/my_notes.json".format(directory_name)
+    notes = []
+    if(os.path.isfile(file_name)):
+        with open(file_name, 'r+') as f:
+            notes = json.load(f)
+    return json.dumps({'status': 'success', 'data': notes}), 200
+
+
+@api.route('/save_note', methods=['POST'])
+def save_note():
+    directory_name = 'data_notes'
+    check_dir(directory_name)
+    file_name = "{}/my_notes.json".format(directory_name)
+    note = {
+        'symbol': request.form.get('symbol'),
+        'title': request.form.get('title'),
+        'body': request.form.get('body')
+         }
+
+    if(not os.path.isfile(file_name)):
+        with open(file_name, 'w') as f:
+            json.dump([note], f)
+    else:
+        notes = []
+        with open(file_name, 'r') as f:
+            notes = json.load(f)
+            notes.append(note)
+        with open(file_name, 'w') as f:
+            json.dump(notes, f)
+
+    return json.dumps(
+        {
+            'status': 'success',
+            'message': 'saved',
+            
+        }
+        ), 200
+
 @api.route('/stock_notes', methods=['GET'])
 def get_stock_notes():
-    directory_name = "stock_notes/"
+    directory_name = 'data_filings_pro'
     check_dir(directory_name)
-    files = sorted(glob.glob("{}*.json".format(directory_name)))
+    files = sorted(glob.glob("{}/*.json".format(directory_name)))
     stock_notes = {}
     date=None
     for i in range(len(files)):
@@ -43,7 +87,7 @@ def get_stock_notes():
 @api.route('/lookup_symbol', methods=['GET'])
 def lookup_symbol():
     try:
-        directory_name = "stock_notes/"
+        directory_name = 'data_filings_pro'
         check_dir(directory_name)
         symbol = request.args.get('symbol')
         if(symbol):

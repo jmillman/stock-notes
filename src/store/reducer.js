@@ -3,6 +3,12 @@ import moment from 'moment';
 export default function (state, action) {
   let retState;
   switch (action.type) {
+    case 'notesLoaded':
+      retState = Object.assign({}, state, { notes: action.data });
+      return retState;
+    case 'noteCreated':
+      retState = Object.assign({}, state, { noteAddedTimeStamp: moment() });
+      return retState;
     case 'symbolCreated':
       retState = Object.assign({}, state, { symbolAddedTimeStamp: moment() });
       return retState;

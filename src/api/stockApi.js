@@ -16,9 +16,31 @@ export async function addSymbol(symbol, callback) {
 }
 
 export async function fetchStockNotes(date, callback) {
-  if (typeof date !== 'string' && typeof 'callback' !== 'function')
+  if (typeof date !== 'string' && typeof callback !== 'function')
     throw new Error('fetchStockNotes input Error');
   const url = `${domain}/stock_notes?date=${date}`;
   const response = await axios.get(url);
   callback(response.data);
+}
+
+export async function fetchMyNotes(callback) {
+  if (typeof callback !== 'function')
+    throw new Error('fetchMyNotes input Error');
+  const url = `${domain}/get_notes`;
+  const response = await axios.get(url);
+  if (callback) {
+    callback(response.data.data);
+  }
+}
+
+export async function saveNote(symbol, title, body, callback) {
+  const bodyFormData = new FormData();
+  bodyFormData.set('symbol', symbol);
+  bodyFormData.set('title', title);
+  bodyFormData.set('body', body);
+  const url = `${domain}/save_note`;
+  const response = await axios.post(url, bodyFormData);
+  if (callback) {
+    callback(response.data);
+  }
 }
