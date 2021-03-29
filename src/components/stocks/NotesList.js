@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import React, { useState, useContext } from 'react';
-import { Button, Divider, Grid, Segment, Popup } from 'semantic-ui-react';
+import { Button, Divider, Grid, Segment, Popup, List } from 'semantic-ui-react';
 import AddNote from './AddNote';
 import GlobalContext from '../../store/GlobalContext';
 
@@ -11,15 +11,12 @@ function NotesList(props) {
   // const [date] = useState(moment().format('YYYY-MM-DD'));
   function getNotes() {
     console.log(props.symbol);
-    return state.notes
+    const items = state.notes
       .filter((note) => note.symbol === props.symbol)
       .map((note) => {
-        return (
-          <div key={note.title + note.body}>
-            {note.title} {note.body}
-          </div>
-        );
+        return (`${note.title} - ${note.body}`);
       });
+      return <List items={items} />
   }
   return (
     <>

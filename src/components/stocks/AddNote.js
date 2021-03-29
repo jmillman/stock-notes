@@ -58,16 +58,20 @@ function AddNote(props) {
         />
       ) : (
         <Form>
-          <Input
-            placeholder="Title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-          <TextArea
-            placeholder="What's up?..."
-            value={body}
-            onChange={(e) => setBody(e.target.value)}
-          />
+          <Form.Field>
+            <Input
+              placeholder="Title"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+          </Form.Field>
+          <Form.Field>
+            <TextArea
+              placeholder="What's up?..."
+              value={body}
+              onChange={(e) => setBody(e.target.value)}
+            />
+          </Form.Field>
           {formStatus && formStatus.status ? (
             <Message
               color={
