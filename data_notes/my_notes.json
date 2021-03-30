@@ -1,1 +1,26 @@
-[{"body": "Just Because", "symbol": "GOOG", "title": "Buy"}, {"body": "I hate this stock", "symbol": "MSFT", "title": "Sell"}]
+[
+    {
+        "body": "Bad news, audit doubts it's future on Sat.",
+        "date": "2021-03-29T09:18:48-04:10",
+        "symbol": "CPHI",
+        "title": "Bad news, not sure why up?"
+    },
+    {
+        "body": "Up 211% pre.  Spirulina company, no news.  Breaking 3 month high, below 1 year high.",
+        "date": "2021-03-29T09:18:48-04:20",
+        "symbol": "CYAN",
+        "title": "No news - breakout or short but low float"
+    },
+    {
+        "body": "Up 50% pre - possible breakout - bounce?, or will hit resistance. This is low float though, careful on shorts.",
+        "date": "2021-03-29T09:18:48-04:30",
+        "symbol": "SEAC",
+        "title": "Up 50% pre. Won contract, possible breakout, look for bounce."
+    },
+    {
+        "body": "Up 570% pre! New IPO, be careful.",
+        "date": "2021-03-29T09:18:48-04:40",
+        "symbol": "UPC",
+        "title": "IPO - careful - no history"
+    }
+]

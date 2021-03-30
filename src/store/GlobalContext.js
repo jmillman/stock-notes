@@ -126,8 +126,8 @@ export function withGlobalContext(Component) {
       });
     };
 
-    const saveNoteFromApp = (symbol, title, body, successCallback) => {
-      saveNote(symbol, title, body, (result) => {
+    const saveNoteFromApp = (symbol, title, body, date, successCallback) => {
+      saveNote(symbol, title, body, date, (result) => {
         dispatch({ type: 'noteCreated' });
         successCallback(result);
       });

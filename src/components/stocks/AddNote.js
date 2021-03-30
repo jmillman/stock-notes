@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import moment from 'moment';
 import React, { useState, useRef, useContext } from 'react';
 import {
   Container,
@@ -16,9 +17,10 @@ import GlobalContext from '../../store/GlobalContext';
 
 function AddNote(props) {
   const [, , api] = useContext(GlobalContext);
-  const [addNote, setAddNote] = useState(false);
-  const [title, setTitle] = useState('');
-  const [body, setBody] = useState('');
+  const [addNote, setAddNote] = useState(props.note ? true : false);
+  const [title, setTitle] = useState(_.get(props, 'note.title', ''));
+  const [body, setBody] = useState(_.get(props, 'note.body', ''));
+  const [date] = useState(_.get(props, 'note.date', ''));
   const [formStatus, setFormStatus] = useState(null);
   // const [date] = useState(moment().format('YYYY-MM-DD'));
   const nameRef = useRef(null);
@@ -42,11 +44,11 @@ function AddNote(props) {
 
   async function handleSubmit() {
     setFormStatus({ status: 'success', message: 'Saving note.....' });
-    api.saveNoteFromApp(props.symbol, title, body, saveCallback);
+    api.saveNoteFromApp(props.symbol, title, body, date, saveCallback);
   }
 
   return (
-    <Container>
+    <Container key={props.note || props.symbol}>
       {!addNote ? (
         <Button
           content="Add Note"

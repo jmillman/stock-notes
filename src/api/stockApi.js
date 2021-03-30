@@ -1,4 +1,5 @@
 import axios from 'axios';
+import moment from 'moment';
 
 // lookup_symbol?symbol=${action.symbol}
 const domain = 'http://127.0.0.1:5000/';
@@ -33,11 +34,13 @@ export async function fetchMyNotes(callback) {
   }
 }
 
-export async function saveNote(symbol, title, body, callback) {
+export async function saveNote(symbol, title, body, date, callback) {
   const bodyFormData = new FormData();
   bodyFormData.set('symbol', symbol);
   bodyFormData.set('title', title);
   bodyFormData.set('body', body);
+  bodyFormData.set('edit_id', date);
+  bodyFormData.set('date_stamp', moment().format());
   const url = `${domain}/save_note`;
   const response = await axios.post(url, bodyFormData);
   if (callback) {

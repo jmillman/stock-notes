@@ -39,22 +39,35 @@ def save_note():
     directory_name = 'data_notes'
     check_dir(directory_name)
     file_name = "{}/my_notes.json".format(directory_name)
-    note = {
-        'symbol': request.form.get('symbol'),
-        'title': request.form.get('title'),
-        'body': request.form.get('body')
-         }
 
-    if(not os.path.isfile(file_name)):
-        with open(file_name, 'w') as f:
-            json.dump([note], f)
-    else:
+    if(request.form.get('edit_id')):
         notes = []
         with open(file_name, 'r') as f:
             notes = json.load(f)
-            notes.append(note)
+            for note in notes:
+                if note['date'] == request.form.get('edit_id'):
+                    note['title'] = request.form.get('title')
+                    note['body'] = request.form.get('body')
         with open(file_name, 'w') as f:
-            json.dump(notes, f)
+            json.dump(notes, f, indent=4)
+
+    else:
+        note = {
+            'symbol': request.form.get('symbol'),
+            'title': request.form.get('title'),
+            'body': request.form.get('body'),
+            'date': request.form.get('date_stamp')
+            }
+        if(not os.path.isfile(file_name)):
+            with open(file_name, 'w') as f:
+                json.dump([note], f, indent=4)
+        else:
+            notes = []
+            with open(file_name, 'r') as f:
+                notes = json.load(f)
+                notes.append(note)
+            with open(file_name, 'w') as f:
+                json.dump(notes, f, indent=4)
 
     return json.dumps(
         {

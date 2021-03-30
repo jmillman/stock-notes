@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import moment from 'moment';
 import React, { useState, useContext } from 'react';
 import { Button, Divider, Grid, Segment, Popup, List } from 'semantic-ui-react';
 import AddNote from './AddNote';
@@ -6,17 +7,38 @@ import GlobalContext from '../../store/GlobalContext';
 
 function NotesList(props) {
   const [state, ,] = useContext(GlobalContext);
-  // const [data, setData] = useState({});
+  const [notesBeingEdited, setNotesBeingEdited] = useState([]);
   // const [, setFormStatus] = useState(null);
   // const [date] = useState(moment().format('YYYY-MM-DD'));
+
+  function editNote(date) {}
+
+  function getNote(note) {
+    if (notesBeingEdited.includes(note.date)) {
+      return <AddNote note={note} key={note.date} />;
+    }
+    return (
+      <div
+        key={note.date}
+        onDoubleClick={() =>
+          setNotesBeingEdited(notesBeingEdited.concat(note.date))
+        }
+      >
+        <div>{moment(note.date).format('YYYY-MM-DD')}</div>
+        <div>
+          {note.title} - {note.body}
+        </div>
+      </div>
+    );
+  }
+
   function getNotes() {
-    console.log(props.symbol);
     const items = state.notes
       .filter((note) => note.symbol === props.symbol)
       .map((note) => {
-        return (`${note.title} - ${note.body}`);
+        return getNote(note);
       });
-      return <List items={items} />
+    return <List items={items} />;
   }
   return (
     <>
