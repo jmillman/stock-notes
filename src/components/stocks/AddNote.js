@@ -33,12 +33,14 @@ function AddNote(props) {
   }
 
   async function saveCallback(result) {
-    setFormStatus({
-      status: result.status,
-      message: JSON.stringify(result.message),
-    });
     if (result.status === 'success') {
-      setTimeout(resetForm, 5000);
+      resetForm();
+    }
+    else{
+      setFormStatus({
+        status: result.status,
+        message: JSON.stringify(result.message),
+      });  
     }
   }
 

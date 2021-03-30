@@ -115,7 +115,6 @@ export function withGlobalContext(Component) {
 
     const fetchStockNotesFromApp = (date, successCallback) => {
       fetchStockNotes(date, (result) => {
-        // dispatch({ type: 'notesLoaded', data: result['data'] });
         successCallback(result);
       });
     };
@@ -130,6 +129,7 @@ export function withGlobalContext(Component) {
       saveNote(symbol, title, body, date, (result) => {
         dispatch({ type: 'noteCreated' });
         successCallback(result);
+        fetchMyNotesFromApp();
       });
     };
 
