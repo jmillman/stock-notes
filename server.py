@@ -83,17 +83,18 @@ def get_stock_notes():
     check_dir(directory_name)
     files = sorted(glob.glob("{}/*.json".format(directory_name)))
     stock_notes = {}
-    date=None
+    search_date=request.args.get('date')
     for i in range(len(files)):
         with open(files[i], 'r') as myfile:
             r = re.compile('.*\/(.*)\-(.*).json')
             m = r.search(files[i])
             if m:
                 date = m.group(1)
-                symbol = m.group(2)
-                file_contents = myfile.read()
-                stock_note = json.loads(file_contents)
-                stock_notes[symbol] = stock_note
+                if(search_date == 'ALL' or search_date == date):
+                    symbol = m.group(2)
+                    file_contents = myfile.read()
+                    stock_note = json.loads(file_contents)
+                    stock_notes[symbol] = stock_note
     return json.dumps({'status': 'success', 'data': stock_notes}), 200
 
 
@@ -113,7 +114,7 @@ def lookup_symbol():
                 file_name = "{}/{}-{}.json".format(directory_name, datetime.datetime.now().strftime("%Y-%m-%d"), symbol)
 
                 with open(file_name, 'w') as json_file:
-                    json.dump(stock_data, json_file)
+                    json.dump(stock_data, json_file, indent=4)
 
                 return json.dumps({'status': 'success', 'message': 'Symbol Saved'}), 200
             else:

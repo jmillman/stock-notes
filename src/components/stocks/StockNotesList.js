@@ -4,18 +4,21 @@ import React, { useContext, useState, useEffect } from 'react';
 import GlobalContext from '../../store/GlobalContext';
 import StockDetails from './StockDetails';
 
-import { Divider, Header, Icon } from 'semantic-ui-react';
+import { Divider, Header, Icon, Radio, Label } from 'semantic-ui-react';
 
 function StockNotesList(props) {
   const [state, , api] = useContext(GlobalContext);
   const [data, setData] = useState({});
   const [, setFormStatus] = useState(null);
+  const [showAllDates, setShowAllDates] = useState(false);
+
   const [date] = useState(moment().format('YYYY-MM-DD'));
 
   useEffect(() => {
     setFormStatus({ status: 'success', message: 'Fetching notes.....' });
-    api.fetchStockNotesFromApp(date, getNotesListCallback);
-  }, [state.symbolAddedTimeStamp]);
+    const date_parameter = showAllDates ? 'ALL' : date;
+    api.fetchStockNotesFromApp(date_parameter, getNotesListCallback);
+  }, [state.symbolAddedTimeStamp, showAllDates]);
 
   function resetForm() {
     setFormStatus(null);
@@ -49,7 +52,10 @@ function StockNotesList(props) {
     return notes;
   }
 
-  return <>{getList()}</>;
+  return <>
+    <Radio toggle checked={showAllDates} onClick={()=>setShowAllDates(!showAllDates)}/><Label>Show All</Label>
+    {getList()}
+  </>;
 }
 
 export default StockNotesList;
