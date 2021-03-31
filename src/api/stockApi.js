@@ -47,3 +47,13 @@ export async function saveNote(symbol, title, body, date, callback) {
     callback(response.data);
   }
 }
+
+export async function deleteNote(date, callback) {
+  const bodyFormData = new FormData();
+  bodyFormData.set('edit_id', date);
+  const url = `${domain}/delete_note`;
+  const response = await axios.post(url, bodyFormData);
+  if (callback) {
+    callback(response.data);
+  }
+}

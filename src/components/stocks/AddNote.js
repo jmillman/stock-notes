@@ -35,18 +35,22 @@ function AddNote(props) {
   async function saveCallback(result) {
     if (result.status === 'success') {
       resetForm();
-    }
-    else{
+    } else {
       setFormStatus({
         status: result.status,
         message: JSON.stringify(result.message),
-      });  
+      });
     }
   }
 
   async function handleSubmit() {
     setFormStatus({ status: 'success', message: 'Saving note.....' });
     api.saveNoteFromApp(props.symbol, title, body, date, saveCallback);
+  }
+
+  async function handleDelete() {
+    setFormStatus({ status: 'success', message: 'Deleting note.....' });
+    api.deleteNoteFromApp(date, saveCallback);
   }
 
   return (
@@ -92,6 +96,18 @@ function AddNote(props) {
           >
             Submit
           </Form.Field>
+          {date ? (
+            <Form.Field
+              control={Button}
+              onClick={() => {
+                handleDelete(date);
+              }}
+            >
+              Delete
+            </Form.Field>
+          ) : (
+            <></>
+          )}
         </Form>
       )}
     </Container>

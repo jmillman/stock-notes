@@ -52,10 +52,17 @@ function StockNotesList(props) {
     return notes;
   }
 
-  return <>
-    <Radio toggle checked={showAllDates} onClick={()=>setShowAllDates(!showAllDates)}/><Label>Show All</Label>
-    {getList()}
-  </>;
+  return (
+    <>
+      <Radio
+        toggle
+        checked={showAllDates}
+        onClick={() => setShowAllDates(!showAllDates)}
+      />
+      <Label>Show All</Label>
+      {getList()}
+    </>
+  );
 }
 
 export default StockNotesList;

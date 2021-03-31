@@ -23,6 +23,7 @@ import {
   fetchStockNotes,
   saveNote,
   fetchMyNotes,
+  deleteNote,
 } from '../api/stockApi';
 import { useCookies } from 'react-cookie';
 import moment from 'moment';
@@ -128,6 +129,13 @@ export function withGlobalContext(Component) {
     const saveNoteFromApp = (symbol, title, body, date, successCallback) => {
       saveNote(symbol, title, body, date, (result) => {
         dispatch({ type: 'noteCreated' });
+        successCallback(result);
+        fetchMyNotesFromApp();
+      });
+    };
+
+    const deleteNoteFromApp = (date, successCallback) => {
+      deleteNote(date, (result) => {
         successCallback(result);
         fetchMyNotesFromApp();
       });
@@ -261,6 +269,7 @@ export function withGlobalContext(Component) {
       addSymbolFromApp,
       fetchStockNotesFromApp,
       saveNoteFromApp,
+      deleteNoteFromApp,
       fetchMyNotesFromApp,
     };
 

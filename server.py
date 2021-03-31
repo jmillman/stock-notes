@@ -77,6 +77,31 @@ def save_note():
         }
         ), 200
 
+@api.route('/delete_note', methods=['POST'])
+def delete_note():
+    directory_name = 'data_notes'
+    check_dir(directory_name)
+    file_name = "{}/my_notes.json".format(directory_name)
+    edit_id = request.form.get('edit_id')
+
+    if(edit_id):
+        notes = []
+        with open(file_name, 'r') as f:
+            notes = json.load(f)
+            for index, note in enumerate(notes):
+                if(note['date'] == edit_id):
+                    notes.pop(index)
+        with open(file_name, 'w') as f:
+            json.dump(notes, f, indent=4)
+
+    return json.dumps(
+        {
+            'status': 'success',
+            'message': 'Note Deleted',
+            
+        }
+        ), 200
+
 @api.route('/stock_notes', methods=['GET'])
 def get_stock_notes():
     directory_name = 'data_filings_pro'
