@@ -57,14 +57,49 @@ function StockDetails(props) {
           <tr>
             <td>
               <a onClick={() => setShowDescription(!showDescription)}>
-                Company Description
+                Details
               </a>
             </td>
           </tr>
           {showDescription ? (
-            <tr>
-              <td colSpan="2">{stockInfo['profile']}</td>
-            </tr>
+            <>
+              <tr>
+                <td>
+                  <a
+                    href={`https://finance.yahoo.com/quote/${symbol}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Yahoo
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href={`https://seekingalpha.com/symbol/${symbol}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Seeking Alpha
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href={`https://www.google.com/search?q=${stockInfo['name']}+stock+news`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Google
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td colSpan="2">{stockInfo['profile']}</td>
+              </tr>
+            </>
           ) : null}
         </tbody>
       </table>
