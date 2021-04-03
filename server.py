@@ -198,21 +198,22 @@ def get_data_yahoo(symbol):
     summary_profile = driver.execute_script(
         "return this.App.main.context.dispatcher.stores.QuoteSummaryStore.summaryProfile;"
     )
+    summary_profile = summary_profile if summary_profile != None else {}
     results["profile"] = {
         "title": "Profile",
-        "value": summary_profile["longBusinessSummary"],
+        "value": summary_profile.get("longBusinessSummary"),
     }
     results["fullTimeEmployees"] = {
         "title": "Profile",
-        "value": summary_profile["fullTimeEmployees"],
+        "value": summary_profile.get("fullTimeEmployees"),
     }
     results["sector"] = {
         "title": "Sector",
-        "value": summary_profile["sector"],
+        "value": summary_profile.get("sector"),
     }
     results["industry"] = {
         "title": "Industry",
-        "value": summary_profile["industry"],
+        "value": summary_profile.get("industry"),
     }
     results["company_name"] = {
         "title": "Company Name",
@@ -225,8 +226,12 @@ def get_data_yahoo(symbol):
 @api.route("/lookup_symbol", methods=["GET"])
 def lookup_symbol():
     try:
-        symbol = request.args.get("symbol")
-        if symbol:
+        symbols = request.args.get("symbol").upper()
+        symbols = symbols.split(",")
+
+        # for loop to iterate over words array
+        for symbol in symbols:
+            print(symbol.strip().upper())
             data = None
             if source == "data_filings_pro":
                 check_dir(directory_name)
@@ -244,16 +249,11 @@ def lookup_symbol():
                 with open(file_name, "w") as json_file:
                     json.dump(data, json_file, indent=4)
 
-                return json.dumps({"status": "success", "message": "Symbol Saved"}), 200
-            else:
-                return (
-                    json.dumps({"status": "error", "message": "Symbol not found"}),
-                    200,
-                )
-        else:
-            return json.dumps({"status": "error", "message": "No Symbol"}), 200
+        return json.dumps({"status": "success", "message": "Symbol Saved"}), 200
     except Exception as err:
         return json.dumps({"status": "error", "message": repr(err)}), 200
+
+    return json.dumps({"status": "error", "message": "No Symbol"}), 200
 
 
 @api.route("/", methods=["GET"])

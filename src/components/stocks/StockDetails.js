@@ -12,71 +12,79 @@ function StockDetails(props) {
         <tbody>
           <tr>
             <td>{'50_day_moving_avg'}</td>
-            <td>{_.get(stockInfo,'50_day_moving_avg.value', '')}</td>
+            <td>{_.get(stockInfo, '50_day_moving_avg.value', '')}</td>
           </tr>
           <tr>
             <td>{'52_week_change'}</td>
-            <td>{_.get(stockInfo,'52_week_change.value', '')}</td>
+            <td>{_.get(stockInfo, '52_week_change.value', '')}</td>
           </tr>
           <tr>
             <td>{'52_week_high'}</td>
-            <td>{_.get(stockInfo,'52_week_high.value', '')}</td>
+            <td>{_.get(stockInfo, '52_week_high.value', '')}</td>
           </tr>
           <tr>
             <td>{'52_week_low'}</td>
-            <td>{_.get(stockInfo,'52_week_low.value', '')}</td>
+            <td>{_.get(stockInfo, '52_week_low.value', '')}</td>
           </tr>
           <tr>
             <td>{'200_day_moving_avg'}</td>
-            <td>{_.get(stockInfo,'200_day_moving_avg.value', '')}</td>
+            <td>{_.get(stockInfo, '200_day_moving_avg.value', '')}</td>
           </tr>
           <tr>
             <td>{'avg_vol_3_mo'}</td>
-            <td>{_.get(stockInfo,'avg_vol_3_mo.value', '')}</td>
+            <td>{_.get(stockInfo, 'avg_vol_3_mo.value', '')}</td>
           </tr>
           <tr>
             <td>{'avg_vol_10_mo'}</td>
-            <td>{_.get(stockInfo,'avg_vol_10_mo.value', '')}</td>
+            <td>{_.get(stockInfo, 'avg_vol_10_mo.value', '')}</td>
           </tr>
           <tr>
             <td>{'float'}</td>
-            <td>{_.get(stockInfo,'float.value', '')}</td>
+            <td>{_.get(stockInfo, 'float.value', '')}</td>
           </tr>
           <tr>
             <td>{'held_by_insiders'}</td>
-            <td>{_.get(stockInfo,'held_by_insiders.value', '')}</td>
+            <td>{_.get(stockInfo, 'held_by_insiders.value', '')}</td>
           </tr>
           <tr>
             <td>{'held_by_institutions'}</td>
-            <td>{_.get(stockInfo,'held_by_institutions.value', '')}</td>
+            <td>{_.get(stockInfo, 'held_by_institutions.value', '')}</td>
           </tr>
           <tr>
             <td>{'shares_outstanding'}</td>
-            <td>{_.get(stockInfo,'shares_outstanding.value', '')}</td>
+            <td>{_.get(stockInfo, 'shares_outstanding.value', '')}</td>
           </tr>
           <tr>
             <td>{'shares_short'}</td>
-            <td>{_.get(stockInfo,'shares_short.value', '')}</td>
+            <td>{_.get(stockInfo, 'shares_short.value', '')}</td>
           </tr>
           <tr>
             <td>{'short_percent_of_float'}</td>
-            <td>{_.get(stockInfo,'short_percent_of_float.value', '')}</td>
+            <td>{_.get(stockInfo, 'short_percent_of_float.value', '')}</td>
           </tr>
           <tr>
             <td>{'short_percent_of_shares_outstanding'}</td>
-            <td>{_.get(stockInfo,'short_percent_of_shares_outstanding.value', '')}</td>
+            <td>
+              {_.get(
+                stockInfo,
+                'short_percent_of_shares_outstanding.value',
+                ''
+              )}
+            </td>
           </tr>
           <tr>
             <td>{'short_ratio'}</td>
-            <td>{_.get(stockInfo,'shares_outstandshort_ratioing.value', '')}</td>
+            <td>
+              {_.get(stockInfo, 'shares_outstandshort_ratioing.value', '')}
+            </td>
           </tr>
           <tr>
             <td>{'sector'}</td>
-            <td>{_.get(stockInfo,'sector.value', '')}</td>
+            <td>{_.get(stockInfo, 'sector.value', '')}</td>
           </tr>
           <tr>
             <td>{'industry'}</td>
-            <td>{_.get(stockInfo,'industry.value', '')}</td>
+            <td>{_.get(stockInfo, 'industry.value', '')}</td>
           </tr>
           <tr>
             <td>
@@ -122,7 +130,7 @@ function StockDetails(props) {
                 </td>
               </tr>
               <tr>
-                <td colSpan="2">{_.get(stockInfo,'profile.value', '')}</td>
+                <td colSpan="2">{_.get(stockInfo, 'profile.value', '')}</td>
               </tr>
             </>
           ) : null}

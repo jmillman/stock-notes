@@ -4,13 +4,29 @@ import React, { useContext, useState, useEffect } from 'react';
 import GlobalContext from '../../store/GlobalContext';
 import StockDetails from './StockDetails';
 
-import { Divider, Header, Icon, Radio, Label } from 'semantic-ui-react';
+import {
+  Divider,
+  Header,
+  Icon,
+  Radio,
+  Table,
+  Grid,
+  Segment,
+  Image,
+} from 'semantic-ui-react';
 
 function StockNotesList(props) {
   const [state, , api] = useContext(GlobalContext);
   const [data, setData] = useState({});
   const [, setFormStatus] = useState(null);
-  const [showAllDates, setShowAllDates] = useState(false);
+  const [showAllDates, setShowAllDates] = api.useLocalStorage(
+    'showAllDates',
+    false
+  );
+  const [showDetailView, setShowDetailView] = api.useLocalStorage(
+    'showDetailView',
+    false
+  );
 
   const [date] = useState(moment().format('YYYY-MM-DD'));
 
@@ -32,7 +48,26 @@ function StockNotesList(props) {
     }
   }
 
-  function getList() {
+  function getCondensedView() {
+    let notes = [];
+
+    if (Object.keys(data).length) {
+      _.forEach(data, (value, key) => {
+        notes.push(<Grid.Column key={key}>
+          <Segment>
+            {key}
+          </Segment>
+          </Grid.Column>);
+      });
+    }
+    return (
+      <Grid stackable columns={5}>
+        {notes}
+      </Grid>
+    );
+  }
+
+  function getDetailsView() {
     let notes = [];
 
     if (Object.keys(data).length) {
@@ -54,13 +89,34 @@ function StockNotesList(props) {
 
   return (
     <>
-      <Radio
-        toggle
-        checked={showAllDates}
-        onClick={() => setShowAllDates(!showAllDates)}
-      />
-      <Label>Show All</Label>
-      {getList()}
+      <Table celled>
+        <Table.Header>
+          <Table.Row>
+            <Table.HeaderCell>Show all Dates</Table.HeaderCell>
+            <Table.HeaderCell>Details View</Table.HeaderCell>
+          </Table.Row>
+        </Table.Header>
+        <Table.Body>
+          <Table.Row>
+            <Table.Cell>
+              <Radio
+                toggle
+                checked={showAllDates}
+                onClick={() => setShowAllDates(!showAllDates)}
+              />
+            </Table.Cell>
+            <Table.Cell>
+              <Radio
+                toggle
+                checked={showDetailView}
+                onClick={() => setShowDetailView(!showDetailView)}
+              />
+            </Table.Cell>
+          </Table.Row>
+        </Table.Body>
+      </Table>
+
+      {showDetailView ? getDetailsView() : getCondensedView()}
     </>
   );
 }
