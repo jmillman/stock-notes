@@ -3,6 +3,7 @@ import _ from 'lodash';
 import React, { useContext, useState, useEffect } from 'react';
 import GlobalContext from '../../store/GlobalContext';
 import StockDetails from './StockDetails';
+import NotesList from './NotesList';
 
 import {
   Divider,
@@ -10,9 +11,7 @@ import {
   Icon,
   Radio,
   Table,
-  Grid,
-  Segment,
-  Image,
+
 } from 'semantic-ui-react';
 
 function StockNotesList(props) {
@@ -53,18 +52,48 @@ function StockNotesList(props) {
 
     if (Object.keys(data).length) {
       _.forEach(data, (value, key) => {
-        notes.push(<Grid.Column key={key}>
-          <Segment>
-            {key}
-          </Segment>
-          </Grid.Column>);
+        notes.push(
+          <span key={key}>
+            <Table celled key={key}>
+              <Table.Header>
+                <Table.Row>
+                  <Table.HeaderCell>Symbol</Table.HeaderCell>
+                  <Table.HeaderCell>Float</Table.HeaderCell>
+                  <Table.HeaderCell>Shares</Table.HeaderCell>
+                  <Table.HeaderCell>Short %Outstanding</Table.HeaderCell>
+                  <Table.HeaderCell>Short %Float</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
+              <Table.Body key={key}>
+                <Table.Row>
+                  <Table.Cell>{key}</Table.Cell>
+                  <Table.Cell>{_.get(value, 'float.value', '')}</Table.Cell>
+                  <Table.Cell>
+                    {_.get(value, 'shares_outstanding.value', '')}
+                  </Table.Cell>
+                  <Table.Cell>
+                    {_.get(value, 'short_percent_of_float.value', '')}
+                  </Table.Cell>
+                  <Table.Cell>
+                    {_.get(
+                      value,
+                      'short_percent_of_shares_outstanding.value',
+                      ''
+                    )}
+                  </Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell colSpan={4}>
+                    <NotesList symbol={key} />
+                  </Table.Cell>
+                </Table.Row>
+              </Table.Body>
+            </Table>
+          </span>
+        );
       });
     }
-    return (
-      <Grid stackable columns={5}>
-        {notes}
-      </Grid>
-    );
+    return notes;
   }
 
   function getDetailsView() {

@@ -30,6 +30,10 @@ function AddNote(props) {
     setTitle('');
     setBody('');
     setAddNote(false);
+    if (props.cancelCallback) {
+      debugger;
+      props.cancelCallback();
+    }
   }
 
   async function saveCallback(result) {
@@ -57,9 +61,8 @@ function AddNote(props) {
     <Container key={props.note || props.symbol}>
       {!addNote ? (
         <Button
-          content="Add Note"
           icon="signup"
-          size="big"
+          size="small"
           onClick={() => {
             setAddNote(true);
           }}
@@ -95,6 +98,14 @@ function AddNote(props) {
             }}
           >
             Submit
+          </Form.Field>
+          <Form.Field
+            control={Button}
+            onClick={() => {
+              resetForm();
+            }}
+          >
+            Cancel
           </Form.Field>
           {date ? (
             <Form.Field

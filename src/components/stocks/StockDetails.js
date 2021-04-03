@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import React, { useState } from 'react';
-import { Button, Divider, Grid, Segment, Popup } from 'semantic-ui-react';
+import { Button, Divider, Grid, Segment, Table } from 'semantic-ui-react';
 import NotesList from './NotesList';
 
 function StockDetails(props) {
@@ -10,6 +10,10 @@ function StockDetails(props) {
     return (
       <table>
         <tbody>
+          <tr>
+            <td>{'company_name'}</td>
+            <td>{_.get(stockInfo, 'company_name.value', '')}</td>
+          </tr>
           <tr>
             <td>{'50_day_moving_avg'}</td>
             <td>{_.get(stockInfo, '50_day_moving_avg.value', '')}</td>
@@ -138,7 +142,6 @@ function StockDetails(props) {
       </table>
     );
   }
-
   return (
     <>
       <Segment placeholder>
@@ -146,7 +149,7 @@ function StockDetails(props) {
           <Grid.Column>{getDetails()}</Grid.Column>
 
           <Grid.Column verticalAlign="middle">
-            <NotesList symbol={props.symbol} />
+        <NotesList symbol={props.symbol} />
           </Grid.Column>
         </Grid>
 
