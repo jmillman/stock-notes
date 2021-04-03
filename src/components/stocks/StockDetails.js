@@ -6,53 +6,77 @@ import NotesList from './NotesList';
 function StockDetails(props) {
   function getDetails() {
     const [showDescription, setShowDescription] = useState(false);
-    const { stockInfo } = props.data;
-    const [sector, industry, country] = stockInfo['sectorsAndCountry'].split(
-      ' | '
-    );
-    const { symbol } = stockInfo;
+    const stockInfo = _.get(props, 'data', {});
     return (
       <table>
         <tbody>
           <tr>
-            <td>{'symbol'}</td>
-            <td>{symbol}</td>
+            <td>{'50_day_moving_avg'}</td>
+            <td>{_.get(stockInfo,'50_day_moving_avg.value', '')}</td>
           </tr>
           <tr>
-            <td>{'name'}</td>
-            <td>{stockInfo['name']}</td>
+            <td>{'52_week_change'}</td>
+            <td>{_.get(stockInfo,'52_week_change.value', '')}</td>
           </tr>
           <tr>
-            <td>{'marketCap'}</td>
-            <td>{stockInfo['marketCap']}</td>
+            <td>{'52_week_high'}</td>
+            <td>{_.get(stockInfo,'52_week_high.value', '')}</td>
+          </tr>
+          <tr>
+            <td>{'52_week_low'}</td>
+            <td>{_.get(stockInfo,'52_week_low.value', '')}</td>
+          </tr>
+          <tr>
+            <td>{'200_day_moving_avg'}</td>
+            <td>{_.get(stockInfo,'200_day_moving_avg.value', '')}</td>
+          </tr>
+          <tr>
+            <td>{'avg_vol_3_mo'}</td>
+            <td>{_.get(stockInfo,'avg_vol_3_mo.value', '')}</td>
+          </tr>
+          <tr>
+            <td>{'avg_vol_10_mo'}</td>
+            <td>{_.get(stockInfo,'avg_vol_10_mo.value', '')}</td>
           </tr>
           <tr>
             <td>{'float'}</td>
-            <td>{stockInfo['float']}</td>
+            <td>{_.get(stockInfo,'float.value', '')}</td>
           </tr>
           <tr>
-            <td>{'sharesOutstanding'}</td>
-            <td>{stockInfo['sharesOutstanding']}</td>
+            <td>{'held_by_insiders'}</td>
+            <td>{_.get(stockInfo,'held_by_insiders.value', '')}</td>
           </tr>
           <tr>
-            <td>{'shortOfFloat'}</td>
-            <td>{stockInfo['shortOfFloat']}</td>
+            <td>{'held_by_institutions'}</td>
+            <td>{_.get(stockInfo,'held_by_institutions.value', '')}</td>
           </tr>
           <tr>
-            <td>{'price'}</td>
-            <td>{stockInfo['price']}</td>
+            <td>{'shares_outstanding'}</td>
+            <td>{_.get(stockInfo,'shares_outstanding.value', '')}</td>
+          </tr>
+          <tr>
+            <td>{'shares_short'}</td>
+            <td>{_.get(stockInfo,'shares_short.value', '')}</td>
+          </tr>
+          <tr>
+            <td>{'short_percent_of_float'}</td>
+            <td>{_.get(stockInfo,'short_percent_of_float.value', '')}</td>
+          </tr>
+          <tr>
+            <td>{'short_percent_of_shares_outstanding'}</td>
+            <td>{_.get(stockInfo,'short_percent_of_shares_outstanding.value', '')}</td>
+          </tr>
+          <tr>
+            <td>{'short_ratio'}</td>
+            <td>{_.get(stockInfo,'shares_outstandshort_ratioing.value', '')}</td>
           </tr>
           <tr>
             <td>{'sector'}</td>
-            <td>{sector}</td>
+            <td>{_.get(stockInfo,'sector.value', '')}</td>
           </tr>
           <tr>
             <td>{'industry'}</td>
-            <td>{industry}</td>
-          </tr>
-          <tr>
-            <td>{'country'}</td>
-            <td>{country}</td>
+            <td>{_.get(stockInfo,'industry.value', '')}</td>
           </tr>
           <tr>
             <td>
@@ -66,7 +90,7 @@ function StockDetails(props) {
               <tr>
                 <td>
                   <a
-                    href={`https://finance.yahoo.com/quote/${symbol}`}
+                    href={`https://finance.yahoo.com/quote/${props.symbol}`}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -74,10 +98,11 @@ function StockDetails(props) {
                   </a>
                 </td>
               </tr>
+
               <tr>
                 <td>
                   <a
-                    href={`https://seekingalpha.com/symbol/${symbol}`}
+                    href={`https://seekingalpha.com/symbol/${props.symbol}`}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -88,7 +113,7 @@ function StockDetails(props) {
               <tr>
                 <td>
                   <a
-                    href={`https://www.google.com/search?q=${stockInfo['name']}+stock+news`}
+                    href={`https://www.google.com/search?q=${stockInfo['company_name'].value}+stock+news`}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -97,7 +122,7 @@ function StockDetails(props) {
                 </td>
               </tr>
               <tr>
-                <td colSpan="2">{stockInfo['profile']}</td>
+                <td colSpan="2">{_.get(stockInfo,'profile.value', '')}</td>
               </tr>
             </>
           ) : null}

@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "1,802.65"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "2,070.18"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "80.11%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "2,152.68"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1,130.94"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Alphabet Inc. (GOOG)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "607.29M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 135301
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "5.90%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "68.09%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Internet Content & Information"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Alphabet Inc. provides online advertising services in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. The company offers performance and brand advertising services. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, such as ads, Android, Chrome, hardware, Google Maps, Google Play, Search, and YouTube, as well as technical infrastructure; and digital content. The Google Cloud segment offers infrastructure and data analytics platforms, collaboration tools, and other services for enterprise customers. The Other Bets segment sells internet and TV services, as well as licensing and research and development services. The company was founded in 1998 and is headquartered in Mountain View, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Communication Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "329.87M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "3.14M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.47%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "2.08"
+    }
+}

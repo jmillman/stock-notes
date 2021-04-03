@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "3.86"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "6.28"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "364.71%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "11.29"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.90"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Future FinTech Group Inc. (FTFT)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "25.07M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 222
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "65.38%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "3.55%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Software\u2014Application"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Future FinTech Group Inc., through its subsidiaries, operates a real-name block chain e-commerce platform that integrates block chain and internet technology in People's Republic of China. It operates through CCM Shopping Mall Membership, Sales of Goods, and Others segments. The company offers Chain Cloud Mall (CCM), an enterprise customer interactive and comprehensive shopping and sales service platform; NONOGIRL, a cross-border e-commerce platform; and DCON, a block chain-based application incubator and a digital payment system. It also engages in the development of block chain-based e-commerce and financial technology. The company sells its products directly to end-users, exhibitions, and distributors, as well as trade Websites. The company was formerly known as SkyPeople Fruit Juice, Inc. and changed its name to Future FinTech Group Inc. in June 2017. Future FinTech Group Inc. is headquartered in Beijing, the People's Republic of China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Technology"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "59.54M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "1.83M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "4.12%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "3.07%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.33"
+    }
+}
