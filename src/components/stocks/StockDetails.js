@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import React, { useState } from 'react';
-import { Button, Divider, Grid, Segment, Table } from 'semantic-ui-react';
+import { Divider, Grid, Segment } from 'semantic-ui-react';
 import NotesList from './NotesList';
 
 function StockDetails(props) {
@@ -92,9 +92,12 @@ function StockDetails(props) {
           </tr>
           <tr>
             <td>
-              <a onClick={() => setShowDescription(!showDescription)}>
+              <span
+                href="#"
+                onClick={() => setShowDescription(!showDescription)}
+              >
                 Details
-              </a>
+              </span>
             </td>
           </tr>
           {showDescription ? (
@@ -149,7 +152,7 @@ function StockDetails(props) {
           <Grid.Column>{getDetails()}</Grid.Column>
 
           <Grid.Column verticalAlign="middle">
-        <NotesList symbol={props.symbol} />
+            <NotesList symbol={props.symbol} />
           </Grid.Column>
         </Grid>
 

@@ -5,14 +5,7 @@ import GlobalContext from '../../store/GlobalContext';
 import StockDetails from './StockDetails';
 import NotesList from './NotesList';
 
-import {
-  Divider,
-  Header,
-  Icon,
-  Radio,
-  Table,
-
-} from 'semantic-ui-react';
+import { Divider, Header, Icon, Radio, Table } from 'semantic-ui-react';
 
 function StockNotesList(props) {
   const [state, , api] = useContext(GlobalContext);
@@ -24,6 +17,10 @@ function StockNotesList(props) {
   );
   const [showDetailView, setShowDetailView] = api.useLocalStorage(
     'showDetailView',
+    false
+  );
+  const [showOnlyNewNotes, setShowOnlyNewNotes] = api.useLocalStorage(
+    'showOnlyNewNotes',
     false
   );
 
@@ -84,7 +81,10 @@ function StockNotesList(props) {
                 </Table.Row>
                 <Table.Row>
                   <Table.Cell colSpan={4}>
-                    <NotesList symbol={key} />
+                    <NotesList
+                      symbol={key}
+                      showOnlyNewNotes={showOnlyNewNotes}
+                    />
                   </Table.Cell>
                 </Table.Row>
               </Table.Body>
@@ -123,6 +123,7 @@ function StockNotesList(props) {
           <Table.Row>
             <Table.HeaderCell>Show all Dates</Table.HeaderCell>
             <Table.HeaderCell>Details View</Table.HeaderCell>
+            <Table.HeaderCell>New Notes</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
         <Table.Body>
@@ -139,6 +140,13 @@ function StockNotesList(props) {
                 toggle
                 checked={showDetailView}
                 onClick={() => setShowDetailView(!showDetailView)}
+              />
+            </Table.Cell>
+            <Table.Cell>
+              <Radio
+                toggle
+                checked={showOnlyNewNotes}
+                onClick={() => setShowOnlyNewNotes(!showOnlyNewNotes)}
               />
             </Table.Cell>
           </Table.Row>

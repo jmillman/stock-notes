@@ -4,7 +4,7 @@ import AddSymbol from './AddSymbol';
 import StockNotesList from './StockNotesList';
 
 function StockNotesPage() {
-  const [state, , api] = useContext(GlobalContext);
+  const [, , api] = useContext(GlobalContext);
   const [, setData] = useState({});
   const [, setFormStatus] = useState(null);
 

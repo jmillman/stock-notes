@@ -1,17 +1,13 @@
 import _ from 'lodash';
-import moment from 'moment';
-import React, { useState, useRef, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import {
   Container,
   Button,
-  Label,
-  Grid,
-  Segment,
-  Popup,
   Form,
   Input,
   TextArea,
   Message,
+  Icon,
 } from 'semantic-ui-react';
 import GlobalContext from '../../store/GlobalContext';
 
@@ -22,8 +18,6 @@ function AddNote(props) {
   const [body, setBody] = useState(_.get(props, 'note.body', ''));
   const [date] = useState(_.get(props, 'note.date', ''));
   const [formStatus, setFormStatus] = useState(null);
-  // const [date] = useState(moment().format('YYYY-MM-DD'));
-  const nameRef = useRef(null);
 
   function resetForm() {
     setFormStatus(null);
@@ -31,7 +25,6 @@ function AddNote(props) {
     setBody('');
     setAddNote(false);
     if (props.cancelCallback) {
-      debugger;
       props.cancelCallback();
     }
   }
@@ -60,13 +53,13 @@ function AddNote(props) {
   return (
     <Container key={props.note || props.symbol}>
       {!addNote ? (
-        <Button
-          icon="signup"
+        <Icon
+          name="signup"
           size="small"
           onClick={() => {
             setAddNote(true);
           }}
-        />
+        ></Icon>
       ) : (
         <Form>
           <Form.Field>
