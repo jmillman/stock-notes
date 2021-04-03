@@ -1,12 +1,11 @@
 import React from 'react';
-import PageMobile from './components/PageMobile';
+import StockNotesPage from './components/stocks/StockNotesPage';
 import { withGlobalContext } from './store/GlobalContext';
 
 function App() {
   return (
     <>
-      {/* <Page1 /> */}
-      <PageMobile />
+      <StockNotesPage />
     </>
   );
 }

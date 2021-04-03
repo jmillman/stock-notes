@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from 'react';
-import { Button, Form, Message } from 'semantic-ui-react';
+import { Form, Message } from 'semantic-ui-react';
 import GlobalContext from '../../store/GlobalContext';
 
 function AddSymbol(props) {
@@ -29,28 +29,30 @@ function AddSymbol(props) {
   return (
     <Form error={formStatus && formStatus.status === 'error'}>
       <>
-        <Form.Field>
-          <input
-            placeholder="Symbol..."
+        <Form.Group inline widths="equal">
+          <Form.Input
+            width={5}
+            fluid
+            placeholder="Symbols, seperated by commas...."
             value={symbol}
             onChange={(e) => setSymbol(e.target.value)}
-            ref={nameRef}
+            // ref={nameRef}
             autoFocus
           />
-        </Form.Field>
-        {formStatus && formStatus.status ? (
-          <Message
-            color={
-              formStatus && formStatus.status === 'error' ? 'red' : 'green'
-            }
-            content={formStatus && formStatus.message}
-          />
-        ) : null}
-        <Form.Field>
-          <Button positive onClick={handleClickCreate}>
+          <Form.Button positive onClick={handleClickCreate}>
             Add
-          </Button>
-        </Form.Field>
+          </Form.Button>
+        </Form.Group>
+        <Form.Group inline>
+          {formStatus && formStatus.status ? (
+            <Message
+              color={
+                formStatus && formStatus.status === 'error' ? 'red' : 'green'
+              }
+              content={formStatus && formStatus.message}
+            />
+          ) : null}
+        </Form.Group>
       </>
     </Form>
   );

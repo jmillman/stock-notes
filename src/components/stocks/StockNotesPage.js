@@ -26,7 +26,6 @@ function StockNotesPage() {
 
   return (
     <>
-      StockNotesPage
       <AddSymbol />
       <StockNotesList />
     </>

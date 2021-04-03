@@ -23,6 +23,7 @@ function StockNotesList(props) {
     'showOnlyNewNotes',
     false
   );
+  const [showFilter, setShowFilter] = api.useLocalStorage('showFilter', true);
 
   const [date] = useState(moment().format('YYYY-MM-DD'));
 
@@ -118,41 +119,45 @@ function StockNotesList(props) {
 
   return (
     <>
-      <Table celled>
-        <Table.Header>
-          <Table.Row>
-            <Table.HeaderCell>Show all Dates</Table.HeaderCell>
-            <Table.HeaderCell>Details View</Table.HeaderCell>
-            <Table.HeaderCell>New Notes</Table.HeaderCell>
-          </Table.Row>
-        </Table.Header>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>
-              <Radio
-                toggle
-                checked={showAllDates}
-                onClick={() => setShowAllDates(!showAllDates)}
-              />
-            </Table.Cell>
-            <Table.Cell>
-              <Radio
-                toggle
-                checked={showDetailView}
-                onClick={() => setShowDetailView(!showDetailView)}
-              />
-            </Table.Cell>
-            <Table.Cell>
-              <Radio
-                toggle
-                checked={showOnlyNewNotes}
-                onClick={() => setShowOnlyNewNotes(!showOnlyNewNotes)}
-              />
-            </Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
-
+      {!showFilter && (
+        <Icon name="filter" size="large" onClick={() => setShowFilter(true)} />
+      )}
+      {showFilter && (
+        <Table celled>
+          <Table.Header onDoubleClick={() => setShowFilter(false)}>
+            <Table.Row>
+              <Table.HeaderCell>Show all Dates</Table.HeaderCell>
+              <Table.HeaderCell>Details View</Table.HeaderCell>
+              <Table.HeaderCell>New Notes</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>
+                <Radio
+                  toggle
+                  checked={showAllDates}
+                  onClick={() => setShowAllDates(!showAllDates)}
+                />
+              </Table.Cell>
+              <Table.Cell>
+                <Radio
+                  toggle
+                  checked={showDetailView}
+                  onClick={() => setShowDetailView(!showDetailView)}
+                />
+              </Table.Cell>
+              <Table.Cell>
+                <Radio
+                  toggle
+                  checked={showOnlyNewNotes}
+                  onClick={() => setShowOnlyNewNotes(!showOnlyNewNotes)}
+                />
+              </Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      )}
       {showDetailView ? getDetailsView() : getCondensedView()}
     </>
   );
