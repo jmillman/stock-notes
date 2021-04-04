@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from 'react';
-import { Form, Message } from 'semantic-ui-react';
+import { Form, Input, Message } from 'semantic-ui-react';
 import GlobalContext from '../../store/GlobalContext';
 
 function AddSymbol(props) {
@@ -30,15 +30,16 @@ function AddSymbol(props) {
     <Form error={formStatus && formStatus.status === 'error'}>
       <>
         <Form.Group inline widths="equal">
-          <Form.Input
-            width={5}
-            fluid
-            placeholder="Symbols, seperated by commas...."
-            value={symbol}
-            onChange={(e) => setSymbol(e.target.value)}
-            // ref={nameRef}
-            autoFocus
-          />
+          <Form.Field width={5}>
+            <Input
+              fluid={true}
+              placeholder="Symbol..."
+              value={symbol}
+              onChange={(e) => setSymbol(e.target.value)}
+              ref={nameRef}
+              autoFocus
+            />
+          </Form.Field>
           <Form.Button positive onClick={handleClickCreate}>
             Add
           </Form.Button>
