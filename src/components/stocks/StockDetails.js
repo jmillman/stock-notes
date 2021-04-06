@@ -2,6 +2,7 @@ import _ from 'lodash';
 import React, { useState } from 'react';
 import { Divider, Grid, Segment } from 'semantic-ui-react';
 import NotesList from './NotesList';
+import FavoritesIcon from './FavoritesIcon';
 
 function StockDetails(props) {
   function getDetails() {
@@ -12,7 +13,10 @@ function StockDetails(props) {
         <tbody>
           <tr>
             <td>{'company_name'}</td>
-            <td>{_.get(stockInfo, 'company_name.value', '')}</td>
+            <td>
+              {_.get(stockInfo, 'company_name.value', '')}
+              <FavoritesIcon symbol={props.symbol} />
+            </td>
           </tr>
           <tr>
             <td>{'50_day_moving_avg'}</td>

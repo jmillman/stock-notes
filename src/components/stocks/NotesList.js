@@ -1,6 +1,6 @@
 import moment from 'moment';
 import React, { useState, useContext, useEffect } from 'react';
-import { Accordion, Icon, Radio } from 'semantic-ui-react';
+import { Accordion, Icon } from 'semantic-ui-react';
 import AddNote from './AddNote';
 import GlobalContext from '../../store/GlobalContext';
 
@@ -9,8 +9,6 @@ function NotesList(props) {
   const [notesBeingEdited, setNotesBeingEdited] = useState([]);
   const [refreshList, setRefreshList] = useState(null);
   const [activeIndex, setActiveIndex] = useState(-1);
-  // const [, setFormStatus] = useState(null);
-  // const [date] = useState(moment().format('YYYY-MM-DD'));
 
   useEffect(() => {
     setNotesBeingEdited([]);

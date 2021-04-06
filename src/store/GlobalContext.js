@@ -5,7 +5,7 @@
 // The main app provides the context using this statement
 // export default withGlobalContext(App);
 
-import React, { useReducer, useEffect, useState } from 'react';
+import React, { useReducer, useEffect } from 'react';
 import { createContext } from 'react';
 import reducer from '../store/reducer';
 import {

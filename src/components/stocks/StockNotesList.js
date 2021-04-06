@@ -4,6 +4,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import GlobalContext from '../../store/GlobalContext';
 import StockDetails from './StockDetails';
 import NotesList from './NotesList';
+import FavoritesIcon from './FavoritesIcon';
 
 import { Divider, Header, Icon, Radio, Table } from 'semantic-ui-react';
 
@@ -15,15 +16,16 @@ function StockNotesList(props) {
   const showFilter = _.get(state, 'settings.showFilter', false);
   const showDetailView = _.get(state, 'settings.showDetailView', false);
   const showAllDates = _.get(state, 'settings.showAllDates', false);
-  const showOnlyNewNotes = _.get(state, 'settings.showOnlyNewNotes', false);
+  const showOnlyFavorites = _.get(state, 'settings.showOnlyFavorites', false);
+  const favoriteStocks = _.get(state, 'settings.favoriteStocks', []);
 
-  useEffect(() => {}, [showOnlyNewNotes, showFilter]);
+  useEffect(() => {}, [showOnlyFavorites, showFilter]);
 
   const [date] = useState(moment().format('YYYY-MM-DD'));
 
   useEffect(() => {
     setFormStatus({ status: 'success', message: 'Fetching notes.....' });
-    const date_parameter = showAllDates == 'true' ? 'ALL' : date;
+    const date_parameter = showAllDates === 'true' ? 'ALL' : date;
     api.fetchStockNotesFromApp(date_parameter, getNotesListCallback);
   }, [state.symbolAddedTimeStamp, showAllDates]);
 
@@ -43,49 +45,52 @@ function StockNotesList(props) {
     let notes = [];
 
     if (Object.keys(data).length) {
-      _.forEach(data, (value, key) => {
-        notes.push(
-          <span key={key}>
-            <Table celled key={key}>
-              <Table.Header>
-                <Table.Row>
-                  <Table.HeaderCell>Symbol</Table.HeaderCell>
-                  <Table.HeaderCell>Float</Table.HeaderCell>
-                  <Table.HeaderCell>Shares</Table.HeaderCell>
-                  <Table.HeaderCell>Short %Outstanding</Table.HeaderCell>
-                  <Table.HeaderCell>Short %Float</Table.HeaderCell>
-                </Table.Row>
-              </Table.Header>
-              <Table.Body key={key}>
-                <Table.Row>
-                  <Table.Cell>{key}</Table.Cell>
-                  <Table.Cell>{_.get(value, 'float.value', '')}</Table.Cell>
-                  <Table.Cell>
-                    {_.get(value, 'shares_outstanding.value', '')}
-                  </Table.Cell>
-                  <Table.Cell>
-                    {_.get(value, 'short_percent_of_float.value', '')}
-                  </Table.Cell>
-                  <Table.Cell>
-                    {_.get(
-                      value,
-                      'short_percent_of_shares_outstanding.value',
-                      ''
-                    )}
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell colSpan={4}>
-                    <NotesList
-                      symbol={key}
-                      showOnlyNewNotes={showOnlyNewNotes}
-                    />
-                  </Table.Cell>
-                </Table.Row>
-              </Table.Body>
-            </Table>
-          </span>
-        );
+      _.forEach(data, (value, symbol) => {
+        (!showOnlyFavorites || favoriteStocks.includes(symbol)) &&
+          notes.push(
+            <span key={symbol}>
+              <Table celled key={symbol}>
+                <Table.Header>
+                  <Table.Row>
+                    <Table.HeaderCell>Symbol</Table.HeaderCell>
+                    <Table.HeaderCell>Float</Table.HeaderCell>
+                    <Table.HeaderCell>Shares</Table.HeaderCell>
+                    <Table.HeaderCell>Short %Outstanding</Table.HeaderCell>
+                    <Table.HeaderCell>Short %Float</Table.HeaderCell>
+                  </Table.Row>
+                </Table.Header>
+                <Table.Body key={symbol}>
+                  <Table.Row>
+                    <Table.Cell>
+                      {symbol} <FavoritesIcon symbol={symbol} />
+                    </Table.Cell>
+                    <Table.Cell>{_.get(value, 'float.value', '')}</Table.Cell>
+                    <Table.Cell>
+                      {_.get(value, 'shares_outstanding.value', '')}
+                    </Table.Cell>
+                    <Table.Cell>
+                      {_.get(value, 'short_percent_of_float.value', '')}
+                    </Table.Cell>
+                    <Table.Cell>
+                      {_.get(
+                        value,
+                        'short_percent_of_shares_outstanding.value',
+                        ''
+                      )}
+                    </Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell colSpan={4}>
+                      <NotesList
+                        symbol={symbol}
+                        showOnlyFavorites={showOnlyFavorites}
+                      />
+                    </Table.Cell>
+                  </Table.Row>
+                </Table.Body>
+              </Table>
+            </span>
+          );
       });
     }
     return notes;
@@ -95,17 +100,18 @@ function StockNotesList(props) {
     let notes = [];
 
     if (Object.keys(data).length) {
-      _.forEach(data, (value, key) => {
-        notes.push(
-          <span key={key}>
-            <StockDetails data={value} symbol={key} />
-            <Divider horizontal>
-              <Header as="h4">
-                <Icon name="tag" />
-              </Header>
-            </Divider>
-          </span>
-        );
+      _.forEach(data, (value, symbol) => {
+        (!showOnlyFavorites || favoriteStocks.includes(symbol)) &&
+          notes.push(
+            <span key={symbol}>
+              <StockDetails data={value} symbol={symbol} />
+              <Divider horizontal>
+                <Header as="h4">
+                  <Icon name="tag" />
+                </Header>
+              </Divider>
+            </span>
+          );
       });
     }
     return notes;
@@ -121,7 +127,7 @@ function StockNotesList(props) {
             <Table.Row>
               <Table.HeaderCell>Show all Dates</Table.HeaderCell>
               <Table.HeaderCell>Details View</Table.HeaderCell>
-              <Table.HeaderCell>New Notes</Table.HeaderCell>
+              <Table.HeaderCell>Favorites</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
           <Table.Body>
@@ -147,9 +153,9 @@ function StockNotesList(props) {
               <Table.Cell>
                 <Radio
                   toggle
-                  checked={showOnlyNewNotes}
+                  checked={showOnlyFavorites}
                   onClick={() =>
-                    api.updateSettings('showOnlyNewNotes', !showOnlyNewNotes)
+                    api.updateSettings('showOnlyFavorites', !showOnlyFavorites)
                   }
                 />
               </Table.Cell>
