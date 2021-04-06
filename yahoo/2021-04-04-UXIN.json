@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "1.1419"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "1.2115"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "26.28%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "2.0200"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.7200"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Uxin Limited (UXIN)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "133.55M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "7.99%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "29.66%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Internet Content & Information"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Uxin Limited, an investment holding company, operates a used car e-commerce platform in China. It provides selection of used cars, evaluation of car condition, various car-related value-added products and services, and supporting services to online used car transactions under the Uxin Used Car brand; and operates Uxin Auction, an application that helps business buyers to source vehicles through online auctions. The company also facilitates used car transaction services, and financing solutions offered by third-party financing partners to buyers for their used car purchases through websites, xin.com and youxinpai.com. Uxin Limited was founded in 2011 and is headquartered in Beijing, China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Communication Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "341.43M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "3.02M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.89%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.78"
+    }
+}

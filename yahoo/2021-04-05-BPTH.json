@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "4.78"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "6.91"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "51.48%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "24.34"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "3.12"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Bio-Path Holdings, Inc. (BPTH)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "6.9M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 10
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.67%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "6.93%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Bio-Path Holdings, Inc. operates as a clinical and preclinical stage oncology focused RNAi nano particle drug development company in the United States. The company develops products based on DNAbilize, a drug delivery and antisense technology that uses P-ethoxy, which is a deoxyribonucleic acid (DNA) backbone modification intended to protect the DNA from destruction. Its lead drug candidate is prexigebersen, which is in Phase II clinical trials for the treatment of acute myeloid leukemia (AML) and myelodysplastic syndrome. The company is also developing Liposomal Bcl-2 for the treatment of refractory/relapsed lymphoma and chronic lymphocytic leukemia; Liposomal STAT3 that is in preclinical stage for the treatment of pancreatic cancer, non-small cell lung cancer, and AML; and prexigebersen-A for various solid tumors. Bio-Path Holdings, Inc. was founded in 2007 and is based in Bellaire, Texas."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "6.95M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "125.1k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "1.81%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "1.80%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.13"
+    }
+}

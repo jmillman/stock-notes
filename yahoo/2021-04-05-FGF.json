@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "3.8354"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "4.9372"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "2.70%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "6.4000"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "2.8000"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "FG Financial Group, Inc. (FGF)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "1.94M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 3
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "32.56%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "85.03%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Insurance\u2014Diversified"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "FG Financial Group, Inc. operates as a reinsurance and investment management holding company in the United States. The company offers specialty property and casualty reinsurance products and services. It also operates a special purpose acquisition company platform that provides various strategic, administrative, and regulatory support services to newly formed SPACs for a monthly fee. The company was formerly known as 1347 Property Insurance Holdings, Inc. and changed its name to FG Financial Group, Inc. in December 2020. The company was incorporated in 2012 and is based in St. Petersburg, Florida."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "4.99M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "73.05k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "3.93%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "1.46%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "1.57"
+    }
+}

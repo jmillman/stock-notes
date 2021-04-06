@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "1.1599"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "1.5536"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "244.62%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "2.4200"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.5400"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Performant Financial Corporation (PFMT)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "21.67M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 1269
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "31.24%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "40.88%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Specialty Business Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Performant Financial Corporation provides technology-enabled audit, recovery, outsource customer, and related analytics services in the United States. The company offers recovery services to the clients in Federal guaranteed student loan program and private institutions; identifies and tracks defaulted borrowers across its clients' portfolios of student loans; rehabilitates and recovers past due student loans; provides tax recovery services to federal, state and municipal agencies; recovers government debt for various federal agencies; and offers audit and recovery services to identify improper healthcare payments for public and private healthcare clients. It also identifies improper payments resulting from incorrect coding, procedures that were not medically necessary, incomplete documentation, and claims submitted based on outdated fee schedules; and provides default aversion and/or first party call center services. In addition, the company offers Performant Insight that provides various services, such as post- and pre-payment audit of healthcare claims, detection of fraud, waste and abuse of healthcare claims, coordination of benefits, and pharmacy fraud detection services. The company was formerly known as DCS Holdings, Inc. and changed its name to Performant Financial Corporation in 2005. Performant Financial Corporation was founded in 1976 and is headquartered in Livermore, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Industrials"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "54.76M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "328.25k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "2.88%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.60%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.62"
+    }
+}

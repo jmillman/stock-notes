@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "1.77"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "2.77"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "813.56%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "5.87"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.52"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Moxian, Inc. (MOXC)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "8.13M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 11
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "54.25%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.66%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Internet Content & Information"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Moxian, Inc. operates a social network platform that integrates social media and business into a single platform in China. The company's products and services focuses on creating interaction between users and merchant clients by allowing merchant clients to study consumer behavior. It serves small and medium sized enterprises. The company was formerly known as Moxian China, Inc. and changed its name to Moxian, Inc. in July 2015. Moxian, Inc. was founded in 2010 and is based in Hong Kong, Hong Kong."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Communication Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "16.19M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "110.39k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "1.29%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.68%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.31"
+    }
+}

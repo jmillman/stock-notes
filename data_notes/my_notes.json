@@ -124,5 +124,89 @@
         "date": "2021-04-03T19:19:30-04:00",
         "symbol": "GOOG",
         "title": "STRONG BUY - VWAP"
+    },
+    {
+        "body": "You can edit this as well",
+        "date": "2021-04-04T18:15:41-04:00",
+        "symbol": "MSFT",
+        "title": "BUY - on VWAP test"
+    },
+    {
+        "body": "",
+        "date": "2021-04-04T18:15:58-04:00",
+        "symbol": "MSFT",
+        "title": "SELL - if Red to green"
+    },
+    {
+        "body": "Be patient, let the stock tell you what to do, wait for it to confirm suspicion.",
+        "date": "2021-04-04T23:23:44-04:00",
+        "symbol": "MOXC",
+        "title": "Short near 5.8 risk above 6"
+    },
+    {
+        "body": "Had good news, it has deal worth 300M, so could run.  It did go up after the market, so that is really bullish.  ",
+        "date": "2021-04-04T23:28:51-04:00",
+        "symbol": "UXIN",
+        "title": "Watch around 2 - Could go either way - prob Bull"
+    },
+    {
+        "body": "Just watch it, they had news of an offering at $42 and now it is at 63, so I don't get it.",
+        "date": "2021-04-04T23:33:06-04:00",
+        "symbol": "AMTI",
+        "title": "Short??? Watch - interesting levels around 70, 80"
+    },
+    {
+        "body": "This has something to do with that hedge fund going crazy.  The class b shares are now untethered to the A, and there was a strange float on this.  Could be a trap.",
+        "date": "2021-04-04T23:36:37-04:00",
+        "symbol": "DISCB",
+        "title": "CAREFUL - MANIPULATION"
+    },
+    {
+        "body": "I'd short close to 7 and see what happens around there.",
+        "date": "2021-04-04T23:38:31-04:00",
+        "symbol": "GNLN",
+        "title": "Some investigation and it goes up?"
+    },
+    {
+        "body": "If it stuffs, short, or it could break out.",
+        "date": "2021-04-04T23:42:08-04:00",
+        "symbol": "IVAC",
+        "title": "Watch around 8.5- huge contract with MSFT but got stuffed a couple times"
+    },
+    {
+        "body": "",
+        "date": "2021-04-04T23:47:01-04:00",
+        "symbol": "PFMT",
+        "title": "Short rejection of 2.6, 2 could be support"
+    },
+    {
+        "body": "Could bounce off 21.30ish, bounce orff 25, or break out?",
+        "date": "2021-04-04T23:49:53-04:00",
+        "symbol": "PLBY",
+        "title": "Anything?"
+    },
+    {
+        "body": "It could go nuts or possibly bounce off 6",
+        "date": "2021-04-05T08:43:23-04:00",
+        "symbol": "CEMI",
+        "title": "COVID test news on friday"
+    },
+    {
+        "body": "",
+        "date": "2021-04-05T08:49:43-04:00",
+        "symbol": "IGIC",
+        "title": "WTF? Spiked from 8 to 90! CAREFUL"
+    },
+    {
+        "body": "",
+        "date": "2021-04-05T09:19:50-04:00",
+        "symbol": "CEMI",
+        "title": "Short off the pre-market high 5.88 or 6"
+    },
+    {
+        "body": "",
+        "date": "2021-04-05T09:25:02-04:00",
+        "symbol": "BPTH",
+        "title": "Phase 2 news"
     }
 ]

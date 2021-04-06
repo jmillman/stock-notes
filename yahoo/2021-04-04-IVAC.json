@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "6.31"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "6.34"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "100.00%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "8.46"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "3.96"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Intevac, Inc. (IVAC)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "21.84M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 266
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "3.08%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "73.69%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Aerospace & Defense"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Intevac, Inc. provides vacuum deposition equipment for various thin-film applications, and digital night-vision technologies and products to the defense industry in the United States, Asia, and Europe. It operates in two segments, Thin-Film Equipment and Photonics. The Thin-Film Equipment segment designs, develops, and markets thin-film processing systems for hard disk drive media, display cover panel, and solar photovoltaic markets. The Photonics segment develops high-sensitivity digital sensors, cameras, and system for use in the defense industry. It also provides integrated digital night-vision imaging systems. The company sells its products through direct sales force and distributors. Intevac, Inc. was incorporated in 1990 and is headquartered in Santa Clara, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Industrials"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "24.09M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "281.6k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "1.52%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "1.17%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "4.34"
+    }
+}

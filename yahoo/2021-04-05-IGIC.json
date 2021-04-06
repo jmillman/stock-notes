@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "7.66"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "7.73"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "36.00%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "9.00"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "5.48"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "International General Insurance Holdings Ltd. (IGIC)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "15.25M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 252
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "50.89%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "51.31%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Insurance\u2014Diversified"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "International General Insurance Holdings Ltd. provides specialty insurance and reinsurance solutions worldwide. The company operates through three segments: Specialty Long-tail, Specialty Short-tail, and Reinsurance segments. It offers a portfolio of specialty lines insurance products and services for energy, property, construction and engineering, ports and terminals, general aviation, political violence, casualty, financial institutions, and marine liability. The company was founded in 2001 and is based in Amman, Jordan."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "48.57M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "238.41k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "1.19%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.49%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "9.83"
+    }
+}

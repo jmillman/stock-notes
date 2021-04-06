@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "4.23"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "5.54"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "238.80%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "8.73"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.62"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Greenlane Holdings, Inc. (GNLN)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "15.57M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 264
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "1.96%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "30.50%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Pharmaceutical Retailers"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Greenlane Holdings, Inc. sells cannabis accessories, child-resistant packaging, and specialty vaporization products in the United States, Canada, Europe, Australia, and South America. The company provides vaporizers, liquid nicotine, storage solutions, pipes, apparel lines, and consumption accessories, as well as bubblers, rigs, and other smoking and vaporization related accessories and merchandise. It offers its products under the VIBES rolling papers, Pollen Gear, the Marley Natural accessory line, Aerospaced & Groove grinders, K. Haring Glass Collections, Eyce specialty silicone smoking products, and Higher Standards brands. The company also operates e-commerce websites, such as Vapor.com, Higherstandards.com, Aerospaced.com, Canada.vapor.com, Vaposhop.com, and others. It serves smoke shops, dispensaries, and specialty retail stores. The company was founded in 2005 and is headquartered in Boca Raton, Florida."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "15.85M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 14, 2021)",
+        "value": "853.86k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 14, 2021)",
+        "value": "5.42%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 14, 2021)",
+        "value": "1.91%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 14, 2021)",
+        "value": "1.56"
+    }
+}

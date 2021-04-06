@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "39.53"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "58.66"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "253.56%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "78.22"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "17.05"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Applied Molecular Transport Inc. (AMTI)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "20.41M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 80
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "24.50%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "63.94%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Applied Molecular Transport Inc., a clinical-stage biopharmaceutical company, engages in the development of a pipeline of oral biologic product candidates to treat autoimmune, inflammatory, metabolic, and other diseases. The company's lead product candidate is AMT-101, a gastrointestinal (GI) selective oral fusion of rhIL-10 that is in Phase II clinical trial for the treatment of ulcerative colitis and related inflammatory indications. It is also involved in developing AMT-126, a GI-selective oral fusion of interleukin 22, which is in a Phase Ia clinical trial for diseases related to intestinal epithelium barrier function defects. The company, through its technology platform, designs and develops various oral biologic therapeutic modalities, such as peptides, proteins, antibodies, antibody fragments, and ribonucleic acid therapeutics. Applied Molecular Transport Inc. was founded in 2010 and is headquartered in South San Francisco, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "35.25M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "1.6M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "9.42%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "4.56%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "10.67"
+    }
+}

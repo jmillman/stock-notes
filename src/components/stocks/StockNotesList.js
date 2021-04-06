@@ -1,6 +1,7 @@
 import moment from 'moment';
 import _ from 'lodash';
 import React, { useContext, useState, useEffect } from 'react';
+import useLocalStorage from 'react-use-localstorage';
 import GlobalContext from '../../store/GlobalContext';
 import StockDetails from './StockDetails';
 import NotesList from './NotesList';
@@ -11,25 +12,22 @@ function StockNotesList(props) {
   const [state, , api] = useContext(GlobalContext);
   const [data, setData] = useState({});
   const [, setFormStatus] = useState(null);
-  const [showAllDates, setShowAllDates] = api.useLocalStorage(
-    'showAllDates',
-    false
-  );
-  const [showDetailView, setShowDetailView] = api.useLocalStorage(
-    'showDetailView',
-    false
-  );
-  const [showOnlyNewNotes, setShowOnlyNewNotes] = api.useLocalStorage(
-    'showOnlyNewNotes',
-    false
-  );
+
+  const [showAllDates, setShowAllDates] = useLocalStorage('showAllDates', 'false');
+  const [showDetailView, setShowDetailView] = useLocalStorage('showDetailView', 'false');
+  const [showOnlyNewNotes, setShowOnlyNewNotes] = useLocalStorage('showOnlyNewNotes', 'false');
+
+  useEffect(() => {
+    console.log("EFECT");
+  }, [showOnlyNewNotes]);
+
   const [showFilter, setShowFilter] = api.useLocalStorage('showFilter', true);
 
   const [date] = useState(moment().format('YYYY-MM-DD'));
 
   useEffect(() => {
     setFormStatus({ status: 'success', message: 'Fetching notes.....' });
-    const date_parameter = showAllDates ? 'ALL' : date;
+    const date_parameter = showAllDates == 'true' ? 'ALL' : date;
     api.fetchStockNotesFromApp(date_parameter, getNotesListCallback);
   }, [state.symbolAddedTimeStamp, showAllDates]);
 
@@ -136,29 +134,29 @@ function StockNotesList(props) {
               <Table.Cell>
                 <Radio
                   toggle
-                  checked={showAllDates}
-                  onClick={() => setShowAllDates(!showAllDates)}
+                  checked={showAllDates == 'true'}
+                  onClick={() => setShowAllDates(!(showAllDates == 'true'))}
                 />
               </Table.Cell>
               <Table.Cell>
                 <Radio
                   toggle
-                  checked={showDetailView}
-                  onClick={() => setShowDetailView(!showDetailView)}
+                  checked={showDetailView == 'true'}
+                  onClick={() => setShowDetailView(!(showDetailView == 'true'))}
                 />
               </Table.Cell>
               <Table.Cell>
                 <Radio
                   toggle
-                  checked={showOnlyNewNotes}
-                  onClick={() => setShowOnlyNewNotes(!showOnlyNewNotes)}
+                  checked={showOnlyNewNotes == 'true'}
+                  onClick={() => setShowOnlyNewNotes(!(showOnlyNewNotes == 'true'))}
                 />
               </Table.Cell>
             </Table.Row>
           </Table.Body>
         </Table>
       )}
-      {showDetailView ? getDetailsView() : getCondensedView()}
+      {showDetailView == 'true' ? getDetailsView() : getCondensedView()}
     </>
   );
 }

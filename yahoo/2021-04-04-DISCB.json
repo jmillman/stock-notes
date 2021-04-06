@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "43.04"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "68.78"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "305.73%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "150.72"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "25.46"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Discovery, Inc. (DISCB)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "447.35M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 9800
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "95.08%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "7.44%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Entertainment"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Discovery, Inc., a media company, provides content across various distribution platforms in approximately 50 languages worldwide. It operates in two segments, U.S. Networks and International Networks. The company owns and operates various television networks under the Discovery Channel, HGTV, Food Network, TLC, Animal Planet, Investigation Discovery, Travel Channel, Science, MotorTrend, Discovery en Espa\u00c3\u00b1ol, Discovery Familia, Eurosport, TVN, Discovery Kids, Discovery Family, American Heroes Channel, Destination America, Discovery Life, DIY Network, Cooking Channel, Great American Country, ID, the Oprah Winfrey Network, Eurosport, DMAX, and Discovery Home & Health brands, as well as other regional television networks. Its content spans genres, including survival, natural history, exploration, sports, general entertainment, home, food, travel, heroes, adventure, crime and investigation, health, and kids. The company also operates production studios that develop and produce content; and digital products and Websites. It provides content through various distribution platforms comprising pay-television, free-to-air and broadcast television, authenticated GO applications, digital distribution arrangements, content licensing agreements, and direct-to-consumer subscriptions, as well as various platforms that include brand-aligned Websites, online streaming, mobile devices, video on demand, and broadband channels. The company was founded in 1985 and is headquartered in Silver Spring, Maryland."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Communication Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "6.51M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "1.18k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "0.37%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.00%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.54"
+    }
+}

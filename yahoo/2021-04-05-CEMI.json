@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "5.2934"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "4.7627"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-43.32%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "15.8900"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "3.0100"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Chembio Diagnostics, Inc. (CEMI)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "18.36M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 355
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "8.85%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "43.63%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Diagnostics & Research"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Chembio Diagnostics, Inc., together with its subsidiaries, develops, manufactures, and commercializes point-of-care (POC) diagnostic tests that are used to detect or diagnose diseases. The company offers tests for COVID-19, HIV and Syphilis, and Zika virus. It also develops tests for malaria, dengue, Hepatitis C, chikungunya, Chagas, ebola, leishmaniasis, lassa, marburg, leptospirosis, Rickettsia, and Burkholderia diseases. The company sells its products under the STAT-PAK, SURE CHECK, STAT VIEW, and DPP trademarks, as well as under the private labels of its marketing partners to medical laboratories and hospitals, governmental and public health entities, non-governmental organizations, medical professionals, and retail establishments in the United States and internationally. It has collaboration agreements with Bill & Melinda Gates Foundation, The Paul G. Allen Family Foundation, The Oswaldo Cruz Foundation, and the Foundation for Innovative New Diagnostics, as well as U.S. government agencies, such as Centers for Disease Control and Prevention, the Biomedical Advanced Research and Development Authority of the U.S. Department of Health and Human Services, and the U.S. Department of Agriculture. Chembio Diagnostics, Inc. was founded in 1985 and is headquartered in Hauppauge, New York."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "20.18M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "1.98M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "9.99%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "9.81%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "2.44"
+    }
+}
