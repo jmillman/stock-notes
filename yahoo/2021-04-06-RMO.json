@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "14.76"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "12.20"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-18.99%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "38.90"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "7.71"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Romeo Power, Inc. (RMO)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "102.34M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "34.97%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "12.18%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Auto Parts"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Romeo Power, Inc., an energy storage technology company, designs and manufactures lithium-ion battery modules and packs for commercial electric vehicles in North America. The company operates through two segments, Romeo Power North America and Joint Venture Support. It also offers battery management systems; and design, research and development, and other engineering related services. Romeo Power, Inc. was founded in 2014 and is headquartered in Vernon, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Consumer Cyclical"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "126.79M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 14, 2021)",
+        "value": "8.79M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 14, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 14, 2021)",
+        "value": "6.93%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 14, 2021)",
+        "value": "1.33"
+    }
+}

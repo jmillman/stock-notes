@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "8.28"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "9.19"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-9.70%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "11.81"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "5.24"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Scienjoy Holding Corporation (SJ)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "626.45k"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "105.40%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.97%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Broadcasting"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Scienjoy Holding Corporation provides mobile live streaming platforms in the People's Republic of China. The company focuses on interactive show live streaming from broadcasters to users. Its platforms enable users to view and interact with broadcasters through online chat, virtual items, and playing games. As of September 30, 2020, the company had 322,841 paying users and 97,038 active broadcasters. It operates five platforms under the Showself, Lehai, Haixiu, BeeLive Chinese, and BeeLive International brands. The company also offers technical development and advisory services. Scienjoy Holding Corporation was founded in 2011 and is based in Beijing, China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Communication Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "30.61M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 14, 2021)",
+        "value": "7.05k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 14, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 14, 2021)",
+        "value": "0.03%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 14, 2021)",
+        "value": "1.58"
+    }
+}

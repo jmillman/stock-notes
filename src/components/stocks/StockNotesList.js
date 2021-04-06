@@ -13,9 +13,11 @@ function StockNotesList(props) {
   const [, setFormStatus] = useState(null);
 
   const showFilter = _.get(state, 'settings.showFilter', false);
+  const showDetailView = _.get(state, 'settings.showDetailView', false);
+  const showAllDates = _.get(state, 'settings.showAllDates', false);
+  const showOnlyNewNotes = _.get(state, 'settings.showOnlyNewNotes', false);
 
-  useEffect(() => {
-  }, [showOnlyNewNotes, showFilter]);
+  useEffect(() => {}, [showOnlyNewNotes, showFilter]);
 
   const [date] = useState(moment().format('YYYY-MM-DD'));
 
@@ -109,10 +111,6 @@ function StockNotesList(props) {
     return notes;
   }
 
-  const showDetailView = _.get(state, 'settings.showDetailView', false);
-  const showAllDates = _.get(state, 'settings.showAllDates', false);
-  const showOnlyNewNotes = _.get(state, 'settings.showOnlyNewNotes', false);
-
   return (
     <>
       {showFilter && (
@@ -159,7 +157,7 @@ function StockNotesList(props) {
           </Table.Body>
         </Table>
       )}
-      {showDetailView == 'true' ? getDetailsView() : getCondensedView()}
+      {showDetailView ? getDetailsView() : getCondensedView()}
     </>
   );
 }

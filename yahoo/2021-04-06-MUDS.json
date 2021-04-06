@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "10.05"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "9.99"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-1.49%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "10.42"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "9.69"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Mudrick Capital Acquisition Corporation II (MUDS)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "N/A"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.00%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "15.30%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Shell Companies"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Mudrick Capital Acquisition Corp. II is a blank check company. The company focuses on effecting a merger, share exchange, asset acquisition, share purchase, reorganization or similar business combination with one or more businesses. The company was founded in 2020 and is based in New York, New York."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "31.62M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "17.09k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.04%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.09"
+    }
+}
