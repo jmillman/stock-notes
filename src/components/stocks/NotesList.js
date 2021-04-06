@@ -3,7 +3,6 @@ import React, { useState, useContext, useEffect } from 'react';
 import { Accordion, Icon, Radio } from 'semantic-ui-react';
 import AddNote from './AddNote';
 import GlobalContext from '../../store/GlobalContext';
-import useLocalStorage from 'react-use-localstorage';
 
 function NotesList(props) {
   const [state, ,] = useContext(GlobalContext);
@@ -60,7 +59,7 @@ function NotesList(props) {
 
   return (
     <>
-                      {state.notes
+      {state.notes
         .filter((note) => note.symbol === props.symbol)
         .map((note, index) => {
           return getNote(note, index);

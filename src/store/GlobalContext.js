@@ -33,6 +33,14 @@ export default GlobalContext;
 
 export function withGlobalContext(Component) {
   return function contextComponent(props) {
+    useEffect(() => {
+      const settingsFromLocalStorage = window.localStorage.getItem('settings');
+      dispatch({
+        type: 'refreshSettingsFromLocalStorage',
+        settings: JSON.parse(settingsFromLocalStorage),
+      });
+    }, []);
+
     const [state, dispatch] = useReducer(reducer, {
       data: [],
       taskLists: [],
@@ -44,43 +52,6 @@ export function withGlobalContext(Component) {
       notes: [],
     });
     const [userIdCookie, setUserIDCookie] = useCookies(['userId']);
-
-    // Hook
-    const useLocalStorage = (key, initialValue) => {
-      // State to store our value
-      // Pass initial state function to useState so logic is only executed once
-      const [storedValue, setStoredValue] = useState(() => {
-        try {
-          // Get from local storage by key
-          const item = window.localStorage.getItem(key);
-          // Parse stored json or if none return initialValue
-          return item ? JSON.parse(item) : initialValue;
-        } catch (error) {
-          // If error also return initialValue
-          console.log(error);
-          return initialValue;
-        }
-      });
-
-      // Return a wrapped version of useState's setter function that ...
-      // ... persists the new value to localStorage.
-      const setValue = (value) => {
-        try {
-          // Allow value to be a function so we have same API as useState
-          const valueToStore =
-            value instanceof Function ? value(storedValue) : value;
-          // Save state
-          setStoredValue(valueToStore);
-          // Save to local storage
-          window.localStorage.setItem(key, JSON.stringify(valueToStore));
-        } catch (error) {
-          // A more advanced implementation would handle the error case
-          console.log(error);
-        }
-      };
-
-      return [storedValue, setValue];
-    };
 
     const fetchItemsFromApp = (userId) => {
       fetchItems(userId, (result) => {
@@ -142,6 +113,10 @@ export function withGlobalContext(Component) {
           fetchItemTypesFromApp(state.loggedInUser.id);
         }
       );
+    };
+
+    const updateSettings = (key, value) => {
+      dispatch({ type: 'settings', key, value });
     };
 
     const addSymbolFromApp = (symbol, successCallback) => {
@@ -308,7 +283,7 @@ export function withGlobalContext(Component) {
       saveNoteFromApp,
       deleteNoteFromApp,
       fetchMyNotesFromApp,
-      useLocalStorage,
+      updateSettings,
     };
 
     return (
@@ -318,10 +293,3 @@ export function withGlobalContext(Component) {
     );
   };
 }
-
-//use to wrap vs using the variable declaration way which needs another wrapper
-// export function GlobalContextWrapperComponent(props) {
-//     return (
-//         <div>GlobalContextWrapperComponent Component:{props.children}</div>
-//     );
-// }

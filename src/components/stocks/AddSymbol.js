@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useState } from 'react';
 import { Form, Input, Message } from 'semantic-ui-react';
 import GlobalContext from '../../store/GlobalContext';
+import ShowFilterButton from './ShowFilterButton';
 
 function AddSymbol(props) {
   const [, , api] = useContext(GlobalContext);
@@ -43,6 +44,7 @@ function AddSymbol(props) {
           <Form.Button positive onClick={handleClickCreate}>
             Add
           </Form.Button>
+          <ShowFilterButton />
         </Form.Group>
         <Form.Group inline>
           {formStatus && formStatus.status ? (

@@ -1,7 +1,6 @@
 import moment from 'moment';
 import _ from 'lodash';
 import React, { useContext, useState, useEffect } from 'react';
-import useLocalStorage from 'react-use-localstorage';
 import GlobalContext from '../../store/GlobalContext';
 import StockDetails from './StockDetails';
 import NotesList from './NotesList';
@@ -13,15 +12,10 @@ function StockNotesList(props) {
   const [data, setData] = useState({});
   const [, setFormStatus] = useState(null);
 
-  const [showAllDates, setShowAllDates] = useLocalStorage('showAllDates', 'false');
-  const [showDetailView, setShowDetailView] = useLocalStorage('showDetailView', 'false');
-  const [showOnlyNewNotes, setShowOnlyNewNotes] = useLocalStorage('showOnlyNewNotes', 'false');
+  const showFilter = _.get(state, 'settings.showFilter', false);
 
   useEffect(() => {
-    console.log("EFECT");
-  }, [showOnlyNewNotes]);
-
-  const [showFilter, setShowFilter] = api.useLocalStorage('showFilter', true);
+  }, [showOnlyNewNotes, showFilter]);
 
   const [date] = useState(moment().format('YYYY-MM-DD'));
 
@@ -115,14 +109,17 @@ function StockNotesList(props) {
     return notes;
   }
 
+  const showDetailView = _.get(state, 'settings.showDetailView', false);
+  const showAllDates = _.get(state, 'settings.showAllDates', false);
+  const showOnlyNewNotes = _.get(state, 'settings.showOnlyNewNotes', false);
+
   return (
     <>
-      {!showFilter && (
-        <Icon name="filter" size="large" onClick={() => setShowFilter(true)} />
-      )}
       {showFilter && (
         <Table celled>
-          <Table.Header onDoubleClick={() => setShowFilter(false)}>
+          <Table.Header
+            onDoubleClick={() => api.updateSettings('showFilter', false)}
+          >
             <Table.Row>
               <Table.HeaderCell>Show all Dates</Table.HeaderCell>
               <Table.HeaderCell>Details View</Table.HeaderCell>
@@ -134,22 +131,28 @@ function StockNotesList(props) {
               <Table.Cell>
                 <Radio
                   toggle
-                  checked={showAllDates == 'true'}
-                  onClick={() => setShowAllDates(!(showAllDates == 'true'))}
+                  checked={showAllDates}
+                  onClick={() =>
+                    api.updateSettings('showAllDates', !showAllDates)
+                  }
                 />
               </Table.Cell>
               <Table.Cell>
                 <Radio
                   toggle
-                  checked={showDetailView == 'true'}
-                  onClick={() => setShowDetailView(!(showDetailView == 'true'))}
+                  checked={showDetailView}
+                  onClick={() =>
+                    api.updateSettings('showDetailView', !showDetailView)
+                  }
                 />
               </Table.Cell>
               <Table.Cell>
                 <Radio
                   toggle
-                  checked={showOnlyNewNotes == 'true'}
-                  onClick={() => setShowOnlyNewNotes(!(showOnlyNewNotes == 'true'))}
+                  checked={showOnlyNewNotes}
+                  onClick={() =>
+                    api.updateSettings('showOnlyNewNotes', !showOnlyNewNotes)
+                  }
                 />
               </Table.Cell>
             </Table.Row>
