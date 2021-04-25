@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "5.3542"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "4.4071"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "97.37%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "11.6000"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.3000"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Energy Focus, Inc. (EFOI)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "2.69M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 57
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "13.44%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "12.15%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Furnishings, Fixtures & Appliances"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Energy Focus, Inc., together with its subsidiaries, designs, develops, manufactures, markets, and sells energy-efficient lighting systems in the United States and internationally. It offers military maritime LED lighting products, such as Military Intellitube, globe lights, berth lights, and fixtures, as well as Invisitube ultra-low EMI tubular LED (TLED) and LED retrofit kits to serve the United States navy and allied foreign navies. The company also provides commercial products comprising direct-wire TLED replacements for linear fluorescent lamps; RedCap emergency battery backup TLEDs; EnFocus lighting platform, including dimming and color tuning; LED fixtures for fluorescent replacement or high-intensity discharge replacement in low-bay and high-bay applications; LED downlights; LED dock lights; LED vapor tight lighting fixtures; and LED retrofit kits. It sells its products to military maritime, industrial, and general commercial markets through direct sales employees, independent sales representatives, electrical and lighting contractors, and distributors. The company was formerly known as Fiberstars, Inc. and changed its name to Energy Focus, Inc. in May 2007. Energy Focus, Inc. was founded in 1985 and is headquartered in Solon, Ohio."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Consumer Cyclical"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "3.68M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "158.32k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "4.76%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "4.30%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "1.11"
+    }
+}

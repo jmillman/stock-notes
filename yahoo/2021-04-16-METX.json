@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.7245"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "2.3786"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-84.63%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "13.0300"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.7100"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Meten EdtechX Education Group Ltd. (METX)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "19.7M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 5491
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "70.64%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "12.32%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Education & Training Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Meten EdtechX Education Group Ltd. provides English language training (ELT) services in the People's Republic of China. It operates through four segments: General Adult English Training, Overseas Training Services, Online English Training, and Junior English Training. The company delivers English language and future skills training for Chinese students and professionals. It offers adult and junior ELT services under the Meten brand name, junior ELT services under the ABC brand name, and online ELT services under the Likeshuo brand name through a digital platform and network of learning centers. As of December 31, 2019, the company had a network of 148 learning centers covering 36 cities in 18 provinces, autonomous regions, and municipalities. Meten EdtechX Education Group Ltd. was founded in 2006 and is based in Shenzhen, the People's Republic of China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Consumer Defensive"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "53.29M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "1.57M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "10.47%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "2.94%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.3"
+    }
+}

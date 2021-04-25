@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "35.98"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "50.68"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "267.79%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "168.80"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "11.20"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Chemomab Therapeutics Ltd. (CMMB)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "50.28k"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "1.90%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "24.81%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Chemomab Therapeutics Ltd. engages in the research and development of biological drugs for the treatment of inflammatory and fibrotic diseases. The company was formerly known as Anchiano Therapeutics Ltd. and changed its name to Chemomab Therapeutics Ltd. in March 16, 2021. Chemomab Therapeutics Ltd. was incorporated in 2011 and is based in Tel Aviv, Israel."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "10.7M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Feb 26, 2021)",
+        "value": "4.07k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Feb 26, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Feb 26, 2021)",
+        "value": "0.22%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Feb 26, 2021)",
+        "value": "0.02"
+    }
+}

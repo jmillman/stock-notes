@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.15"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "4.16"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "240.00%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "9.70"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.75"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Recon Technology, Ltd. (RCON)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "3.1M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 134
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "13.63%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "2.55%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Oil & Gas Equipment & Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Recon Technology, Ltd. provides hardware, software, and on-site services to companies in the petroleum mining and extraction industry in the People's Republic of China. The company offers equipment, tools, and other hardware related to oilfield production and management, and transportation; and develops and sells industrial automation control and information solutions. It also provides equipment for oil and gas production and transportation, including heating furnaces and burner, as well as enhancing techniques comprising packers of fracturing; production packers; sand prevention in oil and water wells; water locating and plugging techniques; fissure shaper; fracture acidizing technique; and electronic broken-down service to resolve block-up and freezing problems. In addition, the company offers automation systems and services, including pumping unit controller that monitors the pumping units and collects data; RTU to monitor natural gas wells and collect gas well pressure data; wireless dynamometers and wireless pressure gauges; electric multi-way valves for oilfield metering station flow control; and natural gas flow computer systems. Further, it provides Recon SCADA oilfield monitor and data acquisition system for supervision and data collection; EPC service of pipeline SCADA system for pipeline monitoring and data acquisition; EPC service of oil and gas wells SCADA system for monitoring and data acquisition of oil wells and natural gas wells; EPC service of oilfield video surveillance and control system to control the oil and gas wellhead and measurement station areas; and technique service for digital oilfield transformation. Additionally, the company offers oilfield waste water treatment solutions and related chemicals; and oily sludge disposal solutions. Recon Technology, Ltd. was incorporated in 2007 and is headquartered in Beijing, the People's Republic of China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Energy"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "18.31M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "738.83k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "5.87%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "4.04%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.62"
+    }
+}

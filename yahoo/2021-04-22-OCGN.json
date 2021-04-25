@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "3.84"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "7.68"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "1,918.63%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "18.77"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.17"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Ocugen, Inc. (OCGN)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "181.89M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 15
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "2.86%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "7.93%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Ocugen, Inc., a clinical-stage biopharmaceutical company, focuses on the developing gene therapies to cure blindness diseases. The company's pipeline product includes OCU400, a novel gene therapy product candidate restoring retinal integrity and function across a range of genetically diverse inherited retinal diseases, such as retinitis pigmentosa and leber congenital amaurosis; OCU410, gene therapy candidate for the treatment of dry age-related macular degeneration (AMD); and OCU200, a novel fusion protein that is in preclinical development stage for the treatment of diabetic macular edema, diabetic retinopathy, and wet AMD. Ocugen, Inc. has a strategic partnership with CanSino Biologics Inc. for gene therapy co-development and manufacturing; and Bharat Biotech for the commercialization of COVAXIN in the United States market. The company is headquartered in Malvern, Pennsylvania."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "188.09M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "27.13M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "14.83%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "14.42%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.78"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "5.47"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "6.84"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "112.96%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "15.52"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.88"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Brooklyn ImmunoTherapeutics, Inc. (BTX)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "N/A"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 10
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.69%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.20%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Brooklyn ImmunoTherapeutics, Inc., a clinical stage biopharmaceutical company, engages in developing therapies to treat patients with cancer. Its advanced program is IRX-2 that is in a Phase 2b clinical trial in patients with squamous cell cancer of the head and neck. The company is based in Brooklyn, New York."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "41.51M"
+    },
+    "shares_short": {
+        "title": "Shares Short",
+        "value": "N/A"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding",
+        "value": "N/A"
+    },
+    "short_ratio": {
+        "title": "Short Ratio",
+        "value": "N/A"
+    }
+}

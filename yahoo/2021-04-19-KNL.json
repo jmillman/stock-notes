@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "15.04"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "17.11"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "82.91%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "18.79"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "8.67"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Knoll, Inc. (KNL)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "45.76M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 3082
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "7.10%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "88.67%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Business Equipment & Supplies"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Knoll, Inc., together with its subsidiaries, designs, manufactures, markets, and sells commercial and residential furniture, accessories, and coverings for the workplace and residential markets in the United States, Canada, Europe, and internationally. The company operates through Office and Lifestyle segments. It provides systems furniture, including integrated panels or table desks, work surfaces and storage units, power and data systems, and lighting products; office seating products comprising various work chairs; and files and storage products, such as lateral files, mobile pedestals and other storage units, bookcases, and overhead cabinets. The company also offers adjustable tables, as well as meeting, conference, training, dining, and stand-alone and table desks; conference furniture product platforms; height desks, tables, and ergonomic seating and accessories principally for individual home offices and small businesses; technology support accessories, desktop organizational tools, and lighting and storage products; seating and lounge furniture, as well as side, caf\u00c3\u00a9, and dining chairs; conference, training, dining, and occasional tables; and lighting, rugs, textiles, fabrics, felt, leather, upholstery, drapery, and related architectural products. It serves Fortune 1000 companies, governmental agencies, and other medium-to-large sized organizations in various industries, including financial, legal, technology, entertainment, accounting, education, healthcare, and hospitality through its direct sales force and showrooms, distribution partners, and independent dealers and retailers, as well as online. The company was founded in 1938 and is headquartered in East Greenville, Pennsylvania."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Industrials"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "49.38M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "550.45k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "1.93%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "1.11%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "1.74"
+    }
+}

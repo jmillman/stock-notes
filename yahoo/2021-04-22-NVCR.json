@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "149.41"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "146.00"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "174.56%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "218.09"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "55.40"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "NovoCure Limited (NVCR)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "87.47M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 1023
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "13.72%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "85.35%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Medical Instruments & Supplies"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "NovoCure Limited, an oncology company, engages in the development, manufacture, and commercialization of Optune for the treatment of a variety of solid tumors. The company markets Optune and Optune Lua, a Tumor Treating Fields delivery system for use as a monotherapy treatment for adult patients with glioblastoma. It is also developing products for brain metastases, non-small cell lung cancer, pancreatic cancer, gastric cancer, ovarian cancer, liver cancer, and mesothelioma. The company markets its products in the European Union, Japan, and internationally. It has a clinical trial collaboration agreement with MSD to evaluate tumor treating fields together with KEYTRUDA, an anti-PD-1 therapy; and a strategic alliance with the NYU Grossman School of Medicine's Department of Radiation Oncology that provides a framework for preclinical and clinical development projects studying Tumor Treating Fields. NovoCure Limited was founded in 2000 and is based in Saint Helier, Jersey."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "101.8M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "4.73M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "5.32%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "4.62%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "5.53"
+    }
+}

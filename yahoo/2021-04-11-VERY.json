@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "10.40"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "10.78"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "77.52%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "22.03"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "6.91"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Vericity, Inc. (VERY)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "1.84M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 421
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "10.69%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "79.46%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Insurance\u2014Life"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Vericity, Inc., together with its subsidiaries, provides life insurance protection products for the middle American market. The company operates through Agency and Insurance segments. The Agency segment sells life insurance products for unaffiliated insurance companies through its call center distribution platform, as well as through its independent agents and other marketing organizations. This segment is also involved in the insurance lead sale activities through its eCoverage web presence. The Insurance segment provides term life, accidental death, and final expense products. This segment distributes its life insurance products through independent producers, including direct distributors that market to consumers through call centers and regional and national independent producer groups. Vericity, Inc. is headquartered in Chicago, Illinois."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "14.88M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "16.07k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "0.87%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.11%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "4.2"
+    }
+}

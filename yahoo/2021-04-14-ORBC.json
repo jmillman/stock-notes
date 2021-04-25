@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "6.72"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "8.03"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "379.25%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "11.55"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "2.22"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "ORBCOMM Inc. (ORBC)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "66.74M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 739
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "5.94%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "70.29%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Telecom Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "ORBCOMM Inc. provides Internet of Things solutions in the United States, South America, Japan, Europe, and internationally. The company offers network connectivity, devices, device management, and web reporting applications that are designed to track, monitor, control, and enhance security for various assets, such as trailers, trucks, rail cars, sea containers, power generators, fluid tanks, marine vessels, diesel or electric powered generators, oil and gas wells, pipeline monitoring equipment, irrigation control systems, and utility meters in transportation and supply chain, heavy equipment, fixed asset monitoring, and maritime industries, as well as for governments. It also provides satellite automatic identification service data services to assist in vessel navigation and to enhance maritime safety for government and commercial customers; and vehicle fleet management, as well as in-cab and fleet vehicle solutions using various network platforms, including its own constellation of low-earth orbit satellites and accompanying ground infrastructure, as well as terrestrial-based cellular communication services through reseller agreements with various cellular wireless providers. In addition, the company offers customer solutions utilizing additional satellite network service options through service agreements with third party mobile satellite providers; and resells service using the two-way Inmarsat plc satellite network to provide higher bandwidth. It markets and sells its products and services directly to original equipment manufacturers, government customers, and end-users, as well as indirectly through market channel partners and affiliates. ORBCOMM Inc. was founded in 1993 and is headquartered in Rochelle Park, New Jersey."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Communication Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "79.44M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "1.55M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "2.10%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "1.96%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "1.22"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "61.24"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "78.53"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "444.60%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "103.87"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "11.10"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Tian Ruixiang Holdings Ltd (TIRX)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "2.42M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 53
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "43.30%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.05%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Insurance Brokers"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "TIAN RUIXIANG Holdings Ltd, headquartered in Beijing, China, is an insurance broker operating in China. It distributes a wide range of insurance products, which are categorized into two major groups: (1) property and casualty insurance, such as automobile insurance, commercial property insurance, liability insurance; and (2) life insurance, such as individual and group life insurances. For more information, visit the Company's website at http://ir.tianrx.com/."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "6.75M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "41.5k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "0.98%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "0.52%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.64"
+    }
+}

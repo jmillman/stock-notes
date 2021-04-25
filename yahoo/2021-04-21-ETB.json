@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "14.75"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "15.62"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "26.95%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "16.64"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "12.61"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Eaton Vance Tax-Managed Buy-Write Income Fund (ETB)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "N/A"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.00%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "17.25%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Asset Management"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Eaton Vance Tax-Managed Buy-Write Income Fund is a closed-ended equity mutual fund launched and managed by Eaton Vance Management. It is co-managed by Parametric Portfolio Associates LLC. The fund invests in the public equity markets of the United States. It seeks to invest in stocks of companies operating across diversified sectors. The fund primarily invests in stocks of large-cap companies. It also writes call options on one or more U.S. indices on a substantial portion of the value of its common stock portfolio. The fund benchmarks the performance of its portfolio against the S&P 500 Index. Eaton Vance Tax-Managed Buy-Write Income Fund was formed on April 29, 2005 and is domiciled in the United States."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "26.62M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "13.12k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "0.05%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.21"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.0533"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "2.8474"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "213.13%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "3.8100"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.8300"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Mer Telemanagement Solutions Ltd. (MTSL)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "2.31M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 34
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "46.29%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "4.38%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Telecom Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Mer Telemanagement Solutions Ltd. provides solutions for telecommunications expense management (TEM), enterprise mobility management, and call usage and accounting software worldwide. It offers TEM suite software platform that helps organizations to reduce operational expenses, enhance productivity, and optimize networks and services associated with communications networks and information technology (IT). The company also provides TEM services, such as Map-to-Wins, a strategic consulting approach for TEM solution; and consulting services, including invoice, inventory audit and recovery, contract negotiations and strategic sourcing, discovery and road mapping, process diagnosis and solution design, and wireless optimization services, as well as creation and implementation of IT governance, risk, and compliance policies. In addition, the company offers cloud and managed services; and converged billing solutions, including applications for charging and invoicing customers, and interconnect billing and partner revenue management services. Further, it provides implementation and maintenance services. The company sells its solutions through original equipment manufacturers, distribution channels, and direct sales force. Mer Telemanagement Solutions Ltd. was founded in 1995 and is headquartered in Ra'anana, Israel."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Communication Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "4.49M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "116.78k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "3.32%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "2.60%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.89"
+    }
+}

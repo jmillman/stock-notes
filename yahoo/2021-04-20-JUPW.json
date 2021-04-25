@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "5.2917"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "5.1417"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-25.00%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "8.8800"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "3.6000"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Jupiter Wellness, Inc. (JUPW)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "4.94M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 5
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "42.50%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.36%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Drug Manufacturers\u2014Specialty & Generic"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Jupiter Wellness, Inc. operates as a hemp-derived cannabidiol (CBD) consumer product development company. It develops various therapeutic and medical use for CBD in the treatment of various ailment and diseases, such as cancer, arthritis, anxiety, insomnia, psoriasis, chronic pain, and others. The company markets CBD-infused sun care lotion formulas containing various sun protection factors under the CaniSun brand. It is also developing other products, such as CBD-infused skin care lotion under the CaniSkin brand; and dermatological treatments under the CaniDermRX brand. The company was formerly known as CBD Brands, Inc. Jupiter Wellness, Inc. was founded in 2018 and is headquartered in Jupiter, Florida."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "11.26M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "187.34k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "3.80%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "2.04%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.51"
+    }
+}

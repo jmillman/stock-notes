@@ -111,7 +111,8 @@ def delete_note():
     )
 
 
-source = "yahoo"
+source = "finviz"
+# source = "yahoo"
 # source = 'data_filings_pro'
 directory_name = source
 
@@ -195,6 +196,11 @@ def get_data_yahoo(symbol):
     url = "https://finance.yahoo.com/quote/" + symbol
     driver.get(url)
     time.sleep(0)
+
+    html = driver.page_source
+    soup = BeautifulSoup(html, "html.parser")
+    scrape_yahoo_stats(soup, results, ["market_cap", "Market Cap"])
+
     summary_profile = driver.execute_script(
         "return this.App.main.context.dispatcher.stores.QuoteSummaryStore.summaryProfile;"
     )
@@ -223,6 +229,33 @@ def get_data_yahoo(symbol):
     return results
 
 
+def get_data_finviz(symbol):
+    results = {}
+
+    url = "https://finviz.com/quote.ashx?t=" + symbol
+    driver.get(url)
+    time.sleep(0)
+    html = driver.page_source
+    soup = BeautifulSoup(html, "html.parser")
+    table = soup.find("table", {"class": "snapshot-table2"})
+    keys = [
+        "Market Cap",
+        "Short Float",
+        "Shs Float",
+        "SMA50",
+        "SMA200",
+        "Shs Outstand",
+        "Prev Close",
+        "Price",
+        "Perf Week",
+        "Perf Month",
+        "Perf YTD",
+    ]
+    for key in keys:
+        results[key] = table.findChildren("td", string=key)[0].next_sibling.string
+    return results
+
+
 @api.route("/lookup_symbol", methods=["GET"])
 def lookup_symbol():
     try:
@@ -239,6 +272,9 @@ def lookup_symbol():
             if source == "yahoo":
                 check_dir(directory_name)
                 data = get_data_yahoo(symbol)
+            if source == "finviz":
+                check_dir(directory_name)
+                data = get_data_finviz(symbol)
 
             if data:
                 check_dir(directory_name)

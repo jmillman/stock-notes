@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.5706"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "2.2725"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-4.66%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "6.4300"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.4100"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Ambow Education Holding Ltd. (AMBO)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "10.6M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 1809
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.00%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "1.09%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Education & Training Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Ambow Education Holding Ltd. provides educational and career enhancement services and products to students, recent graduates, and corporate employees and management in the People's Republic of China. The company operates through two segments, K-12 Schools and CP&CE Programs. The K-12 Schools segment provides educational services covering K-12 programs and tutoring services; and international education programs. The CP&CE Programs segment operates tutoring centers that provide classroom instruction, small class, and one-on-one tutoring services for students to perform better in school and prepare for important tests, primarily high school and university entrance exams; and educational curriculum through its web-based applications. This segment also offers educational software products include eBoPo, which offers full subjects, online practice tests, and instructions for K-12 level students; career enhancement services and products focusing on improving educational opportunities for primary and advanced degree school students, and employment opportunities for university graduates; and outbound and in-house management trainings for corporate clients. In addition, this segment provides students with training for professional skills, such as case studies, job environment simulation, and technical skills; soft skills, including time management, presentation, leadership, and interview techniques; and intellectualized operational services to corporate clients, colleges, and universities. As of December 31, 2019, the company had 60 centers and schools comprising 3 K-12 schools, 25 tutoring centers, 26 training offices, 5 career enhancement centers, and 1 career enhancement college. The company was founded in 2000 and is headquartered in Beijing, the People's Republic of China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Consumer Defensive"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "23.22M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "616.58k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "2.66%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.96"
+    }
+}

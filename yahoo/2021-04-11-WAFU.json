@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "5.01"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "6.58"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "530.51%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "21.00"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.43"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Wah Fu Education Group Limited (WAFU)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "N/A"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 142
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "73.04%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.86%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Education & Training Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Wah Fu Education Group Limited, through its subsidiaries, provides online exam preparation services and related technology solutions in the People's Republic of China. The company operates in two segments, Online Education Services; and Technological Development and Operation Services. The Online Education Services segment offers online education platforms to institutions, such as universities and training institutions, and online course development service companies. This segment provides self-study examination, continuing education, and non-diploma training platforms that allow students to enroll in courses for college credit; vocational education 1+X and higher vocational enrollment expansion teaching and educational administration platform; Huafu e-school system and paperless examination platform; and online training and examination preparation services directly to students. The Technological Development and Operation Services segment develops and maintains online education platforms and online courses for its clients, including universities and government agencies, as well as private clients, such as publishers; and provides consulting, maintenance, and updating services related to online education programs. Wah Fu Education Group Limited was founded in 1999 and is headquartered in Beijing, the People's Republic of China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Consumer Defensive"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "4.38M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "15.39k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "1.30%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.35%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.09"
+    }
+}

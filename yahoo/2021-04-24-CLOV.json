@@ -1,0 +1,78 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "10.83"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "8.13"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-16.67%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "17.45"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "6.31"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Clover Health Investments, Corp. (CLOV)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "107.57M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 458
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "24.84%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "35.35%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Healthcare Plans"
+    },
+    "market_cap": {
+        "title": "Market Cap",
+        "value": "3.794B"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Clover Health Investments, Corp. operates as a Medicare Advantage insurer in the United States. The company through its software platform provides preferred provider organization and health maintenance organization health plans for Medicare-eligible consumers. Clover Health Investments, Corp. was founded in 2012 and is headquartered in Franklin, Tennessee."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "145.35M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "38.5M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "9.48%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "2.8"
+    }
+}

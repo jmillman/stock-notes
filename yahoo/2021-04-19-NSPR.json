@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "0.5685"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "0.6918"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-47.44%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "1.4800"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.2800"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "InspireMD, Inc. (NSPR)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "107.7M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 45
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "2.79%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "11.16%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Medical Devices"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "InspireMD, Inc., a medical device company, focuses on the development and commercialization of proprietary MicroNet stent platform technology for the treatment of vascular and coronary diseases in Europe, Latin America, the Middle East, and Asia. The company offers CGuard carotid embolic prevention system for use in carotid artery applications; and MGuard Prime embolic protection systems for use in patients with acute coronary syndromes, notably acute myocardial infarction, and saphenous vein graft coronary interventions. It is also developing NGuard, a neurovascular flow diverter that diverts blood flow away from cerebral aneurysms and seals the aneurysms. The company sells its products through local distributors. InspireMD, Inc. was founded in 2005 and is headquartered in Tel Aviv, Israel."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "117.79M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "1.54M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "1.35%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "1.31%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.21"
+    }
+}

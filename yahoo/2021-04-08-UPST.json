@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "74.79"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "91.81"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "327.79%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "165.66"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "22.61"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Upstart Holdings, Inc. (UPST)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "42.35M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 554
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "20.92%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "59.25%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Credit Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Upstart Holdings, Inc. operates a cloud- based artificial intelligence (AI) lending platform. The company's platform aggregates consumer demand for loans and connects it to its network of the company's AI- enabled bank partners. Its platform connects consumers, banks, and institutional investors through a shared AI lending platform. Upstart Holdings, Inc. was incorporated in 2012 and is headquartered in San Mateo, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "73.62M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "3.31M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "6.94%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "4.49%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "2.32"
+    }
+}

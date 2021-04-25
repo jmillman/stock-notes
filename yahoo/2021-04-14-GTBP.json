@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "5.61"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "6.60"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "275.29%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "13.09"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "2.04"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "GT Biopharma, Inc. (GTBP)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "3.94M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 2
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "3.54%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "7.82%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "GT Biopharma, Inc., a clinical stage biopharmaceutical company, focuses on the development and commercialization of novel immuno-oncology products based on its proprietary technology platforms. The company develops immuno-oncology product candidates, including GTB-1550, a bispecific scFv recombinant fusion protein-drug conjugate that targets cancer cells expressing the CD19 receptor or CD22 receptor, or both receptors, which is in Phase 2 clinical trial; GTB-3550, a single-chain, tri-specific scFv recombinant fusion protein conjugate that is in Phase 1 clinical trial; GTB-C3550, a next-generation follow-on to its lead candidates TriKE, GTB-3550, and GTB-C3550, which contains a modified CD16 moiety; and GTB-1615, a single-chain fusion protein for the treatment of solid tumors. Its central nervous system portfolio consists of GTP-004 for the treatment of myasthenia gravis, PainBrake to treat chronic neuropathic pain, and GTP-011 for the treatment of motion sickness. GT Biopharma, Inc. has a co-development partnership agreement with Altor BioScience Corporation for the clinical development of a novel 161533 TriKE fusion protein for cancer therapies; and a collaboration agreement with Cytovance Biologics to provide development services for a TriKE therapeutic for the treatment of coronavirus infection. The company was formerly known as OXIS International, Inc. and changed its name to GT Biopharma, Inc. in July 2017. GT Biopharma, Inc. was incorporated in 1965 and is headquartered in Westlake Village, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "21.37M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "564.75k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "2.70%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "2.64%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "1.06"
+    }
+}

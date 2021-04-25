@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "5.64"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "5.61"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-26.30%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "11.50"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.90"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "180 Life Sciences Corp. (ATNF)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "3.49M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "42.78%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "7.01%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "180 Life Sciences Corp., a clinical-stage biotechnology company, engages in the development of drug candidates in the areas of inflammatory diseases, fibrosis, and pain. Its product development platforms in Phase IIb/III clinical trials include Fibrosis and Anti-TNF platform, which focuses on fibrosis and anti-tumor necrosis factors; Synthetic Cannabidiol (CBD) Analogs platform, which are man-made derivatives of CBD; and a7nAChR platform, which focuses on alpha 7 nicotinic acetylcholine receptor. The company is headquartered in Menlo Park, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "24.07M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "2.27M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "9.44%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "1.76"
+    }
+}

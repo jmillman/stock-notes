@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "12.20"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "15.20"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "262.03%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "22.90"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "5.50"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Marlin Business Services Corp. (MRLN)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "7.23M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 254
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "7.86%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "80.58%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Credit Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Marlin Business Services Corp. provides credit products and services to small and mid-sized businesses in the United States. The company's products and services include loans and leases for the acquisition of commercial equipment and working capital loans. It offers lease finance to approximately 100 categories of equipment. As of December 31, 2020, the company had a portfolio of approximately 80,000 equipment finance leases and loans. It also offers reinsurance services; and operates a commercial bank that issues certificates of deposit and money market deposit accounts. The company provides its solutions through a network of independent commercial equipment dealers and national account programs, as well as through direct solicitation and relationships with select lease and loan brokers. Marlin Business Services Corp. was founded in 1997 and is based in Mount Laurel, New Jersey."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "11.99M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "205.78k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "2.44%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "1.72%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "5.45"
+    }
+}

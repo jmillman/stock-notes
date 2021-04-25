@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "41.64"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "43.88"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "166.08%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "51.62"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "16.45"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Nuance Communications, Inc. (NUAN)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "250.05M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 7100
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.68%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "104.45%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Software\u2014Application"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Nuance Communications, Inc. provides conversational and cognitive artificial intelligence (AI) innovations that bring intelligence to everyday work and life. The company delivers solutions that understand, analyze, and respond to people - amplifying human intelligence to increase productivity and security. Its Healthcare segment provides clinical speech and clinical language understanding solutions that improve the clinical documentation process, from capturing the complete patient record to improving clinical documentation and quality measures for reimbursement. Its solutions include Dragon Medical One, cloud-based speech solution; computer-assisted physician documentation; diagnostic imaging solutions; Nuance Dragon Ambient eXperience, a voice-enabled solution; and clinical documentation improvement and coding. The company's Enterprise segment primarily engages in using speech, natural language understanding, and artificial intelligence to provide automated customer solutions and services for voice, mobile, Web, and messaging channels. Its solutions include intelligent engagement solutions; Conversational AI; Engagement AI; and Security AI. Its Other segment provides voicemail transcription services. The company serves organizations across healthcare, financial services, telecommunications, government, and retail. Nuance Communications, Inc. markets and sells its solutions and technologies directly through sales force, as well as through a network of resellers, including system integrators, independent software vendors, value-added resellers, distributors, hardware vendors, telecommunications carriers, and e-commerce Websites worldwide. The company was formerly known as ScanSoft, Inc. and changed its name to Nuance Communications, Inc. in October 2005. Nuance Communications, Inc. was founded in 1992 and is headquartered in Burlington, Massachusetts."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Technology"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "285.06M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 14, 2021)",
+        "value": "25.49M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 14, 2021)",
+        "value": "8.98%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 14, 2021)",
+        "value": "8.94%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 14, 2021)",
+        "value": "9.11"
+    }
+}

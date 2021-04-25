@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "27.29"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "27.29"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-44.84%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "54.00"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "18.65"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Esports Technologies, Inc. (EBET)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "N/A"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 11
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "45.01%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.00%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Gambling"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Esports Technologies, Inc., a technology company, develops and operates platforms that focuses on esports and competitive gaming worldwide. The company operates gogawi.com, a licensed online gambling platform, which is an esports/sportsbook that focuses on bettors located in Asia and Latin America. It also offers iGaming, which include online casino and table games, such as blackjack, virtual sport computer simulated games, and slot machines, as well as traditional sports betting. The company is based in Las Vegas, Nevada."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Consumer Cyclical"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "N/A"
+    },
+    "shares_short": {
+        "title": "Shares Short",
+        "value": "N/A"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding",
+        "value": "N/A"
+    },
+    "short_ratio": {
+        "title": "Short Ratio",
+        "value": "N/A"
+    }
+}

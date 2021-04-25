@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "0.92"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "0.83"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "222.73%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "14.45"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.31"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Sysorex, Inc. (SYSX)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "484.3k"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 17
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "2.03%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "8.29%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Information Technology Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Sysorex, Inc. provides information technology (IT) and telecommunications solutions and services to commercial and government customers primarily in the United States. The company offers solutions, including cybersecurity, professional services, engineering support, IT consulting, enterprise level technology, networking, wireless, help desk, and custom IT solutions. It also resells hardware, software, and other IT equipment, as well as provides license and maintenance services. In addition, the company offers solutions and services that enable customers to manage, protect, and monetize their enterprise assets whether on-premises, in the cloud, or via mobile technology. The company was formerly known as Inpixon USA. Sysorex, Inc. is headquartered in Herndon, Virginia."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Technology"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "491.28k"
+    },
+    "shares_short": {
+        "title": "Shares Short",
+        "value": "N/A"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding",
+        "value": "N/A"
+    },
+    "short_ratio": {
+        "title": "Short Ratio",
+        "value": "N/A"
+    }
+}

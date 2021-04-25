@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "0.6648"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "0.8185"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-41.57%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "1.4500"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.3300"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Assertio Holdings, Inc. (ASRT)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "171M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 27
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "2.50%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "22.23%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Drug Manufacturers\u2014Specialty & Generic"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Assertio Holdings, Inc., a commercial pharmaceutical company, provides medicines in the areas of neurology, hospital, and pain and inflammation. The company's pharmaceutical products include INDOCIN, an oral solution and a suppository form for the treatment of moderate to severe rheumatoid arthritis, including acute flares of chronic disease; moderate to severe ankylosing spondylitis and osteoarthritis; and acute painful shoulder and gouty arthritis. It also provides CAMBIA, a non-steroidal anti-inflammatory drug (NSAID) for the treatment of migraine, nausea, photophobia, and phonophobia; Zipsor, an NSAID for relief of mild to moderate acute pain; and SPRIX, an NSAID for the short term management of moderate to moderately severe pain that requires analgesia at the opioid level. The company was formerly known as Assertio Therapeutics, Inc. and changed its name to Assertio Holdings, Inc. in May 2020. Assertio Holdings, Inc. was incorporated in 1995 and is headquartered in Lake Forest, Illinois."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "173.44M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "3.79M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "2.20%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "2.18%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.35"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "4.6358"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "4.3994"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "32.86%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "6.4200"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "3.3600"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Gulf Resources, Inc. (GURE)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "6.41M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 606
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "35.83%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "5.89%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Specialty Chemicals"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Gulf Resources, Inc., through its subsidiaries, manufactures and trades bromine and crude salt, chemical products, and natural gas in the People's Republic of China. It provides bromine for use in brominated flame retardants, fumigants, water purification compounds, dyes, medicines, and disinfectants. The company also offers crude salt for use as a material in alkali and chlorine alkali production; and for use in the chemical, food and beverage, and other industries. In addition, it manufactures and sells chemical products for use in oil and gas field exploration, oil and gas distribution, oil field drilling, papermaking chemical agents, and inorganic chemicals, as well as materials that are used for human and animal antibiotics. Gulf Resources, Inc. is founded in 2006 and is based in Shouguang, the People's Republic of China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Basic Materials"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "10M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "3.79k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "0.06%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.04%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.03"
+    }
+}

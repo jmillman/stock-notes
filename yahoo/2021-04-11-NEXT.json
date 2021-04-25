@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.4220"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "2.1399"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "21.15%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "5.1100"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.1150"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "NextDecade Corporation (NEXT)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "17.11M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 52
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "9.90%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "83.73%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Oil & Gas E&P"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "NextDecade Corporation, a liquefied natural gas (LNG) development company, engages in the development activities related to the liquefaction and sale of LNG. It focusses on the development activities of Rio Grande LNG terminal facility located in the Port of Brownsville, southern Texas. The company is headquartered in Houston, Texas."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Energy"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "122.07M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "656.98k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "1.75%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.56%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "1.87"
+    }
+}

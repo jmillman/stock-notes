@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "105.51"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "112.99"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "223.60%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "162.07"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "43.00"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "BioNTech SE (BNTX)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "78.56M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 1941
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "1.18%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "10.57%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "BioNTech SE, a biotechnology company, develops and commercializes immunotherapies for cancer and other infectious diseases. The company is involved in the developing of FixVac product candidates, including BNT111, which is in Phase I clinical trial for advance melanoma; BNT112 that is in Phase I/IIa trial for prostate cancer; BNT113, which is in Phase I/II trial to treat HPV+ head and neck cancers; BNT114 that is in Phase I clinical trial for triple negative breast cancer; BNT115 in a Phase I trial in ovarian cancer; and BNT116 for non-small cell lung cancer.It also develops neoantigen specific immunotherapies, such as Autogene cevumeran (BNT122), which is in Phase II clinical trial for first-line melanoma, as well as in Phase I clinical trial to treat multiple solid tumors; mRNA intratumoral immunotherapy comprising SAR441000 that is in Phase I clinical trial for solid tumors; and BNT141 and BNT142 to treat multiple solid tumors. In addition, the company develops RiboCytokines, which include BNT151, BNT152, and BNT153 for multiple solid tumors; chimeric antigen receptor T cell immunotherapies, such as BNT211 to treat multiple solid tumors, and BNT221 for other cancers; and checkpoint immunomodulators consisting of GEN1046 and GEN1042, which are in Phase I/II a clinical trial to treat multiple solid tumors. Further, it develops BNT321, an IgG1 monoclonal antibody, which is in Phase I/IIa clinical trial for pancreatic cancer; BNT411, small molecule immunomodulator product candidate for solid tumors; prophylactic vaccine for COVID-19 and Influenza; and infectious disease immunotherapies and rare disease protein replacement therapies. The company has collaborations with Genentech, Inc.; Sanofi S.A.; Genmab A/S; Genevant Sciences GmbH; Pfizer Inc.; Shanghai Fosun Pharmaceutical (Group) Co., Ltd.; and Regeneron Pharmaceuticals, Inc. BioNTech SE was incorporated in 2008 and is headquartered in Mainz, Germany."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "241.52M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "4.76M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "1.97%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "3.35"
+    }
+}

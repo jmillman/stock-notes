@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.4575"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "3.6332"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "395.40%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "6.6000"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.7260"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Auris Medical Holding Ltd. (EARS)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "12.2M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 8
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "4.43%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "1.46%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Auris Medical Holding Ltd., a clinical-stage biopharmaceutical company, developing therapeutics that address important unmet medical needs in neurotology, rhinology and allergy, and CNS disorders. The company's Phase 3 programs under the development include Keyzilen (AM-101) for the treatment of acute inner ear tinnitus; and Sonsuvi (AM-111) for the treatment of acute inner ear hearing loss. It is also developing AM-125 that is in Phase 2 clinical trial for the intranasal treatment of acute peripheral vertigo; AM-201, which has completed Phase 1b clinical trial for the prevention of antipsychotic induced weight gain and drowsiness; and AM-301, a drug-free nasal spray for protection against airborne viruses and allergens , as well as AM-102 for the tinnitus treatment. The company has a collaboration and license agreement with INSERM; and Xigen S.A. to develop, manufacture, and commercialize pharmaceutical products, as well as drug delivery devices and formulations for local administration of therapeutic substances to the inner ear for the treatment of ear disorders. Auris Medical Holding Ltd. was founded in 1998 and is headquartered in Hamilton, Bermuda."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "12.87M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "491.41k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "4.46%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "4.30%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.08"
+    }
+}

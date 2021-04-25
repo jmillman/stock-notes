@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "17.67"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "21.99"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "77.30%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "29.65"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "12.30"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Cara Therapeutics, Inc. (CARA)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "41.85M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 80
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "10.73%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "67.19%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Cara Therapeutics, Inc., a clinical-stage biopharmaceutical company, focuses on developing and commercializing chemical entities with a primary focus on pruritus and pain by selectively targeting kappa opioid receptors in the United States. The company is developing product candidates that target the body's peripheral nervous system and immune cells. Its lead product candidate includes KORSUVA (CR845/ difelikefalin) injection, which is in Phase III clinical trial for the treatment of patients with moderate-to-severe chronic kidney disease-associated pruritus (CKD-aP) undergoing hemodialysis. The company is also developing Oral KORSUVA (CR845/difelikefalin), which has completed Phase II clinical trial for the treatment of pruritus in stage III-V CKD patients; in Phase II clinical trial for treating pruritus chronic liver disease; and in Phase II clinical trial for the treatment of pruritus associated with atopic dermatitis. In addition, it is developing CR845/difelikefalin Injection, which has completed Phase II/III clinical trial for the treatment of acute post-operative pain. The company has license agreements with Maruishi Pharmaceutical Co., Ltd to develop, manufacture, and commercialize drug products containing CR845/difelikefalin for acute pain and uremic pruritus in Japan; and Chong Kun Dang Pharmaceutical Corporation to develop, manufacture, and commercialize drug products containing CR845/difelikefalin in South Korea. Cara Therapeutics, Inc. was founded in 2004 and is headquartered in Stamford, Connecticut."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "49.88M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "2.74M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "6.21%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "5.49%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "6.01"
+    }
+}

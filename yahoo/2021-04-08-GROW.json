@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "4.90"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "7.30"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "710.81%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "10.29"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.96"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "U.S. Global Investors, Inc. (GROW)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "12.39M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 25
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "4.67%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "37.48%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Asset Management"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "U.S. Global Investors, Inc. is a publicly owned investment manager. The firm primarily provides its services to investment companies. It also provides its services to pooled investment vehicles. The firm manages equity and fixed income mutual funds for its clients. It also manages hedge funds. The firm also manages exchange traded funds. It invests in the public equity and fixed income markets across the globe. It invests in G.A.R.P. and value stocks to make its equity investments. The firm employs a fundamental and quantitative analysis with top-down and bottom-up stock picking approach to make its investments. U.S. Global Investors, Inc. was founded in 1968 and is based in San Antonio, Texas."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "13M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "124.97k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "1.01%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.83%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.43"
+    }
+}

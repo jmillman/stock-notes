@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.0755"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "2.2943"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-8.02%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "6.1400"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.4300"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Astrotech Corporation (ASTC)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "15.42M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 27
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "20.35%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "12.58%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Aerospace & Defense"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Astrotech Corporation operates as a science and technology development and commercialization company in the United States. It operates through two segments, 1st Detect Corporation and AgLAB Inc. The 1st Detect Corporation segment manufactures explosives and narcotics trace detectors for use at airports, secured facilities, and borders. This segment provides TRACER 1000, a mass spectrometer based explosives trace detector to replace the explosives and narcotics trace detectors used at airports, cargo and secured facilities, and borders. The AgLAB Inc. segment develops AgLAB-1000, a mass spectrometer for use in the agriculture market for process control and the detection of trace amounts of solvents and pesticides. It also develops BreathTest-1000, a breath analysis tool to screen for volatile organic compound metabolites found in a person's breath. The company was formerly known as SPACEHAB, Inc. and changed its name to Astrotech Corporation in 2009. Astrotech Corporation was founded in 1984 is based in Austin, Texas."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Industrials"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "22.58M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "358.36k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "1.73%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "1.59%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.15"
+    }
+}

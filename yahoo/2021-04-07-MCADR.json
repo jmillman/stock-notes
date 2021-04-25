@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "N/A"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "N/A"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "N/A"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "0.4900"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.4450"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Mountain Crest Acquisition Corp. II (MCADR)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "N/A"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "N/A"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "N/A"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": null
+    },
+    "profile": {
+        "title": "Profile",
+        "value": null
+    },
+    "sector": {
+        "title": "Sector",
+        "value": null
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "N/A"
+    },
+    "shares_short": {
+        "title": "Shares Short",
+        "value": "N/A"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding",
+        "value": "N/A"
+    },
+    "short_ratio": {
+        "title": "Short Ratio",
+        "value": "N/A"
+    }
+}

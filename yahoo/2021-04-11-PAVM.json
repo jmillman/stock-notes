@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.70"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "4.51"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "176.50%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "6.59"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.63"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "PAVmed Inc. (PAVM)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "72.01M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 25
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "12.30%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "10.87%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Medical Devices"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "PAVmed Inc. operates as a medical device company in the United States. The company's lead products include CarpX, a percutaneous device to treat carpal tunnel syndrome; and EsoCheck, an esophageal cell collection device for the early detection of adenocarcinoma of the esophagus and Barrett's Esophagus (BE). Its product pipeline also comprises EsoGuard, a molecular diagnostic esophageal DNA test; EsoCure, an esophageal ablation device to treat dysplastic BE; PortIO, an implantable intraosseous vascular access device; NextFlo, a disposable infusion platform technology; PortIO, an implantable intraosseous vascular access device; and DisappEAR, a resorbable pediatric ear tube, as well as NextCath and Caldus. The company was formerly known as PAXmed Inc. and changed its name to PAVmed Inc. in April 2015. PAVmed Inc. was incorporated in 2014 and is based in New York, New York."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "82.46M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "5.47M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "7.19%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "6.63%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.84"
+    }
+}

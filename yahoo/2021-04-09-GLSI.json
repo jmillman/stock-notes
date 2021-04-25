@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "24.11"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "32.67"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "925.60%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "158.07"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "3.26"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Greenwich LifeSciences, Inc. (GLSI)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "2.84M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 1
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "74.70%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.87%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Greenwich LifeSciences, Inc., a clinical stage biopharmaceutical company, focuses on the development of novel cancer immunotherapies for breast cancer and other human epidermal growth factor receptor 2/neu-expressing (HER2/neu) cancers. Its lead product candidate is the GP2, an immunotherapy, which has completed Phase IIb clinical trial to prevent recurrence of breast cancer following surgery. The company was formerly known as Norwell, Inc. and changed its name to Greenwich LifeSciences, Inc. in March 2018. Greenwich LifeSciences, Inc. was founded in 2006 and is headquartered in Stafford, Texas."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "12.85M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "243.88k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "5.54%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "1.90%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.35"
+    }
+}

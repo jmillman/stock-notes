@@ -1,0 +1,78 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.39"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "4.57"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "963.64%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "6.35"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.50"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Seelos Therapeutics, Inc. (SEEL)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "68.63M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 9
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "6.57%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "12.23%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "market_cap": {
+        "title": "Market Cap",
+        "value": "436.036M"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Seelos Therapeutics, Inc., a clinical-stage biopharmaceutical company, focuses on the development and commercialization of novel technologies and therapeutics for the treatment of central nervous system, respiratory, and other disorders. The company's lead programs are SLS-002, an intranasal racemic ketamine for the treatment of acute suicidal ideation and behavior in patients with major depressive disorders; SLS-005, a protein stabilizer for the treatment of amyotrophic lateral sclerosis and Sanfilippo syndrome; and SLS-006, a partial dopamine agonist for the treatment of patients with Parkinson's disease (PD). Its preclinical programs include SLS-007, an anti-alpha-synuclein peptidic inhibitor to treat patients with PD; SLS-008, an orally available antagonist for chemoattractant receptor-homologous molecule for the treatment of chronic inflammation in asthma and pediatric orphan indications; SLS-004 for the treatment of PD; SLS-010, an oral histamine H3A receptor antagonist for narcolepsy and related disorders; and SLS-012, an injectable therapy for post-operative pain management. Seelos Therapeutics, Inc. was founded in 2016 and is headquartered in New York, New York."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "78.28M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "2.9M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "4.14%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "3.96%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.15"
+    }
+}

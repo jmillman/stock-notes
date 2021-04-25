@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.3646"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "3.4891"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-62.48%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "14.7000"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.0900"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Hall of Fame Resort & Entertainment Company (HOFV)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "45.46M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 30
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "45.48%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "7.67%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Entertainment"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Hall of Fame Resort & Entertainment Company, a resort and entertainment company, doing business as the Pro Football Hall of Fame. It owns the premier sports, entertainment, and media enterprise surrounding the Pro Football Hall of Fame in Canton, Ohio. The company was founded in 2015 and is headquartered in Canton, Ohio."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Communication Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "83.28M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "4.5M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "7.74%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "5.40%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "1.07"
+    }
+}

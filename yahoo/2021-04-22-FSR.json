@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "16.32"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "18.31"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "48.53%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "31.96"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "8.70"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Fisker Inc. (FSR)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "131.67M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 101
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "3.77%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "39.37%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Auto Manufacturers"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Fisker, Inc. focuses on design, development, manufacture, and sale of electric vehicles. The company was founded in 2016 and is headquartered in Manhattan Beach, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Consumer Cyclical"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "157.71M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "19.78M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "6.82%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "1.15"
+    }
+}

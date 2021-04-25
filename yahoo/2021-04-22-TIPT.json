@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "5.98"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "8.38"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "176.65%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "14.36"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "4.50"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Tiptree Inc. (TIPT)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "19.47M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 1372
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "40.34%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "37.89%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Insurance\u2014Specialty"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Tiptree Inc., through its subsidiaries, underwrites and administers specialty insurance products primarily in the United States. It operates in two segments, Insurance and Mortgage. The company provides niche commercial and personal lines insurance, credit insurance and collateral protection products, and warranty and service contract products and solutions, as well as premium finance services. It also offers mortgage loans for institutional investors; and maritime transportation services, as well as invests in securities and other assets. Tiptree Inc. markets its products through a network of independent insurance agents, consumer finance companies, auto dealers, retailers, brokers, and managing general agencies. The company was formerly known as Tiptree Financial Inc. and changed its name to Tiptree Inc. in December 2016. Tiptree Inc. was incorporated in 2007 and is based in New York, New York."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "32.54M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "396.16k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "1.66%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "1.22%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "2.33"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "5.52"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "6.89"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "275.00%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "8.60"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.88"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Affimed N.V. (AFMD)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "82.4M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 137
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "2.67%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "59.52%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Affimed N.V., a clinical-stage biopharmaceutical company, focuses on discovering and developing cancer immunotherapies in the United States, Europe, and Germany. Its lead product candidate is AFM13, a natural killer cell (NK-cell) TandAb, which has completed Phase 2a clinical study of relapsed CD30-positive lymphoma and Phase 1b clinical study of anti-PD-1 antibody Keytruda (pembrolizumab) in patients with relapsed Hodgkin lymphoma. The company is also developing AFM24, a tetravalent, bispecific epidermal growth factor receptor, and CD16A-binding innate cell engager for the treatment of advanced cancer patients; AFM26, an innate cell-engaging bispecific antibody targeting B cell maturation antigen (BCMA) for the treatment of multiple myeloma; and Trispecific antibodies for the treatment of multiple myeloma. In addition, it is developing AFM11, a T cell engager for the treatment of CD19+ B cell malignancies, including non-Hodgkin Lymphoma and acute lymphocytic leukemia (AML); and AMV564, a CD33/CD3-specific T-cell TandAb that is in Phase 1 clinical study of refractory AML. The company has license agreements with Amphivena Therapeutics, Inc., Deutsches Krebsforschungszentrum, and Xoma Corporation; research funding agreement with The Leukemia & Lymphoma Society; and collaboration with Merck Sharp & Dohme B.V. and Roche. It also has a clinical development and commercialization collaboration with The University of Texas MD Anderson Cancer Center to evaluate AFM13 in combination with MD Anderson's NK-cell product; Genentech; and Roivant Sciences. The company was formerly known as Affimed Therapeutics B.V. and changed its name to Affimed N.V. in October 2014. Affimed N.V. was founded in 2000 and is headquartered in Heidelberg, Germany."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "114.79M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "6.94M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "6.24%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "6.05%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "3.4"
+    }
+}

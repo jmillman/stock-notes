@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "6.86"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "6.04"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "107.84%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "24.90"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "2.23"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Vaxart, Inc. (VXRT)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "117.08M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 28
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.60%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "34.40%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Vaxart, Inc., a clinical-stage biotechnology company, engages in the discovery and development of oral recombinant protein vaccines based on its proprietary oral vaccine platform. The company's product pipeline includes norovirus vaccine, an oral tablet vaccine, which is in a Phase Ib clinical trial with bivalent oral tablet vaccine for the GI.1 and GII.4 norovirus strains; seasonal influenza vaccine, which is in Phase II clinical trial for the treatment of H1 influenza infection; respiratory syncytial virus vaccine; and coronavirus vaccine, which completed Phase I clinical trial for the treatment of SARS-CoV-2 infection. It is also developing therapeutic vaccines for cervical cancer and dysplasia caused by human papillomavirus. Vaxart, Inc. has a research collaboration agreement with Janssen Vaccines & Prevention B.V. (Janssen) to evaluate the company's proprietary oral vaccine platform for the Janssen universal influenza vaccine program. The company is headquartered in South San Francisco, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "117.77M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "23.89M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "26.01%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "20.29%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "4.36"
+    }
+}

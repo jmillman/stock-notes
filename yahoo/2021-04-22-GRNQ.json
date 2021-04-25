@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.0255"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "2.4597"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "473.53%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "4.1500"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.2800"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Greenpro Capital Corp. (GRNQ)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "19.54M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 60
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "68.52%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "1.74%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Consulting Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Greenpro Capital Corp. provides financial consulting and corporate services to small and medium-size businesses primarily in Hong Kong, Malaysia, and China. It operates in two segments, Service Business and Real Estate Business. The company offers business consulting and corporate advisory services, including cross-border listing advisory, tax planning, bookkeeping, advisory and transaction, record management, and accounting outsourcing services; and venture capital related education and support services. It is also involved in the acquisition and rental of real estate properties held for investment and sale; and provision of company formation advisory, company secretarial, and financial services. In addition, the company provides corporate advisory services, such as company review, bank loan advisory, and bank products analysis, as well as loan and credit, and insurance brokerage services; and wealth planning, administration, charity, tax and legal, trusteeship and risk management, investment planning and management, and business support services, as well as asset protection and management, consolidation, and performance monitoring services. The company was formerly known as Greenpro, Inc. and changed its name to Greenpro Capital Corp. in May 2015. Greenpro Capital Corp. was founded in 2013 and is headquartered in Hung Hom, Hong Kong."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Industrials"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "62.11M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "350.72k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "1.50%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "0.56%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.09"
+    }
+}

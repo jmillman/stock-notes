@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "3.02"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "4.25"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "417.39%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "7.84"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.90"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "FreightCar America, Inc. (RAIL)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "12.1M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 669
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "23.37%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "26.74%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Railroads"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "FreightCar America, Inc., through its subsidiaries, designs, manufactures, and sells railcars and railcar components for the transportation of bulk commodities and containerized freight products primarily in North America. It operates through two segments, Manufacturing and Parts. The company offers a range of freight cars, including open top hoppers; covered hopper cars; gondolas; triple hoppers and hybrid aluminum/stainless steel railcars; ore hopper and gondola railcars; ballast hopper cars; aggregate hopper cars; intermodal flats; and non-intermodal flat cars. It also provides railcars, including coal cars, bulk commodity cars, coil steel cars, and boxcars; and woodchip hoppers, aluminum vehicle carriers, intermodal doublestack railcars, and articulated bulk container railcars. In addition, the company sells used railcars; leases, rebuilds, and converts railcars; and sells forged, cast, and fabricated parts for various railcars. It also exports its manufactured railcars to Latin America and the Middle East. The company's customers primarily include financial institutions, railroads, and shippers. FreightCar America, Inc. was founded in 1901 and is headquartered in Chicago, Illinois."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Industrials"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "15.59M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "150.07k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "1.10%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.96%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.67"
+    }
+}

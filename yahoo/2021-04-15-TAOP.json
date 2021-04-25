@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "4.92"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "9.84"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "170.08%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "16.86"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.86"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Taoping Inc. (TAOP)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "5.17M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 78
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "29.48%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "2.34%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Software\u2014Infrastructure"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Taoping Inc. provides cloud-based platform, resource sharing, and big data solutions to the Chinese new media, education residential community management, and elevator Internet of Things (IoT) industries in the People's Republic of China. The company operates in two segments, Cloud-based Technology and Traditional Information Technology. It offers cloud-based software as a service to automate the interactive workflow between advertising agencies and their customers, including establishing new projects, submitting advertisement proposals, revising and approving advertising proposals, processing payment online, remotely uploading advertisement content, and tracking and analyzing performance data. The company also provides project-based technology products and services for the public sector; and software and hardware with fully integrated solutions, including information technology infrastructure, Internet-enabled display technologies, and IoT platforms to customers in government, education, residential community management, media, transportation, healthcare, and other private sectors, as well as related maintenance and support services. In addition, it offers cloud-app-terminal and IoT technology based digital advertising distribution network and media resource sharing platform in the out-of-home advertising markets. Further, the company operates Taoping Net, an advertising-resources trading service platform, which connect screen owners, advertisers, and consumers; Taoping App, which enable customers to distribute and manage ads from mobile terminals; and blockchain business. The company was formerly known as China Information Technology, Inc. and changed its name to Taoping Inc. in June 2018. Taoping Inc. was founded in 1993 and is headquartered in Shenzhen, the People's Republic of China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Technology"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "9.53M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "119.46k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "1.82%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "1.25%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.08"
+    }
+}

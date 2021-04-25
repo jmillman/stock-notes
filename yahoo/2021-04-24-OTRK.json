@@ -1,0 +1,78 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "56.39"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "32.08"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "10.70%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "99.89"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "17.55"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Ontrak, Inc. (OTRK)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "7.46M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 723
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "56.54%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "35.35%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Medical Care Facilities"
+    },
+    "market_cap": {
+        "title": "Market Cap",
+        "value": "538.891M"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Ontrak, Inc. operates as an artificial intelligence powered, virtualized outpatient healthcare treatment company that provides in-person or telehealth intervention services to health plans and other third-party payors. Its Ontrak PRE (Predict-Recommend-Engage) platform predicts people whose chronic disease will improve with behavior change, recommends care pathways that people are willing to follow, and engages people who aren't getting the care they need. The company's technology-enabled, OnTrak, program is designed to treat health plan members with unaddressed behavioral health conditions that cause or exacerbate chronic medical diseases, such as diabetes, hypertension, coronary artery disease, COPD, and congestive heart failure. The OnTrak integrates evidence-based psychosocial and medical interventions delivered in-person or via telehealth along with care coaching and in-market community care coordinators who address the social and environmental determinants of health. The company was formerly known as Catasys, Inc. and changed its name to Ontrak, Inc. in July 2020. The company was founded in 2003 and is headquartered in Santa Monica, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "17.69M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "3.18M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "37.52%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "17.99%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "1.74"
+    }
+}

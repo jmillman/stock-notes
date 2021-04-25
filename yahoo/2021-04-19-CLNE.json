@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "8.60"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "13.26"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "529.38%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "19.79"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.69"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Clean Energy Fuels Corp. (CLNE)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "131.33M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 465
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "34.28%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "33.24%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Oil & Gas Refining & Marketing"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Clean Energy Fuels Corp. provides natural gas as an alternative fuel for vehicle fleets and related fueling solutions, primarily in the United States and Canada. It supplies renewable natural gas (RNG), compressed natural gas (CNG), and liquefied natural gas (LNG) for light, medium, and heavy-duty vehicles; and offers operation and maintenance services for public and private vehicle fleet customer stations. The company also designs, builds, operates, and maintains fueling stations; sells and services compressors and other equipment that are used in fueling stations; and provides assessment, design, and modification solutions to offer operators with code-compliant service and maintenance facilities for natural gas vehicle fleets. In addition, it transports and sells CNG and LNG through virtual natural gas pipelines and interconnects; procures and sells RNG; sells tradable credits, such as RNG and conventional natural gas as a vehicle fuel comprising Renewable Identification Numbers and Low Carbon Fuel Standards credits; enables its customers to acquire and finance natural gas vehicles; and obtains federal, state and local credits, grants, and incentives. The company serves heavy-duty trucking, airports, refuse, public transit, industrial, and institutional energy users, as well as government fleets. As of December 31, 2020, it served approximately 1,000 fleet customers operating approximately 48,000 vehicles; and owned, operated, or supplied approximately 565 fueling stations in 39 states in the United States and 5 provinces in Canada. The company was incorporated in 2001 and is headquartered in Newport Beach, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Energy"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "199.22M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "10.47M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "8.21%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "5.25%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "1.58"
+    }
+}

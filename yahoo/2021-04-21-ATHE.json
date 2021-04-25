@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "1.6119"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "1.4729"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "70.67%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "5.1500"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.5500"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Alterity Therapeutics Limited (ATHE)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "25.64M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 12
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.00%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "3.70%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Alterity Therapeutics Limited researches and develops therapeutic drugs for the treatment of Parkinsonian's disease and other neurodegenerative diseases in Australia. The company's lead drug candidates is ATH434 that has completed Phase I clinical trial for the treatment of Parkinson's disease. It is also developing PBT2 for used as an antimicrobial agent. The company was formerly known as Prana Biotechnology Limited and changed its name to Alterity Therapeutics Limited in April 2019. The company was founded in 1997 and is based in Melbourne, Australia."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "34.73M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "169.23k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "0.49%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.54"
+    }
+}

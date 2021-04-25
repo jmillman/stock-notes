@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "4.7500"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "4.0614"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-52.12%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "9.3000"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "3.1600"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Moleculin Biotech, Inc. (MBRX)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "27.87M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 10
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "4.09%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "7.72%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Moleculin Biotech, Inc., a clinical-stage pharmaceutical company, focuses on the development of oncology drug candidates for the treatment of highly resistant tumors and viruses in the United States. Its lead drug candidate is Annamycin that is in Phase 1/2 studies for the treatment of relapsed or refractory acute myeloid leukemia (AML) and cancers metastasized to the lungs. The company's flagship immune/transcription modulator is WP1066, which is in Phase I clinical trial for the treatment of brain tumors and pediatric brain tumors, as well as pancreatic cancer and hematologic malignancies. It also develops WP1220, an analog of WP1066, which has completed Phase 1 clinical trial for the topical treatment of cutaneous T-cell lymphoma in Poland; WP1234 for the treatment of pancreatic cancer; and WP1732, an analog of WP1066 for the treatment of topical treatment of cutaneous T-cell lymphoma. The company's lead metabolism/glycosylation inhibitor compound is WP1122 to treat cancers and viruses. In addition, it engages in the preclinical development of other drug candidates, including other immune/transcription modulators and antimetabolites, targeting glycolysis and glycosylation. The company has partnerships and collaboration agreement with MD Anderson, DERMIN Sp. z o. o., Animal Life Sciences, LLC, and WPD Pharmaceuticals Sp z.o.o for the development of various drug candidates. Moleculin Biotech, Inc. was incorporated in 2015 and is headquartered in Houston, Texas."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "28.44M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "514.19k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "1.84%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "1.81%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.24"
+    }
+}

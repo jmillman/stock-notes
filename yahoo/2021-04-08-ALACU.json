@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "13.76"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "16.50"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "64.84%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "17.52"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "10.01"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Alberton Acquisition Corporation (ALACU)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "1.34M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.00%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "1.19%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Shell Companies"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Alberton Acquisition Corporation does not have significant operations. It intends to engage in a merger, share exchange, asset acquisition, stock purchase, recapitalization, reorganization or other similar business combination with one or more target businesses. The company was formerly known as Wisdom Resources Group Limited and changed its name to Alberton Acquisition Corporation in July 2018. Alberton Acquisition Corporation was founded in 2005 and is based in Wan Chai, Hong Kong."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "2.5M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "N/A"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0"
+    }
+}

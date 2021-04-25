@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "12.65"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "20.46"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "664.75%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "38.50"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "2.52"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "UP Fintech Holding Limited (TIGR)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "65.28M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "8.81%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "5.78%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Capital Markets"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "UP Fintech Holding Limited provides online brokerage services focusing on Chinese investors. The company has developed a brokerage platform, which allows investor to trade stocks, options, warrants, and other financial instruments that can be accessed through its APP and website. It offers brokerage and value-added services, including trade order placement and execution, margin financing, account management, investor education, community discussion, and customer support. The company also provides asset management and wealth management; ESOP management; fund license application, product design, asset custody, transaction execution, and funding allocation; fund structuring and management; and IPO underwriting services. In addition, it offers market information, community engagement, investor education, and simulated trading services. UP Fintech Holding Limited was founded in 2014 and is based in Beijing, China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "141.44M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "4.03M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "2.85%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.39"
+    }
+}

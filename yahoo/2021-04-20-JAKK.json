@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "6.25"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "7.68"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "13.68%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "14.40"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "3.50"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "JAKKS Pacific, Inc. (JAKK)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "3.47M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 626
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "33.74%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "14.27%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Leisure"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "JAKKS Pacific, Inc. develops, produces, and markets toys, consumables, and electronics and related products worldwide. The company operates through two segments, Toys/Consumer Products and Halloween. It offers action figures and accessories, such as licensed characters; toy vehicles and accessories; dolls and accessories, including small, large, fashion, and baby dolls based on licenses, as well as infant and pre-school products; private label products; and foot-to-floor ride-on products, inflatable environments, tents, and wagons. The company also provides role play, dress-up, pretend play, and novelty products for boys and girls based on brands and entertainment properties, as well as on its own proprietary brands; and indoor and outdoor kids' furniture, activity trays and tables, room d\u00c3\u00a9cor, kiddie pools, and seasonal and outdoor products. In addition, it offers Halloween and everyday costumes for various ages based on licensed and proprietary non-licensed brands, and related Halloween accessories; outdoor activity toys; and junior sports toys, including hyper-charged balls, sport sets, and toy hoops. The company sells its products through in-house sales staff and independent sales representatives to toy and mass-market retail chain stores, department stores, office supply stores, drug and grocery store chains, club stores, toy specialty stores, and wholesalers. JAKKS Pacific, Inc. was founded in 1995 and is headquartered in Santa Monica, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Consumer Cyclical"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "6.08M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "43.91k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "1.00%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "0.72%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.21"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "9.70"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "21.19"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "210.84%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "39.10"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.76"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Canaan Inc. (CAN)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "79.47M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.00%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "13.10%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Computer Hardware"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Canaan Inc. engages in the research, design, and sale of integrated circuit (IC) final system products by integrating IC products for bitcoin mining and related components primarily in the People's Republic of China. It is also involved in the assembly of system products; and supply chain and distribution of system products. The company has a strategic cooperation with Northern Data AG in the areas of artificial intelligence development, blockchain technology, and datacenter operations. The company was founded in 2013 and is based in Hangzhou, the People's Republic of China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Technology"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "155.22M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 30, 2021)",
+        "value": "8.37M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 30, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 30, 2021)",
+        "value": "5.34%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 30, 2021)",
+        "value": "0.37"
+    }
+}

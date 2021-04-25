@@ -6,7 +6,7 @@ import StockDetails from './StockDetails';
 import NotesList from './NotesList';
 import FavoritesIcon from './FavoritesIcon';
 
-import { Divider, Header, Icon, Radio, Table } from 'semantic-ui-react';
+import { Divider, Header, Icon, Radio, Table, Label } from 'semantic-ui-react';
 
 function StockNotesList(props) {
   const [state, , api] = useContext(GlobalContext);
@@ -25,7 +25,7 @@ function StockNotesList(props) {
 
   useEffect(() => {
     setFormStatus({ status: 'success', message: 'Fetching notes.....' });
-    const date_parameter = showAllDates === 'true' ? 'ALL' : date;
+    const date_parameter = showAllDates ? 'ALL' : date;
     api.fetchStockNotesFromApp(date_parameter, getNotesListCallback);
   }, [state.symbolAddedTimeStamp, showAllDates]);
 
@@ -41,10 +41,56 @@ function StockNotesList(props) {
     }
   }
 
+  function getShortFloatLabel(value) {
+    const num = Number(_.get(value, 'Short Float', '').replace('%', ''));
+    let color = 'red';
+    if (num >= 15) color = '';
+    if (num >= 20) color = 'green';
+    return (
+      <Label color={color} horizontal>
+        {_.get(value, 'Short Float', '')}
+      </Label>
+    );
+  }
+
+
+  function getFloatLabel(value) {
+    const cap = _.get(value, 'Shs Float', '');
+    let color = 'red';
+    if (!cap.includes('B')) {
+      const num = Number(_.get(value, 'Shs Float', '').replace('M', ''));
+      if (num <= 20) color = '';
+      if (num <= 10) color = 'green';
+    }
+
+    return (
+      <Label color={color} horizontal>
+        {_.get(value, 'Shs Float', '')}
+      </Label>
+    );
+  }
+
+  function getMarketCapLabel(value) {
+    const cap = _.get(value, 'Market Cap', '');
+    let color = 'red';
+    if (!cap.includes('B')) {
+      const num = Number(_.get(value, 'Market Cap', '').replace('M', ''));
+      if (num <= 20) color = 'blue';
+      if (num <= 3) color = 'green';
+    }
+
+    return (
+      <Label color={color} horizontal>
+        {_.get(value, 'Market Cap', '')}
+      </Label>
+    );
+  }
+
   function getCondensedView() {
     let notes = [];
 
     if (Object.keys(data).length) {
+      console.log(data);
       _.forEach(data, (value, symbol) => {
         (!showOnlyFavorites || favoriteStocks.includes(symbol)) &&
           notes.push(
@@ -54,9 +100,8 @@ function StockNotesList(props) {
                   <Table.Row>
                     <Table.HeaderCell>Symbol</Table.HeaderCell>
                     <Table.HeaderCell>Float</Table.HeaderCell>
-                    <Table.HeaderCell>Shares</Table.HeaderCell>
-                    <Table.HeaderCell>Short %Outstanding</Table.HeaderCell>
-                    <Table.HeaderCell>Short %Float</Table.HeaderCell>
+                    <Table.HeaderCell>Cap</Table.HeaderCell>
+                    <Table.HeaderCell>Short Float</Table.HeaderCell>
                   </Table.Row>
                 </Table.Header>
                 <Table.Body key={symbol}>
@@ -64,20 +109,9 @@ function StockNotesList(props) {
                     <Table.Cell>
                       {symbol} <FavoritesIcon symbol={symbol} />
                     </Table.Cell>
-                    <Table.Cell>{_.get(value, 'float.value', '')}</Table.Cell>
-                    <Table.Cell>
-                      {_.get(value, 'shares_outstanding.value', '')}
-                    </Table.Cell>
-                    <Table.Cell>
-                      {_.get(value, 'short_percent_of_float.value', '')}
-                    </Table.Cell>
-                    <Table.Cell>
-                      {_.get(
-                        value,
-                        'short_percent_of_shares_outstanding.value',
-                        ''
-                      )}
-                    </Table.Cell>
+                    <Table.Cell>{getFloatLabel(value)}</Table.Cell>
+                    <Table.Cell>{getMarketCapLabel(value)}</Table.Cell>
+                    <Table.Cell>{getShortFloatLabel(value)}</Table.Cell>
                   </Table.Row>
                   <Table.Row>
                     <Table.Cell colSpan={4}>

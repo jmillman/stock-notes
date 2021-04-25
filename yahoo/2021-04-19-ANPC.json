@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "5.2734"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "6.2347"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-39.90%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "12.0900"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "3.1500"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "AnPac Bio-Medical Science Co., Ltd. (ANPC)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "1.69M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 111
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "37.84%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "1.81%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Anpac Bio-Medical Science Co., Ltd., a development-stage biotechnology company, researches, develops, markets, and sells multi-cancer screening and detection tests to corporations and life insurance companies in the People's Republic of China and the United States. It also manufactures cancer differentiation analysis devices; and offers physical checkup package services. The company was founded in 2010 and is headquartered in Lishui, the People's Republic of China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "11.2M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "16.33k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "0.15%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.01"
+    }
+}

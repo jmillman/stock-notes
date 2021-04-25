@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "9.78"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "10.37"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "38.22%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "12.32"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "7.18"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Zynga Inc. (ZNGA)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "1.01B"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 2245
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "6.59%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "79.27%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Electronic Gaming & Multimedia"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Zynga Inc. provides social game services in the United States and internationally. The company develops, markets, and operates social games as live services played on mobile platforms, such as Apple iOS and Google's Android operating systems; social networking platforms, such as Facebook and Snapchat; and personal computers consoles, such as Nintendo's Switch game console, and other platforms and consoles. It also provides advertising services comprising mobile advertisements, engagement advertisements and offers, and branded virtual items and sponsorships for marketers and advertisers; and licenses its own brands. The company was formerly known as Zynga Game Network Inc. and changed its name to Zynga Inc. in November 2010. Zynga Inc. was founded in 2007 and is headquartered in San Francisco, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Communication Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "1.09B"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "74.02M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "7.29%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "6.82%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "4.36"
+    }
+}

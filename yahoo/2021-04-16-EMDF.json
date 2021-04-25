@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "0.0512"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "0.1117"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "5,738.71%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "0.1850"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.0013"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "XL Rent, Inc. (EMDF)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "N/A"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 2
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.00%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.05%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Medical Instruments & Supplies"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "XL Rent, Inc. manufactures and markets products designed to reduce accidental hypodermic needlestick injuries. Its products include NeedleZap, a safety device intended to help reduce accidental needlestick injuries by disintegrating the sharp portion of a hypodermic needle. The company also develops a dental parking station, which is intended to provide temporary resting place for a hypodermic syringe; and butterfly needle burner that is intended to accommodate needles not secured to a hypodermic syringe for IV's and kidney dialysis. It offers its products to healthcare professionals, law enforcement and correctional personnel, veterinarians, military, clinical researchers, hospitality, and sanitation workers. XL Rent, Inc. was formerly known as Acem Holdings, Inc. and changed its name to XL Rent, Inc. in October 2012. The company was incorporated in 1990 and is headquartered in New Haven, Connecticut."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "6.25M"
+    },
+    "shares_short": {
+        "title": "Shares Short",
+        "value": "N/A"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding",
+        "value": "N/A"
+    },
+    "short_ratio": {
+        "title": "Short Ratio",
+        "value": "N/A"
+    }
+}

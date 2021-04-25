@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.4424"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "2.3477"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "84.04%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "3.9800"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.7600"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Galectin Therapeutics Inc. (GALT)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "41.31M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 6
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "29.14%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "17.81%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Galectin Therapeutics Inc., a clinical stage biopharmaceutical company, engages in the research and development of therapies for fibrotic, cancer, and other diseases. The company's lead product candidate is (GR-MD-02) belapectin galectin-3 inhibitor, a galactoarabino-rhamnogalacturonan polysaccharide polymer that is in Phase III clinical trial for the treatment of liver fibrosis associated with fatty liver disease and non-alcoholic steatohepatitis cirrhosis, as well as for the treatment of cancer. It also engages in developing GM-CT-01, which is in pre-clinical development stage for the treatment of cardiac and vascular fibrosis, as well as focuses on developing belapectin for the treatment of psoriasis, and lung and kidney fibrosis. The company, through its Galectin Sciences, LLC, which is a collaborative joint venture co-owned by SBH Sciences, Inc., to research and development of small organic molecule inhibitors of galectin-3 for oral administration. The company was formerly known as Pro-Pharmaceuticals, Inc. and changed its name to Galectin Therapeutics, Inc. in May 2011. Galectin Therapeutics Inc. was founded in 2000 and is based in Norcross, Georgia."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "57.08M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "4.77M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "21.16%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "8.35%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "22.34"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "12.37"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "16.03"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "291.50%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "17.25"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "3.90"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Welbilt, Inc. (WBT)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "141M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 4400
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.50%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "92.55%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Specialty Industrial Machinery"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Welbilt, Inc., designs, manufactures, and supplies foodservice equipment for commercial foodservice market worldwide. The company offers commercial upright and undercounter refrigerators and freezers, blast freezers and chillers, and cook-chill systems under the Delfield brand; and walk-in refrigerators, coolers and freezers, and prefabricated cooler and freezer panels under the Kolpak brand. It also provides traditional, combination, convection, conveyor, and rapid-cooking ovens, and range and grill products under the Convotherm, Garland, Lincoln, and Merrychef brands; fryers and frying systems under the Frymaster brand; and steam equipment under the Cleveland brand. In addition, the company offers cafeteria and buffet equipment stations, bins, boxes, warming cabinets, warmers, display and deli cases, and insulated and refrigerated salad and food bars under the Delfield, Merco, and other brand names; beverage dispensers, blended ice machines, ice/beverage dispensers, beer coolers, post-mix dispensing valves, backroom equipment, and support system components and related equipment; ice machines under the Manitowoc and other brand names; coffee equipment under the Crem brand name; and other beverage-related products under the Multiplex and Manitowoc brand names. Further, it provides after-market parts, and installation and start-up, and preventative maintenance services; spare parts supply for Welbilt products under the KitchenCare brand; designed kitchens under FitKitchen brand; and KitchenConnect, a cloud based-application. It supplies its products to full-service restaurants, quick-service restaurant chains, hotels, resorts, cruise ships, caterers, supermarkets, convenience stores, hospitals, schools, and other institutions through dealers and distributors. The company was formerly known as Manitowoc Foodservice, Inc. and changed its name to Welbilt, Inc. in February 2017. Welbilt, Inc. was founded in 1864 and is headquartered in New Port Richey, Florida."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Industrials"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "141.63M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "6.19M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "4.38%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "4.37%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "5.23"
+    }
+}

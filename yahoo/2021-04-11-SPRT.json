@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.39"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "3.33"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "323.53%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "9.45"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.15"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Support.com, Inc. (SPRT)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "3.39M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 780
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "50.48%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "63.19%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Software\u2014Application"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Support.com, Inc. provides customer and technical support solutions through home-based employees primarily in the United States. The company offers outsourced customer support and cloud-based technology platforms to clients in verticals, such as media and communication, healthcare, retail, and technology with omnichannel programs that include voice, chat, and self-service; technical support programs to enterprise clients; and subscription-based tech support service direct-to-consumers and small businesses that helps users solve a range of technology problems with computers, smartphones, and other connected devices, including device setup, troubleshooting, connectivity or interoperability problems, and malware and virus removal, as well as wireless network set-up, and automation system onboarding and support services. It also provides SUPERAntiSpyware software, a malware protection and removal software product; Guided Paths, which contains step-by-step self-support guides, with decision points to help customers resolve problems; and service delivery management tools for technology support services, includes Support.com cloud-based software capabilities and other contact center applications, such as customer relationship management, ticketing, ordering, methods of payment, and telephony, which are integrated into applications for its contact center specialists. The company provides its services through partners, as well as its website at www.support.com. Support.com, Inc. was incorporated in 1997 and is headquartered in Wilmington, Delaware."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Technology"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "23.59M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "2.13k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "0.01%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.01%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.02"
+    }
+}

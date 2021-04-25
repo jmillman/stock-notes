@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "30.02"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "40.77"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "76.77%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "59.58"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "17.99"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Teradata Corporation (TDC)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "107.7M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 7543
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "1.42%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "106.31%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Information Technology Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Teradata Corporation, together with its subsidiaries, operates as a hybrid cloud analytics software provider. Its solutions and services comprise software, hardware, and related business consulting and support services to deliver analytics in company's analytical ecosystem. The company offers Teradata Vantage, a data warehouse and analytics platform. Its business consulting services include consulting services for organizations to establish an analytic vision, identify and operationalize analytical opportunities, enable an analytical ecosystem architecture, and ensure their analytical infrastructure delivers value, as well as support and maintenance services. The company serves various industries comprising financial services, government, healthcare, manufacturing, retail, telecommunications, and travel/transportation. It operates in the Americas; Europe, the Middle East and Africa; and the Asia Pacific and Japan. The company primarily sells and markets its solutions and services through a direct sales force. Teradata Corporation was incorporated in 1979 and is headquartered in San Diego, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Technology"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "109.52M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "8.32M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "11.95%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "7.60%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "6.19"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.8415"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "3.4112"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "4.17%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "9.6500"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.7500"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Powerbridge Technologies Co., Ltd. (PBTS)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "7.9M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 287
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "13.96%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.16%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Software\u2014Application"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Powerbridge Technologies Co., Ltd. provides software application and technology solutions and services primarily in China. The company offers Powerbridge System Solutions, which include Trade Enterprise and Trade Compliance, as well as Import & Export Loan and Insurance Processing for customers to streamline their trade operations, trade logistics, and regulatory compliance. It also provides Powerbridge Software-as-a-Service solutions, which include Logistics Service Cloud and Trade Zone Operations Cloud, as well as Inward Processed Manufacturing Cloud, Cross-Border eCommerce Cloud, and Import & Export Loan and Insurance Processing Service Cloud; and Powerbridge Blockchain-as-a-Service that comprise Compliance Blockchain Services and Supply Chain Blockchain Services. The company serves international trade businesses and manufacturers, government agencies and authorities, and logistics service and other providers. It sells its solutions and services through its direct sales organization, indirect channel partners, and strategic government partners. Powerbridge Technologies Co., Ltd. was founded in 1997 and is headquartered in Zhuhai, China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Technology"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "45.78M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "41.94k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "0.11%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.09%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.05"
+    }
+}

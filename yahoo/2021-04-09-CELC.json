@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "10.83"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "14.54"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "165.68%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "18.00"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "4.03"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Celcuity Inc. (CELC)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "6.75M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 30
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "42.81%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "15.79%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Diagnostics & Research"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Celcuity Inc., a clinical stage biotechnology company, discovers cancer sub-types and therapeutic options for cancer patients in the United States. The company's CELsignia diagnostic platform uses a patient's living tumor cells to identify the specific abnormal cellular process driving a patient's cancer and the targeted therapy that treats it. The company is also developing CELsignia MP test, a qualitative laboratory developed test that measures HER2, c-Met, and PI3K signaling activity in breast and ovarian tumor cells. Celcuity Inc. was founded in 2011 and is headquartered in Minneapolis, Minnesota."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "12.29M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "10.01k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "0.13%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.08%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.22"
+    }
+}

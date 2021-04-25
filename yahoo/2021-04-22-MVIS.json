@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "8.28"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "14.29"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "4,900.00%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "24.18"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.23"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "MicroVision, Inc. (MVIS)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "155.71M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 52
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "1.07%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "14.77%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Scientific & Technical Instruments"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "MicroVision, Inc. develops lidar sensors used in automotive safety and autonomous driving applications. Its laser beam scanning technology is based on micro-electrical mechanical systems, laser diodes, opto-mechanics, electronics, algorithms and software. The company also develops micro-display concepts and designs for head-mounted augmented reality (AR) headsets, as well as 1440i MEMS module that can support AR headsets; Interactive Display modules used in smart speakers and other devices; and Consumer Lidar used in smart home systems. In addition, it provides PicoP, a scanning technology that creates full color, high-contrast, and uniform image over the entire field-of-view from a small and thin module. The company sells its products primarily to original equipment manufacturers and original design manufacturers. MicroVision, Inc. was incorporated in 1993 and is headquartered in Redmond, Washington."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Technology"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "157.95M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "28.32M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "18.05%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "17.93%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "2.26"
+    }
+}

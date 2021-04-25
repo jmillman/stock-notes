@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "1.1619"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "1.3521"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-2.40%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "2.9900"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.7500"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Pintec Technology Holdings Limited (PT)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "27.48M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 256
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "8.04%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.44%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Credit Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Pintec Technology Holdings Limited, through with its subsidiaries, operates an online technology platform that enables financial services in the People's Republic of China. The company connects business partners and financial partners on its platform and enables them to provide financial services to end users. Its technology platform include assistance for borrowers to obtain loans from third party investors and various financial partners; a lending solution for borrowers to originate loans; a lending solution for borrowers who want to finance online purchases; and a wealth management and insurance product distribution solution for asset management and insurance companies to facilitate the sales of products. The company has a strategic business cooperation with Fullerton Credit; and cooperation with Aspire Holdings Ltd. to develop advanced fintech solutions. The company was founded in 2012 and is headquartered in Beijing, the People's Republic of China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "39.69M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "45.88k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "N/A"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.04"
+    }
+}

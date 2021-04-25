@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "12.54"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "13.96"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "41.24%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "15.58"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "8.08"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Mackinac Financial Corporation (MFNC)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "8.83M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 315
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "6.39%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "61.26%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Banks\u2014Regional"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Mackinac Financial Corporation operates as the bank holding company for mBank that provides commercial and retail banking products and services in the United States. It offers interest bearing and non-interest bearing accounts, such as commercial and retail checking accounts, negotiable order of withdrawal accounts, money market accounts, individual retirement accounts, regular interest-bearing statement savings accounts, certificates of deposit, time deposits, and interest bearing transaction accounts. The company provides loan products, including commercial loans to entities within real estate \u00c2\u0097 operators of nonresidential buildings industry; consumer loan products comprising installment, mortgages, home equity loans, and residential mortgage loans; and commercial and governmental lease financing, as well as offers safe deposit facilities. It has 28 branch locations, including 10 in the Upper Peninsula, 10 in the Lower Peninsula, 1 in Southeast Michigan, Michigan, and 7 in Wisconsin. The company was formerly known as North Country Financial Corporation and changed its name to Mackinac Financial Corporation in December 2004. Mackinac Financial Corporation was incorporated in 1974 and is headquartered in Manistique, Michigan."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "10.55M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "130.42k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "1.47%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "1.24%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "6.8"
+    }
+}

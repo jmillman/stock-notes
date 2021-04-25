@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "53.13"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "53.13"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "25.77%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "107.33"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "11.40"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "United Time Technology Co., Ltd. (UTME)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "N/A"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 307
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "54.64%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.00%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Consumer Electronics"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "United Time Technology Co., Ltd., through its subsidiaries, designs, manufactures, and sells mobile phones, accessories, and related consumer electronics. The company also provides electronics manufacturing services, including original equipment manufacturer and original design manufacturer services. It sells its products under the UTime and Do brand names in South America, South Asia, Southeast Asia, and Africa. United Time Technology Co., Ltd. was founded in 2008 and is headquartered in Shenzhen, China. United Time Technology Co., Ltd. operates as a subsidiary of Nollec Wireless Company, Ltd."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Technology"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "8.27M"
+    },
+    "shares_short": {
+        "title": "Shares Short",
+        "value": "N/A"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding",
+        "value": "N/A"
+    },
+    "short_ratio": {
+        "title": "Short Ratio",
+        "value": "N/A"
+    }
+}

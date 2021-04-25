@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "0.2291"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "0.2518"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "90.19%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "1.1200"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.0633"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Bam Bam Resources Corp. (NPEZF)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "62.92M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "18.46%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.00%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Copper"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Bam Bam Resources Corp. engages in the acquisition and exploration of mineral property assets. The company primarily explores for gold, silver, and copper deposits. Its flagship property is the Majuba Hill project situated in Nevada, the United States. The company was formerly known as KOPR Point Ventures Inc. and changed its name to Bam Bam Resources Corp. in December 2019. Bam Bam Resources Corp. was incorporated in 2017 and is headquartered in North Vancouver, Canada."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Basic Materials"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "77.96M"
+    },
+    "shares_short": {
+        "title": "Shares Short",
+        "value": "N/A"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding",
+        "value": "N/A"
+    },
+    "short_ratio": {
+        "title": "Short Ratio",
+        "value": "N/A"
+    }
+}

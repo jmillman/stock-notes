@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.4434"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "1.8171"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "53.54%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "4.9400"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.8530"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Dragon Victory International Limited (LYL)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "6.5M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "49.10%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "1.08%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Credit Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Dragon Victory International Limited operates a reward-based crowdfunding platform in the People's Republic of China. The company operates through four segments: Crowdfunding Platform Service, Incubation Services, Finder's Fees Services, and Auto-Parts Procurement Services. It operates 5etou, an online crowdfunding platform at 5etou.cn that enables project searching for funding to connect with funding sources. The company also provides business incubation services related to marketing, sales and strategic planning, and guidance and general resources in ancillary services, such as human resources, legal, accounting, operations, assisting with feasibility studies, and other types of services. In addition, it offers finder's service to assist companies to obtain loans or additional equity financing, introduce them to potential business partners, find merger candidates or other strategic relationships, or assist with feasibility studies. Further, the company offers procurement services to auto-repair shops that have demands for auto-parts from auto-parts suppliers, and transacting with auto-parts shops. Dragon Victory International Limited was founded in 2015 and is headquartered in Hangzhou, the People's Republic of China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "11.64M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 14, 2021)",
+        "value": "484.37k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 14, 2021)",
+        "value": "6.85%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 14, 2021)",
+        "value": "4.16%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 14, 2021)",
+        "value": "0.2"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "3.62"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "4.44"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "98.15%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "7.65"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "2.10"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Shineco, Inc. (TYHT)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "3.14M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 318
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "15.51%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "4.07%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Drug Manufacturers\u2014Specialty & Generic"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Shineco, Inc., through its subsidiaries, produces, distributes, and sells health and well-being focused plant-based products in China. It processes and distributes traditional Chinese herbal medicine products, as well as other pharmaceutical products directly to individual customers. The company also plants, processes, and distributes green and organic vegetables and fruits; and grows, cultivates, and sells yew trees that are used for the production of anti-cancer medication, as well as ornamental bonsai trees for purifying indoor air quality. In addition, it offers logistics services for agricultural products. Further, the company develops, manufactures, and distributes specialized fabrics, textiles, health supplements, and other byproducts derived from an indigenous Chinese plant Apocynum Venetum. The company sells its Chinese medicinal products and western medicines through wholesale customers; and its 13 Ankang retail pharmacies operating under the Sunsimiao Pharmacies name, as well as 66 pharmacies operated by third parties. Shineco, Inc. sells its decoction pieces on the Anhui Bozhou Chinese medicine transaction market to medical materials companies and Chinese patent medicine factories. The company sells its Luobuma textile products online through third party e-commerce websites, as well as through distributors under the Tenethealth brand; and yew trees and agricultural products primarily through its sales personnel, and group and institutional sales. The company was formerly known as Beijing Tenet Jove Technological Development Co., Ltd. and changed its name to Shineco, Inc. in June 2005. Shineco, Inc. was founded in 1997 and is based in Beijing, China."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "3.64M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "51.19k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "1.54%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "1.40%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.49"
+    }
+}

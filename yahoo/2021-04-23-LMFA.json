@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "1.1334"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "1.3121"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "64.18%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "4.8900"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.4830"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "LM Funding America, Inc. (LMFA)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "25.93M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 8
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "7.97%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "10.82%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Credit Services"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "LM Funding America, Inc., through its subsidiary, LM Funding, LLC, operates as a specialty finance company. It provides funding to nonprofit community associations (Associations) primarily located in the state of Florida, as well as in the states of Washington, Colorado, and Illinois. The company offers funding to Associations by purchasing their rights under delinquent accounts that are selected by the Associations arising from unpaid Association assessments. It is also involved in the business of purchasing delinquent accounts on various terms tailored to suit each Association's financial needs, including under its New Neighbor Guaranty program. In addition, the company provides medical insurance products for international travelers. LM Funding America, Inc. was founded in 2008 and is based in Tampa, Florida."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Financial Services"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "26.98M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "812.44k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "3.21%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "3.01%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.4"
+    }
+}

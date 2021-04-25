@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "2.1953"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "2.6441"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "26.73%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "4.7500"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "1.4400"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "vTv Therapeutics Inc. (VTVT)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "20.73M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 25
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "103.86%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "4.36%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "vTv Therapeutics Inc., a clinical-stage biopharmaceutical company, discovers, develops, and sells orally administered small molecule drug candidates to fill unmet medical needs. The company is developing TTP399, an orally administered, small molecule, liver-selective glucokinase activator for the treatment of type 1 diabetes; and HPP737, an orally administered non-CNS penetrant PDE4 inhibitor that addresses inflammatory diseases. It is also involved in the clinical development of other programs, including a small molecule GLP-1r agonist; the PDE4 inhibitor; HPP737, a PPAR-delta agonist; and an Nrf2 activator through partnerships with pharmaceutical partners. The company has a license agreement with Reneo Pharmaceuticals, Inc. to develop and commercialize peroxisome proliferation activated receptor delta agonist program, including the compound HPP593. vTv Therapeutics Inc. also has license and research agreements with Hangzhou Zhongmei Huadong Pharmaceutical Co., Ltd.; Newsoara Biopharma Co., Ltd.; JDRF International; Novo Nordisk A/S; and Columbia University. The company was founded in 2015 and is headquartered in High Point, North Carolina. vTv Therapeutics Inc. is a subsidiary of MacAndrews & Forbes Incorporated."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "57.57M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "2.27M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "10.85%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "2.81%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "1.04"
+    }
+}

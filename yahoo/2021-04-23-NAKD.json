@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "0.5242"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "0.7534"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "12.12%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "3.4000"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.0661"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Naked Brand Group Limited (NAKD)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "38.03M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 173
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "21.20%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.27%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Apparel Manufacturing"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Naked Brand Group Limited designs, distributes, wholesales, and retails women's and men's intimate apparel, and women's swimwear. The company offers its products under the Pleasure State, Davenport, Lovable, Bendon, Fayreform, Naked, VaVoom, Evollove, and Hickory brands, as well as through licenced brands, including Heidi Klum and Fredericks of Hollywood. It sells its products through company-owned retail stores in Australia and New Zealand; online channels; and wholesale partners in Australia, New Zealand, the United States, and Europe. The company was founded in 1947 and is headquartered in Auckland, New Zealand."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Consumer Cyclical"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "641.48M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "39.66M"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "6.18%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "6.18%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.52"
+    }
+}

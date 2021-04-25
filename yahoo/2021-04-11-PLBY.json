@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "12.40"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "17.02"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "161.54%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "33.49"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "9.85"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "PLBY Group, Inc. (PLBY)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "11.23M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 216
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "8.22%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "73.61%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Leisure"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "PLBY Group, Inc. operates as a pleasure and leisure lifestyle company. The company operates a platform that connects consumers with products, services, and experiences to help them look good, feel good, and have fun. It serves consumers in various categories, including sexual wellness, style and apparel, gaming and lifestyle, and beauty and grooming. The company's flagship brand is Playboy. PLBY Group, Inc. was founded in 1953 and is headquartered in Los Angeles, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Consumer Cyclical"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "33.56M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "627.32k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "1.87%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "1.2"
+    }
+}

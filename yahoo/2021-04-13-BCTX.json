@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "4.3748"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "4.5494"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "-48.31%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "12.9500"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "2.9600"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "BriaCell Therapeutics Corp. (BCTX)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "3.42M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "23.16%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "36.29%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Biotechnology"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "BriaCell Therapeutics Corp., an immuno-oncology biotechnology company, engages in developing approaches for the management of cancer. Its lead candidate is Bria-IMT that is in Phase I/IIa clinical trial in a combination study with immune checkpoint inhibitors for the treatment of breast cancer. The company also has a cooperative research and development agreement with the National Cancer Institute for developing Bria-OTS, an off-the-shelf personalized immunotherapy for advanced breast cancer; and BriaDx, a diagnostic test. BriaCell Therapeutics Corp. is headquartered in West Vancouver, Canada."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "5.62M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "36.17k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "N/A"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.64%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.04"
+    }
+}

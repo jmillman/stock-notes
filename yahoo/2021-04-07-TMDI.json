@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "1.5517"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "2.0500"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "713.64%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "3.4700"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.2000"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "Titan Medical Inc. (TMDI)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "99.81M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": null
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "0.30%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "4.05%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Medical Devices"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "Titan Medical Inc., a research and development stage company, focuses on the design, development, and commercialization of computer-assisted robotic surgical technologies for application in minimally invasive surgery (MIS). The company is developing the Enos robotic single-access surgical system (Enos system), a single-port robotic surgical system that includes a surgeon-controlled patient cart that includes a 3D high definition vision system and multi-articulating instruments for performing MIS procedures; and a surgeon workstation that provides the surgeon with ergonomic interface to the patient cart and a 3D endoscopic view inside the patient's body during MIS procedures. The Enos system enables surgeons to perform surgical procedures for gynecologic, urologic, colorectal, and bariatric. Titan Medical Inc. is headquartered in Toronto, Canada."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Healthcare"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "109.53M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 15, 2021)",
+        "value": "795.71k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 15, 2021)",
+        "value": "0.73%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 15, 2021)",
+        "value": "0.73%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 15, 2021)",
+        "value": "0.33"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "200_day_moving_avg": {
+        "title": "200-Day Moving Average",
+        "value": "7.37"
+    },
+    "50_day_moving_avg": {
+        "title": "50-Day Moving Average",
+        "value": "13.50"
+    },
+    "52_week_change": {
+        "title": "52-Week Change",
+        "value": "2,824.07%"
+    },
+    "52_week_high": {
+        "title": "52 Week High",
+        "value": "20.78"
+    },
+    "52_week_low": {
+        "title": "52 Week Low",
+        "value": "0.24"
+    },
+    "company_name": {
+        "title": "Company Name",
+        "value": "GreenBox POS (GBOX)"
+    },
+    "float": {
+        "title": "Float",
+        "value": "17.66M"
+    },
+    "fullTimeEmployees": {
+        "title": "Profile",
+        "value": 18
+    },
+    "held_by_insiders": {
+        "title": "% Held by Insiders",
+        "value": "57.11%"
+    },
+    "held_by_institutions": {
+        "title": "% Held by Institutions",
+        "value": "0.17%"
+    },
+    "industry": {
+        "title": "Industry",
+        "value": "Software\u2014Infrastructure"
+    },
+    "profile": {
+        "title": "Profile",
+        "value": "GreenBox POS, a technology company, develops, markets, and sells blockchain-based payment solutions. The company's blockchain-based systems are designed to facilitate, record, and store a volume of tokenized assets, representing cash or data, on a blockchain-based ledger. GreenBox POS was incorporated in 2007 and is based in San Diego, California."
+    },
+    "sector": {
+        "title": "Sector",
+        "value": "Technology"
+    },
+    "shares_outstanding": {
+        "title": "Shares Outstanding",
+        "value": "41.19M"
+    },
+    "shares_short": {
+        "title": "Shares Short (Mar 31, 2021)",
+        "value": "190.36k"
+    },
+    "short_percent_of_float": {
+        "title": "Short % of Float (Mar 31, 2021)",
+        "value": "1.11%"
+    },
+    "short_percent_of_shares_outstanding": {
+        "title": "Short % of Shares Outstanding (Mar 31, 2021)",
+        "value": "0.46%"
+    },
+    "short_ratio": {
+        "title": "Short Ratio (Mar 31, 2021)",
+        "value": "0.45"
+    }
+}
