@@ -13,14 +13,14 @@ function StockDetails(props) {
     return (
       <table>
         <tbody>
-        <tr>
+          <tr>
             <td>{'symbol'}</td>
             <td>
               {props.symbol}
               <FavoritesIcon symbol={props.symbol} />
             </td>
           </tr>
-                    <tr>
+          <tr>
             <td>{'Shs Float'}</td>
             <td>{_.get(stockInfo, 'Shs Float', '')}</td>
           </tr>

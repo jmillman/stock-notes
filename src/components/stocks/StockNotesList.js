@@ -53,7 +53,6 @@ function StockNotesList(props) {
     );
   }
 
-
   function getFloatLabel(value) {
     const cap = _.get(value, 'Shs Float', '');
     let color = 'red';
