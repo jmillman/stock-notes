@@ -24,6 +24,14 @@ export async function fetchStockNotes(date, callback) {
   callback(response.data);
 }
 
+export async function fetchChartData(callback) {
+  if (typeof callback !== 'function')
+    throw new Error('fetchChartData input Error');
+  const url = `${domain}/daily_data`;
+  const response = await axios.get(url);
+  callback(response.data);
+}
+
 export async function fetchMyNotes(callback) {
   if (typeof callback !== 'function')
     throw new Error('fetchMyNotes input Error');

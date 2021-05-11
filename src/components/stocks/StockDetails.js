@@ -8,7 +8,6 @@ function StockDetails(props) {
   function getDetails() {
     const [showDescription, setShowDescription] = useState(false);
     const stockInfo = _.get(props, 'data', {});
-    console.log(stockInfo);
 
     return (
       <table>

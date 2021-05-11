@@ -24,6 +24,7 @@ import {
   saveNote,
   fetchMyNotes,
   deleteNote,
+  fetchChartData,
 } from '../api/stockApi';
 import { useCookies } from 'react-cookie';
 import moment from 'moment';
@@ -128,6 +129,12 @@ export function withGlobalContext(Component) {
 
     const fetchStockNotesFromApp = (date, successCallback) => {
       fetchStockNotes(date, (result) => {
+        successCallback(result);
+      });
+    };
+
+    const fetchChartDataFromApp = (date, successCallback) => {
+      fetchChartData(date, (result) => {
         successCallback(result);
       });
     };
@@ -284,6 +291,7 @@ export function withGlobalContext(Component) {
       deleteNoteFromApp,
       fetchMyNotesFromApp,
       updateSettings,
+      fetchChartDataFromApp,
     };
 
     return (

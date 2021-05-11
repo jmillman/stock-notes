@@ -10,6 +10,8 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import re
+import csv
+import pandas as pd
 
 api = Flask(__name__)
 driver = webdriver.Chrome("./chromedriver")
@@ -135,6 +137,27 @@ def get_stock_notes():
                     stock_note = json.loads(file_contents)
                     stock_notes[symbol] = stock_note
     return json.dumps({"status": "success", "data": stock_notes}), 200
+
+
+@api.route("/daily_data", methods=["GET"])
+def daily_data():
+    file_name = "data/TSLA.csv"
+    # with open(file_name, "r") as myfile:
+    file = pd.read_csv(file_name)
+    data = []
+    for index, row in file.iterrows():
+        current_row = [
+            row["datetime"],
+            row["open"],
+            row["high"],
+            row["low"],
+            row["close"],
+            row["volume"],
+        ]
+        data.append(current_row)
+
+    #     for row in reader:
+    return json.dumps({"status": "success", "data": data}), 200
 
 
 def get_data_filings_pro(symbol):
