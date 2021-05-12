@@ -10,7 +10,6 @@ import TradeDetails from './TradeDetails';
 function TradesPage(props) {
   return (
     <>
-      Trades Page
       <TradeDetails {...props} />
     </>
   );

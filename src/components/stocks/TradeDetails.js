@@ -4,28 +4,10 @@ import AnyChart from 'anychart-react';
 import anychart from 'anychart';
 import msft from '../../data/msft';
 import moment from 'moment';
-import { Checkbox, Segment } from 'semantic-ui-react';
+import { Checkbox, Segment, Divider } from 'semantic-ui-react';
 import ChartPage from './ChartPage';
 
 function TradeDetails(props) {
-  const [selectedTrades, setSelectedTrades] = useState([]);
-
-  useEffect(() => {
-    // initially select all trades
-    const tmp = [];
-    props.trades.forEach((trade) => {
-      tmp.push(trade.Time);
-    });
-    setSelectedTrades(tmp);
-  }, [props.trades]);
-
-  function handleClickCheckbox(tradeTime) {
-    if (selectedTrades && selectedTrades.includes(tradeTime)) {
-      setSelectedTrades(selectedTrades.filter((t) => t !== tradeTime));
-    } else {
-      setSelectedTrades(selectedTrades.concat(tradeTime));
-    }
-  }
 
   function getData() {
     let total = 0;
@@ -34,16 +16,10 @@ function TradeDetails(props) {
       props.trades.forEach((trade) => {
         total += trade.Qty * trade.Price * (trade.Side === 'B' ? -1 : 1);
         trades.push(
-          <>
-            <Segment key={trade.Time}>
-              <Checkbox
-                label={trade.Time}
-                onClick={(e, data) => handleClickCheckbox(trade.Time)}
-                checked={selectedTrades && selectedTrades.includes(trade.Time)}
-              />
+          <span key={trade.Time}>
               {trade.Time} {trade.Side} {trade.Price} {trade.Qty}
-            </Segment>
-          </>
+              <Divider />
+          </span>
         );
       });
     trades.push(<div key="total">{total.toFixed(2)}</div>);
@@ -52,7 +28,7 @@ function TradeDetails(props) {
   return (
     <>
       {getData()}
-      <ChartPage {...props} selectedTrades={selectedTrades} key="a" />
+      <ChartPage {...props} key="ChartPage" />
     </>
   );
 }
