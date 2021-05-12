@@ -161,6 +161,18 @@ def daily_data():
     return json.dumps({"status": "success", "data": data}), 200
 
 
+@api.route("/get_trades", methods=["GET"])
+def get_trades():
+    date = request.args.get("date").upper()
+    file_name = "data/trades_{}.csv".format(date)
+    # with open(file_name, "r") as myfile:
+    data = pd.read_csv(file_name)
+    return (
+        json.dumps({"status": "success", "data": data.to_json(orient="records")}),
+        200,
+    )
+
+
 def get_data_filings_pro(symbol):
     page = requests.get("https://api.filingspro.com/sec?ticker=" + symbol)
     stock_data = json.loads(page.content)

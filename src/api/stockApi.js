@@ -32,6 +32,14 @@ export async function fetchChartData(symbol, callback) {
   callback(response.data);
 }
 
+export async function fetchTrades(date, callback) {
+  if (typeof symbol !== 'string' && typeof callback !== 'function')
+    throw new Error('get_trades input Error');
+  const url = `${domain}/get_trades?date=${date}`;
+  const response = await axios.get(url);
+  callback(response.data);
+}
+
 export async function fetchMyNotes(callback) {
   if (typeof callback !== 'function')
     throw new Error('fetchMyNotes input Error');

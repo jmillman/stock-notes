@@ -10,16 +10,29 @@ const tabs = {
 };
 
 function PageMobile() {
-  const [state, ,] = useContext(GlobalContext);
+  const [state, ,api] = useContext(GlobalContext);
 
   const [selectedTab, setSelectedTab] = useState(tabs.STOCK_NOTES_PAGE);
+  const [trades, setTrades] = useState([]);
+
+  const date = '2021-04-28';
+  const symbol = 'MVIS';
+
+  useEffect(() => {
+    api.fetchTradesFromApp(date, tradesCallback);
+  }, []);
+
+  async function tradesCallback(result) {
+    const x = JSON.parse(result.data).filter((trade)=>trade.Symb === symbol);
+    setTrades(x);
+  }
 
   function getContent() {
     switch (selectedTab) {
       case tabs.STOCK_NOTES_PAGE:
         return <StockNotesPage />;
       case tabs.CHART:
-        return <ChartPage />;
+        return <ChartPage trades={trades} symbol={symbol} date={date}/>;
 
       default:
         throw new Error('Component Not Found');
