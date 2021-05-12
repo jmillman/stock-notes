@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import GlobalContext from '../store/GlobalContext';
 import { Icon, Menu } from 'semantic-ui-react';
 import StockNotesPage from './stocks/StockNotesPage';
-import ChartPage from './stocks/ChartPage';
+import TradesPage from './stocks/TradesPage';
 
 const tabs = {
   STOCK_NOTES_PAGE: 'Stonks',
@@ -10,7 +10,7 @@ const tabs = {
 };
 
 function PageMobile() {
-  const [state, ,api] = useContext(GlobalContext);
+  const [state, , api] = useContext(GlobalContext);
 
   const [selectedTab, setSelectedTab] = useState(tabs.STOCK_NOTES_PAGE);
   const [trades, setTrades] = useState([]);
@@ -23,7 +23,7 @@ function PageMobile() {
   }, []);
 
   async function tradesCallback(result) {
-    const x = JSON.parse(result.data).filter((trade)=>trade.Symb === symbol);
+    const x = JSON.parse(result.data).filter((trade) => trade.Symb === symbol);
     setTrades(x);
   }
 
@@ -32,7 +32,7 @@ function PageMobile() {
       case tabs.STOCK_NOTES_PAGE:
         return <StockNotesPage />;
       case tabs.CHART:
-        return <ChartPage trades={trades} symbol={symbol} date={date}/>;
+        return <TradesPage trades={trades} symbol={symbol} date={date} />;
 
       default:
         throw new Error('Component Not Found');
