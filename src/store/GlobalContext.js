@@ -133,8 +133,8 @@ export function withGlobalContext(Component) {
       });
     };
 
-    const fetchChartDataFromApp = (date, successCallback) => {
-      fetchChartData(date, (result) => {
+    const fetchChartDataFromApp = (symbol, successCallback) => {
+      fetchChartData(symbol, (result) => {
         successCallback(result);
       });
     };

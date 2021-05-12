@@ -141,7 +141,8 @@ def get_stock_notes():
 
 @api.route("/daily_data", methods=["GET"])
 def daily_data():
-    file_name = "data/TSLA.csv"
+    symbol = request.args.get("symbol").upper()
+    file_name = "data/{}.csv".format(symbol)
     # with open(file_name, "r") as myfile:
     file = pd.read_csv(file_name)
     data = []
