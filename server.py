@@ -142,7 +142,9 @@ def get_stock_notes():
 @api.route("/daily_data", methods=["GET"])
 def daily_data():
     symbol = request.args.get("symbol").upper()
-    file_name = "data/{}.csv".format(symbol)
+    file_name = "../udacity/ameritradepython2020/local_stock_history_minute_extended/{}.csv".format(
+        symbol
+    )
     # with open(file_name, "r") as myfile:
     file = pd.read_csv(file_name)
     data = []
@@ -163,12 +165,26 @@ def daily_data():
 
 @api.route("/get_trades", methods=["GET"])
 def get_trades():
-    date = request.args.get("date").upper()
-    file_name = "data/trades_{}.csv".format(date)
-    # with open(file_name, "r") as myfile:
-    data = pd.read_csv(file_name)
+    search_date = request.args.get("date", "ALL")
+
+    files = sorted(glob.glob("{}/*.csv".format("trades")))
+    r = re.compile(".*\/trades_(.*).csv")
+    data = None
+    result = None
+
+    for i in range(len(files)):
+        m = r.search(files[i])
+        if m:
+            date = m.group(1)
+            if search_date == "ALL" or search_date == date:
+                data = pd.read_csv(files[i])
+                data["dateTime"] = date
+                if not isinstance(result, pd.DataFrame):
+                    result = data
+                else:
+                    result = result.append(data)
     return (
-        json.dumps({"status": "success", "data": data.to_json(orient="records")}),
+        json.dumps({"status": "success", "data": result.to_json(orient="records")}),
         200,
     )
 

@@ -1,4 +1,5 @@
 import { default as React, useContext, useEffect, useState } from 'react';
+import _ from 'lodash';
 import GlobalContext from '../../store/GlobalContext';
 import AnyChart from 'anychart-react';
 import anychart from 'anychart';
@@ -9,25 +10,8 @@ import ChartPage from './ChartPage';
 
 function TradeDetails(props) {
 
-  function getData() {
-    let total = 0;
-    let trades = [];
-    props.trades &&
-      props.trades.forEach((trade) => {
-        total += trade.Qty * trade.Price * (trade.Side === 'B' ? -1 : 1);
-        trades.push(
-          <span key={trade.Time}>
-              {trade.Time} {trade.Side} {trade.Price} {trade.Qty}
-              <Divider />
-          </span>
-        );
-      });
-    trades.push(<div key="total">{total.toFixed(2)}</div>);
-    return trades;
-  }
   return (
     <>
-      {getData()}
       <ChartPage {...props} key="ChartPage" />
     </>
   );

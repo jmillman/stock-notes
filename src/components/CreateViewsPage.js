@@ -108,7 +108,7 @@ function CreateViewsPage() {
               Edit
             </Button>
           ) : null}
-          <Button positive onClick={handleClickCreate}>
+          <Button positive =onClick{handleClickCreate}>
             Add New
           </Button>
           <Button negative onClick={resetForm}>

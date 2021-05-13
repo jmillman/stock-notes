@@ -16,15 +16,16 @@ function PageMobile() {
   const [trades, setTrades] = useState([]);
 
   const date = '2021-04-28';
-  const symbol = 'MVIS';
+  // const symbol = 'MVIS';
 
   useEffect(() => {
     api.fetchTradesFromApp(date, tradesCallback);
   }, []);
 
   async function tradesCallback(result) {
-    const x = JSON.parse(result.data).filter((trade) => trade.Symb === symbol);
-    setTrades(x);
+    // const x = JSON.parse(result.data).filter((trade) => trade.Symb === symbol);
+    // debugger;
+    setTrades(JSON.parse(result.data));
   }
 
   function getContent() {
@@ -32,7 +33,7 @@ function PageMobile() {
       case tabs.STOCK_NOTES_PAGE:
         return <StockNotesPage />;
       case tabs.CHART:
-        return <TradesPage trades={trades} symbol={symbol} date={date} />;
+        return <TradesPage trades={trades} symbol={'MVIS'} date={date} />;
 
       default:
         throw new Error('Component Not Found');
