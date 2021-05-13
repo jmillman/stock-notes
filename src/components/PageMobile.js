@@ -15,7 +15,8 @@ function PageMobile() {
   const [selectedTab, setSelectedTab] = useState(tabs.STOCK_NOTES_PAGE);
   const [trades, setTrades] = useState([]);
 
-  const date = '2021-05-12';
+  // const date = '2021-05-10';
+  const date = 'ALL';
 
   useEffect(() => {
     api.fetchTradesFromApp(date, tradesCallback);
@@ -30,7 +31,7 @@ function PageMobile() {
       case tabs.STOCK_NOTES_PAGE:
         return <StockNotesPage />;
       case tabs.CHART:
-        return <TradesPage trades={trades} symbol={'MVIS'} date={date} />;
+        return <TradesPage trades={trades} />;
 
       default:
         throw new Error('Component Not Found');

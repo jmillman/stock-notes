@@ -9,7 +9,7 @@ import TradeDetails from './TradeDetails';
 import { Checkbox, Segment, Divider , Button} from 'semantic-ui-react';
 
 function TradesPage(props) {
-  const [symbol, setSymbol] = useState(null);
+  const [symbolAndDate, setSymbolAndDate] = useState({});
 
   function getData() {
     let trades = [];
@@ -20,7 +20,7 @@ function TradesPage(props) {
         let symbolArea = [];
         symbols.forEach((s)=>{
           symbolArea.push(
-            <Button inverted color='red' key={date+s} onClick={()=>setSymbol(s)}>{s}</Button>
+            <Button inverted color='red' key={date+s} onClick={()=>setSymbolAndDate({symbol: s, date})}>{s}</Button>
           )
 
         })
@@ -37,8 +37,8 @@ function TradesPage(props) {
 
   return (
     <>
+      <TradeDetails {...props} symbol={symbolAndDate.symbol} date={symbolAndDate.date}/>
       {getData()}
-      <TradeDetails {...props} symbol={symbol}/>
     </>
   );
 }
