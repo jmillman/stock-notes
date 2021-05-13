@@ -140,8 +140,8 @@ export function withGlobalContext(Component) {
       });
     };
 
-    const fetchChartDataFromApp = (symbol, successCallback) => {
-      fetchChartData(symbol, (result) => {
+    const fetchChartDataFromApp = (symbol, date, successCallback) => {
+      fetchChartData(symbol, date, (result) => {
         successCallback(result);
       });
     };

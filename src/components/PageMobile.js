@@ -15,16 +15,13 @@ function PageMobile() {
   const [selectedTab, setSelectedTab] = useState(tabs.STOCK_NOTES_PAGE);
   const [trades, setTrades] = useState([]);
 
-  const date = '2021-04-28';
-  // const symbol = 'MVIS';
+  const date = '2021-05-12';
 
   useEffect(() => {
     api.fetchTradesFromApp(date, tradesCallback);
   }, []);
 
   async function tradesCallback(result) {
-    // const x = JSON.parse(result.data).filter((trade) => trade.Symb === symbol);
-    // debugger;
     setTrades(JSON.parse(result.data));
   }
 

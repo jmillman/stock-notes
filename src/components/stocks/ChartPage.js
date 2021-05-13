@@ -13,7 +13,7 @@ function ChartPage(props) {
   useEffect(() => {
     if(props.symbol){
       setData(null);
-      api.fetchChartDataFromApp(props.symbol, callback);
+      api.fetchChartDataFromApp(props.symbol, props.date, callback);
     }
   }, [props.trades, props.symbol]);
 

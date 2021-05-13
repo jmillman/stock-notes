@@ -24,10 +24,10 @@ export async function fetchStockNotes(date, callback) {
   callback(response.data);
 }
 
-export async function fetchChartData(symbol, callback) {
-  if (typeof symbol !== 'string' && typeof callback !== 'function')
+export async function fetchChartData(symbol, date, callback) {
+  if (typeof symbol !== 'string' && typeof date !== 'string' && typeof callback !== 'function')
     throw new Error('fetchChartData input Error');
-  const url = `${domain}/daily_data?symbol=${symbol}`;
+  const url = `${domain}/daily_data?symbol=${symbol}&date=${date}`;
   const response = await axios.get(url);
   callback(response.data);
 }
