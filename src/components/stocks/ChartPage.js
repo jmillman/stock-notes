@@ -2,7 +2,6 @@ import { default as React, useContext, useEffect, useState } from 'react';
 import GlobalContext from '../../store/GlobalContext';
 import AnyChart from 'anychart-react';
 import anychart from 'anychart';
-import msft from '../../data/msft';
 import moment from 'moment';
 
 function ChartPage(props) {
@@ -11,7 +10,7 @@ function ChartPage(props) {
   const [, setFormStatus] = useState(null);
 
   useEffect(() => {
-    if(props.symbol){
+    if (props.symbol) {
       setData(null);
       api.fetchChartDataFromApp(props.symbol, props.date, callback);
     }
@@ -28,6 +27,7 @@ function ChartPage(props) {
     if (!data) return null;
 
     const chart = anychart.stock();
+
     var firstPlot = chart.plot(0);
     const scrubbedData = data
       .map((row) => {
@@ -39,18 +39,31 @@ function ChartPage(props) {
       });
     const version = 6;
     if (version === 6) {
-      var msftDataTable = anychart.data.table();
-      msftDataTable.addData(scrubbedData);
+      var dataTable = anychart.data.table();
+      dataTable.addData(scrubbedData);
 
-      firstPlot.area(msftDataTable.mapAs({ value: 4 })).name(props.symbol);
-      chart.scroller().area(msftDataTable.mapAs({ value: 4 }));
+      let mapping = dataTable.mapAs();
+      mapping.addField('open', 1);
+      mapping.addField('high', 2);
+      mapping.addField('low', 3);
+      mapping.addField('close', 4);
+      // chart type
+      // set the series
+      var series = chart.plot(0).candlestick(mapping);
+      series.name('ACME Corp. stock prices');
+
+      // firstPlot.area(msftDataTable.mapAs({ value: 4 })).name(props.symbol);
+      // chart.scroller().area(msftDataTable.mapAs({ value: 4 }));
 
       var plot = chart.plot(0);
       var controller = plot.annotations();
       let total = 0;
       props.trades.forEach((trade) => {
-        if(trade['Symb'] == props.symbol && trade['dateTime'] == props.date) {
-          total += trade.Qty * trade.Price * (trade.Side === 'B' ? -1 : 1);                      
+        if (
+          trade['Symb'] === props.symbol &&
+          trade['dateTime'] === props.date
+        ) {
+          total += trade.Qty * trade.Price * (trade.Side === 'B' ? -1 : 1);
           var marker2 = controller.marker();
           marker2.xAnchor(`${props.date}T${trade.Time}.000Z`);
           marker2.valueAnchor(trade.Price);
@@ -66,7 +79,7 @@ function ChartPage(props) {
           marker2.normal().fill(color);
           marker2.normal().stroke('#006600', 1, '10 2');
           marker2.hovered().stroke('#00b300', 2, '10 2');
-          marker2.selected().stroke('#00b300', 4, '10 2');  
+          marker2.selected().stroke('#00b300', 4, '10 2');
         }
       });
 
@@ -77,9 +90,9 @@ function ChartPage(props) {
 
       return (
         <>
-        {total}
-      <AnyChart height={600} instance={chart} title={props.symbol} />
-      </>
+          {total}
+          <AnyChart height={600} instance={chart} title={props.symbol} />
+        </>
       );
     }
   }

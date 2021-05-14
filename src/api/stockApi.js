@@ -25,7 +25,11 @@ export async function fetchStockNotes(date, callback) {
 }
 
 export async function fetchChartData(symbol, date, callback) {
-  if (typeof symbol !== 'string' && typeof date !== 'string' && typeof callback !== 'function')
+  if (
+    typeof symbol !== 'string' &&
+    typeof date !== 'string' &&
+    typeof callback !== 'function'
+  )
     throw new Error('fetchChartData input Error');
   const url = `${domain}/daily_data?symbol=${symbol}&date=${date}`;
   const response = await axios.get(url);

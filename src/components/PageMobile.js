@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import GlobalContext from '../store/GlobalContext';
-import { Icon, Menu } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
 import StockNotesPage from './stocks/StockNotesPage';
 import TradesPage from './stocks/TradesPage';
 
