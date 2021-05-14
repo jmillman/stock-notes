@@ -47,6 +47,7 @@ function ChartPage(props) {
       mapping.addField('high', 2);
       mapping.addField('low', 3);
       mapping.addField('close', 4);
+      mapping.addField('volume', 5);
       // chart type
       // set the series
       var series = chart.plot(0).candlestick(mapping);
@@ -58,6 +59,13 @@ function ChartPage(props) {
       var plot = chart.plot(0);
       var controller = plot.annotations();
       let total = 0;
+
+      var valueMapping = dataTable.mapAs({ value: 5 });
+      chart.scroller().area(valueMapping);
+
+      var vwap = plot.vwap(mapping);
+      vwap.series().stroke('#1976d2', 3);
+
       props.trades.forEach((trade) => {
         if (
           trade['Symb'] === props.symbol &&
