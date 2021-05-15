@@ -50,7 +50,7 @@ export async function fetchTrades(date, callback) {
   let response = await axios.get(url);
   if (response.status === 200) {
     var start = new Date().getTime();
-    
+
     // sort by date, symbol, time, if the last trade is the same symbol, same direction, within 2 min, add it to previous
     // Buy 20 SPY 10:10:11, BUY 80 SPY 10:10:12 would make one row of BUY 100 SPY 10:10:11
     let trades = JSON.parse(response.data.data);
