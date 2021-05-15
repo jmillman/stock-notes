@@ -1,5 +1,6 @@
 import axios from 'axios';
 import moment from 'moment';
+import _ from 'lodash';
 
 // lookup_symbol?symbol=${action.symbol}
 const domain = 'http://127.0.0.1:5000/';
@@ -33,15 +34,63 @@ export async function fetchChartData(symbol, date, callback) {
     throw new Error('fetchChartData input Error');
   const url = `${domain}/daily_data?symbol=${symbol}&date=${date}`;
   const response = await axios.get(url);
-  callback(response.data);
+  if (response.status === 200) {
+    const ret = response.data.data.map((row) => {
+      row[0] = moment(row[0]).subtract(8, 'hour').toISOString();
+      return row;
+    });
+    callback(ret);
+  }
 }
 
 export async function fetchTrades(date, callback) {
   if (typeof symbol !== 'string' && typeof callback !== 'function')
     throw new Error('get_trades input Error');
   const url = `${domain}/get_trades?date=${date}`;
-  const response = await axios.get(url);
-  callback(response.data);
+  let response = await axios.get(url);
+  if (response.status === 200) {
+    var start = new Date().getTime();
+    
+    // sort by date, symbol, time, if the last trade is the same symbol, same direction, within 2 min, add it to previous
+    // Buy 20 SPY 10:10:11, BUY 80 SPY 10:10:12 would make one row of BUY 100 SPY 10:10:11
+    let trades = JSON.parse(response.data.data);
+    // trades = _.sortBy(trades, ['Symb', 'DateTime']);
+    trades = _.sortBy(trades, ['Date', 'Symb', 'Time']);
+
+    let lastTrade = null;
+    trades = trades.reduce((accum, trade) => {
+      const tradeWithinTwoMinute =
+        lastTrade &&
+        Math.abs(
+          moment
+            .duration(moment(lastTrade.DateTime).diff(moment(trade.DateTime)))
+            .asMinutes()
+        ) <= 2 &&
+        trade.Side === lastTrade.Side &&
+        trade.Symb === lastTrade.Symb;
+
+      if (tradeWithinTwoMinute) {
+        // Just add the Qty, and average the price
+        lastTrade.Price =
+          (lastTrade.Price * lastTrade.Qty + trade.Price * trade.Qty) /
+          (lastTrade.Qty + trade.Qty);
+        lastTrade.Qty = lastTrade.Qty + trade.Qty;
+      } else {
+        accum[`${trade.DateTime}${trade.Symb}${trade.Side}`] = trade;
+        lastTrade = trade;
+      }
+      return accum;
+    }, {});
+    lastTrade = null;
+
+    trades = Object.values(trades);
+
+    console.log(
+      'Elapsed ' + (new Date().getTime() - start) / 1000 + ' seconds.'
+    );
+
+    callback(trades);
+  }
 }
 
 export async function fetchMyNotes(callback) {

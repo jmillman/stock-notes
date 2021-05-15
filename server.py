@@ -179,7 +179,8 @@ def get_trades():
             date = m.group(1)
             if search_date == "ALL" or search_date == date:
                 data = pd.read_csv(files[i])
-                data["dateTime"] = date
+                data["Date"] = date
+                data["DateTime"] = data["Date"] + " " + data["Time"]
                 if not isinstance(result, pd.DataFrame):
                     result = data
                 else:

@@ -1,12 +1,7 @@
 import { default as React } from 'react';
-import ChartPage from './ChartPage';
 
 function TradeDetails(props) {
-  return (
-    <>
-      <ChartPage {...props} key="ChartPage" />
-    </>
-  );
+  return <>This is the tradde details page</>;
 }
 
 export default TradeDetails;

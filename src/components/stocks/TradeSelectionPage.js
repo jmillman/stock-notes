@@ -1,31 +1,38 @@
 import _ from 'lodash';
 import { default as React, useState } from 'react';
 import { Button, Divider } from 'semantic-ui-react';
-import TradeDetails from './TradeDetails';
+import ChartPage from './ChartPage';
 
-function TradesPage(props) {
+function TradeSelectionPage(props) {
   const [symbolAndDate, setSymbolAndDate] = useState({});
 
   function getData() {
     let trades = [];
-    const dates = _.uniq(props.trades.map((t) => t['dateTime']));
+    const dates = _.uniq(props.trades.map((t) => t['Date']));
     dates &&
       dates.forEach((date) => {
         const symbols = _.uniq(
-          props.trades
-            .filter((t) => t['dateTime'] === date)
-            .map((t) => t['Symb'])
+          props.trades.filter((t) => t['Date'] === date).map((t) => t['Symb'])
         );
         let symbolArea = [];
         symbols.forEach((s) => {
+          const total = props.trades
+            .filter((trade) => {
+              return trade['Symb'] === s && trade['DateTime'].includes(date);
+            })
+            .reduce((total, trade) => {
+              total += trade.Qty * trade.Price * (trade.Side === 'B' ? -1 : 1);
+              return total;
+            }, 0);
+
           symbolArea.push(
             <Button
               inverted
-              color="red"
+              color={total > 0 ? 'green' : 'red'}
               key={date + s}
               onClick={() => setSymbolAndDate({ symbol: s, date })}
             >
-              {s}
+              {s} {total.toFixed(2)}
             </Button>
           );
         });
@@ -42,7 +49,7 @@ function TradesPage(props) {
 
   return (
     <>
-      <TradeDetails
+      <ChartPage
         {...props}
         symbol={symbolAndDate.symbol}
         date={symbolAndDate.date}
@@ -52,4 +59,4 @@ function TradesPage(props) {
   );
 }
 
-export default TradesPage;
+export default TradeSelectionPage;
