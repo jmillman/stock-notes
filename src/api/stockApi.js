@@ -85,11 +85,28 @@ export async function fetchTrades(date, callback) {
 
     trades = Object.values(trades);
 
+    let tradesObj = {};
+    let openOrders = [];
+    let orderCount = 0;
+    trades.forEach((trade) => {
+      openOrders.push(trade);
+      orderCount += trade.Qty * (trade.Side === 'B' ? -1 : 1);
+      // if orderCount is 0 buy and sell orders equal, trade closed
+      if (orderCount === 0) {
+        tradesObj[
+          `${openOrders[0].DateTime} ${openOrders[0].Symb} ${
+            openOrders[0].Side === 'SS' ? 'Short' : 'Long'
+          }`
+        ] = openOrders;
+        openOrders = [];
+      }
+    });
+
     console.log(
       'Elapsed ' + (new Date().getTime() - start) / 1000 + ' seconds.'
     );
 
-    callback(trades);
+    callback(tradesObj);
   }
 }
 

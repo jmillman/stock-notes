@@ -1,13 +1,22 @@
 import anychart from 'anychart';
 import AnyChart from 'anychart-react';
+import _ from 'lodash';
 import { default as React, useContext, useEffect, useState } from 'react';
-import { Container, Divider, Label, Button } from 'semantic-ui-react';
+import { Divider, Grid, Table } from 'semantic-ui-react';
 import GlobalContext from '../../store/GlobalContext';
 
 function ChartPage(props) {
   const [, , api] = useContext(GlobalContext);
   const [data, setData] = useState(null);
   const [, setFormStatus] = useState(null);
+
+  // get just the trades for the button clicked, which is that symbol and date
+  const tradeKeys = _.keys(props.trades).filter((key) => {
+    return (
+      props.trades[key][0]['Symb'] === props.symbol &&
+      props.trades[key][0]['DateTime'].includes(props.date)
+    );
+  });
 
   useEffect(() => {
     if (props.symbol) {
@@ -26,15 +35,8 @@ function ChartPage(props) {
 
     const chart = anychart.stock();
 
-    var firstPlot = chart.plot(0);
     const scrubbedData = data.filter((row) => {
       return row[0].includes(props.date);
-    });
-    // get just the trades for the button clicked, which is that symbol and date
-    let trades = props.trades.filter((trade) => {
-      return (
-        trade['Symb'] === props.symbol && trade['DateTime'].includes(props.date)
-      );
     });
 
     var dataTable = anychart.data.table();
@@ -46,13 +48,9 @@ function ChartPage(props) {
     mapping.addField('low', 3);
     mapping.addField('close', 4);
     mapping.addField('volume', 5);
-    // chart type
-    // set the series
+
     var series = chart.plot(0).candlestick(mapping);
     series.name('ACME Corp. stock prices');
-
-    // firstPlot.area(msftDataTable.mapAs({ value: 4 })).name(props.symbol);
-    // chart.scroller().area(msftDataTable.mapAs({ value: 4 }));
 
     var plot = chart.plot(0);
     var controller = plot.annotations();
@@ -64,24 +62,27 @@ function ChartPage(props) {
     vwap.series().stroke('#1976d2', 3);
 
     let total = 0;
-    trades.forEach((trade) => {
-      total += trade.Qty * trade.Price * (trade.Side === 'B' ? -1 : 1);
-      var marker2 = controller.marker();
-      marker2.xAnchor(`${props.date}T${trade.Time}.000Z`);
-      marker2.valueAnchor(trade.Price);
-      let arrow = 'arrow-down';
-      let color = '#FF0000';
-      if (trade.Side === 'B') {
-        arrow = 'arrow-up';
-        color = '#00FFFF';
-      }
-      marker2.markerType(arrow);
-      marker2.size(20);
-      marker2.offsetY(-10);
-      marker2.normal().fill(color);
-      marker2.normal().stroke('#006600', 1, '10 2');
-      marker2.hovered().stroke('#00b300', 2, '10 2');
-      marker2.selected().stroke('#00b300', 4, '10 2');
+    tradeKeys.forEach((tradeKey) => {
+      const trades = props.trades[tradeKey];
+      trades.forEach((trade) => {
+        total += trade.Qty * trade.Price * (trade.Side === 'B' ? -1 : 1);
+        var marker2 = controller.marker();
+        marker2.xAnchor(`${props.date}T${trade.Time}.000Z`);
+        marker2.valueAnchor(trade.Price);
+        let arrow = 'arrow-down';
+        let color = '#FF0000';
+        if (trade.Side === 'B') {
+          arrow = 'arrow-up';
+          color = '#00FFFF';
+        }
+        marker2.markerType(arrow);
+        marker2.size(20);
+        marker2.offsetY(-10);
+        marker2.normal().fill(color);
+        marker2.normal().stroke('#006600', 1, '10 2');
+        marker2.hovered().stroke('#00b300', 2, '10 2');
+        marker2.selected().stroke('#00b300', 4, '10 2');
+      });
     });
 
     chart.selectRange(
@@ -89,50 +90,66 @@ function ChartPage(props) {
       `${props.date}T16:00:00.000Z`
     );
 
-    function getTradesObject(trades) {
-      let tradesObj = {};
-      let openOrders = [];
-      let orderCount = 0;
-      trades.forEach((trade) => {
-        openOrders.push(trade);
-        orderCount += trade.Qty * (trade.Side === 'B' ? -1 : 1);
-        // if orderCount is 0 buy and sell orders equal, trade closed
-        if (orderCount === 0) {
-          tradesObj[`${openOrders[0].Time} ${openOrders[0].Type}`] = openOrders;
-          openOrders = [];
-        }
-      });
-      return tradesObj;
-    }
-
     function getTable() {
-      const xxx = getTradesObject(trades);
-      console.log(xxx);
-      let total = 0;
+      let ticketCount = 0;
       let tickets = [];
       let ret = [];
-      trades.forEach((trade) => {
-        const qty = trade.Qty * (trade.Side === 'B' ? -1 : 1);
-        total += qty;
-        tickets.push(
-          <Label key={JSON.stringify(trade)}>
-            {trade.Time} {trade.Side} {trade.Price} {trade.Qty} {trade.Side}
-          </Label>
-        );
-        if (total === 0) {
-          ret.push(<Button content="primary">{tickets}</Button>);
-          tickets = [];
-        }
+      let total = 0;
+      tradeKeys.forEach((tradeKey) => {
+        const trades = props.trades[tradeKey];
+        trades.forEach((trade) => {
+          total += trade.Qty * trade.Price * (trade.Side === 'B' ? -1 : 1);
+          const qty = trade.Qty * (trade.Side === 'B' ? -1 : 1);
+          ticketCount += qty;
+          tickets.push(
+            <Table.Row key={JSON.stringify(trade)}>
+              <Table.Cell collapsing>{trade.Time}</Table.Cell>
+              <Table.Cell>{trade.Side}</Table.Cell>
+              <Table.Cell>{trade.Price.toFixed(2)}</Table.Cell>
+              <Table.Cell>{trade.Qty}</Table.Cell>
+            </Table.Row>
+          );
+          if (ticketCount === 0) {
+            ret.push(
+              <Grid.Column>
+                <Table celled striped size="small">
+                  <Table.Header>
+                    <Table.Row>
+                      <Table.HeaderCell>Time</Table.HeaderCell>
+                      <Table.HeaderCell>Side</Table.HeaderCell>
+                      <Table.HeaderCell>Price</Table.HeaderCell>
+                      <Table.HeaderCell>Qty</Table.HeaderCell>
+                    </Table.Row>
+                  </Table.Header>
+                  <Table.Body>
+                    {tickets}
+                    <Table.Row>
+                      <Table.Cell colSpan="5">{total.toFixed(2)}</Table.Cell>
+                    </Table.Row>
+                  </Table.Body>
+                </Table>
+              </Grid.Column>
+            );
+            tickets = [];
+            total = 0;
+          }
+        });
       });
       return ret;
     }
 
     return (
       <>
-        {getTable()}
+        <Grid columns={4} stackable>
+          {getTable()}
+        </Grid>
+
         <Divider />
-        <Container>{total.toFixed(2)}</Container>
-        <AnyChart height={600} instance={chart} title={props.symbol} />
+        <AnyChart
+          height={600}
+          instance={chart}
+          title={`${props.symbol} ${total.toFixed(2)}`}
+        />
       </>
     );
   }

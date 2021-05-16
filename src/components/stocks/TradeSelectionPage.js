@@ -8,22 +8,38 @@ function TradeSelectionPage(props) {
 
   function getData() {
     let trades = [];
-    const dates = _.uniq(props.trades.map((t) => t['Date']));
+    const dates = _.uniq(
+      _.keys(props.trades).map((key) => {
+        return props.trades[key][0].Date;
+      })
+    );
+
     dates &&
       dates.forEach((date) => {
         const symbols = _.uniq(
-          props.trades.filter((t) => t['Date'] === date).map((t) => t['Symb'])
-        );
+          _.keys(props.trades).map((key) => {
+            return props.trades[key][0].Date === date
+              ? props.trades[key][0].Symb
+              : null;
+          })
+        ).filter((symb) => symb);
+
         let symbolArea = [];
         symbols.forEach((s) => {
-          const total = props.trades
-            .filter((trade) => {
-              return trade['Symb'] === s && trade['DateTime'].includes(date);
-            })
-            .reduce((total, trade) => {
+          let total = 0;
+
+          const tradeKeys = _.keys(props.trades).filter((key) => {
+            return (
+              props.trades[key][0]['Symb'] === s &&
+              props.trades[key][0]['DateTime'].includes(date)
+            );
+          });
+          tradeKeys.forEach((tradeKey) => {
+            const trades = props.trades[tradeKey];
+            trades.forEach((trade) => {
               total += trade.Qty * trade.Price * (trade.Side === 'B' ? -1 : 1);
-              return total;
-            }, 0);
+            });
+          });
 
           symbolArea.push(
             <Button
