@@ -10,6 +10,7 @@ function ChartPage(props) {
   const [data, setData] = useState(null);
   const [, setFormStatus] = useState(null);
 
+  console.log(props.trades);
   // get just the trades for the button clicked, which is that symbol and date
   const tradeKeys = _.keys(props.trades).filter((key) => {
     return (
@@ -51,10 +52,10 @@ function ChartPage(props) {
 
     var series = chart.plot(0).candlestick(mapping);
     series.name(`${props.symbol} ${props.date} minute`);
-    series.risingFill('red');
-    series.risingStroke('red');
-    series.fallingFill('green');
-    series.fallingStroke('green');
+    series.risingFill('green');
+    series.risingStroke('green');
+    series.fallingFill('red');
+    series.fallingStroke('red');
 
     var plot = chart.plot(0);
     var controller = plot.annotations();

@@ -12,6 +12,7 @@ from selenium import webdriver
 import re
 import csv
 import pandas as pd
+import numpy
 
 api = Flask(__name__)
 driver = webdriver.Chrome("./chromedriver")
@@ -211,6 +212,22 @@ def get_trades():
                     result = result.append(data)
     return (
         json.dumps({"status": "success", "data": result.to_json(orient="records")}),
+        200,
+    )
+
+
+@api.route("/xxx", methods=["GET"])
+def xxx():
+    files = sorted(glob.glob("{}/*.csv".format("trades")))
+    traded_symbols = []
+    for i in range(len(files)):
+        data = pd.read_csv(files[i])
+        traded_symbols = traded_symbols + data["Symb"].tolist()
+
+    traded_symbols = list(set(traded_symbols))
+
+    return (
+        json.dumps({"status": "success", "data": traded_symbols}),
         200,
     )
 

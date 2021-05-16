@@ -49,7 +49,7 @@ function TradeSelectionPage(props) {
               key={date + s}
               onClick={() => setSymbolAndDate({ symbol: s, date })}
             >
-              {s} {total.toFixed(2)}
+              {s} {total.toFixed(0)}
             </Button>
           );
         });

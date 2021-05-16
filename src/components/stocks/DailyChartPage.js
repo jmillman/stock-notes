@@ -43,10 +43,10 @@ function DailyChartPage(props) {
 
     var series = chart.plot(0).candlestick(mapping);
     series.name(`${props.symbol} ${props.date} daily ${props.date}`);
-    series.risingFill('red');
-    series.risingStroke('red');
-    series.fallingFill('green');
-    series.fallingStroke('green');
+    series.risingFill('green');
+    series.risingStroke('green');
+    series.fallingFill('red');
+    series.fallingStroke('red');
 
     var plot = chart.plot(0);
     var controller = plot.annotations();
