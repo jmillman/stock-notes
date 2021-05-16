@@ -32,7 +32,7 @@ export async function fetchChartData(symbol, date, callback) {
     typeof callback !== 'function'
   )
     throw new Error('fetchChartData input Error');
-  const url = `${domain}/daily_data?symbol=${symbol}&date=${date}`;
+  const url = `${domain}/minute_data?symbol=${symbol}&date=${date}`;
   const response = await axios.get(url);
   if (response.status === 200) {
     const ret = response.data.data.map((row) => {
@@ -40,6 +40,16 @@ export async function fetchChartData(symbol, date, callback) {
       return row;
     });
     callback(ret);
+  }
+}
+
+export async function fetchDailyChartData(symbol, callback) {
+  if (typeof symbol !== 'string' && typeof callback !== 'function')
+    throw new Error('fetchDailyChartData input Error');
+  const url = `${domain}/daily_data?symbol=${symbol}`;
+  const response = await axios.get(url);
+  if (response.status === 200) {
+    callback(response.data.data);
   }
 }
 

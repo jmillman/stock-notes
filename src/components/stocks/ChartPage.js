@@ -50,7 +50,11 @@ function ChartPage(props) {
     mapping.addField('volume', 5);
 
     var series = chart.plot(0).candlestick(mapping);
-    series.name('ACME Corp. stock prices');
+    series.name(`${props.symbol} ${props.date} minute`);
+    series.risingFill('red');
+    series.risingStroke('red');
+    series.fallingFill('green');
+    series.fallingStroke('green');
 
     var plot = chart.plot(0);
     var controller = plot.annotations();
@@ -70,14 +74,16 @@ function ChartPage(props) {
         marker2.xAnchor(`${props.date}T${trade.Time}.000Z`);
         marker2.valueAnchor(trade.Price);
         let arrow = 'arrow-down';
-        let color = '#FF0000';
+        let color = 'red';
         if (trade.Side === 'B') {
           arrow = 'arrow-up';
-          color = '#00FFFF';
+          color = 'green';
+      }
+        else{
+          marker2.offsetY(-20);
         }
         marker2.markerType(arrow);
         marker2.size(20);
-        marker2.offsetY(-10);
         marker2.normal().fill(color);
         marker2.normal().stroke('#006600', 1, '10 2');
         marker2.hovered().stroke('#00b300', 2, '10 2');
@@ -149,6 +155,7 @@ function ChartPage(props) {
           height={600}
           instance={chart}
           title={`${props.symbol} ${total.toFixed(2)}`}
+          key={`${props.symbol} ${total.toFixed(2)}`}
         />
       </>
     );

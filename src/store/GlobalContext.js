@@ -26,6 +26,7 @@ import {
   deleteNote,
   fetchChartData,
   fetchTrades,
+  fetchDailyChartData,
 } from '../api/stockApi';
 import { useCookies } from 'react-cookie';
 import moment from 'moment';
@@ -142,6 +143,12 @@ export function withGlobalContext(Component) {
 
     const fetchChartDataFromApp = (symbol, date, successCallback) => {
       fetchChartData(symbol, date, (result) => {
+        successCallback(result);
+      });
+    };
+
+    const fetchDailyChartDataFromApp = (symbol, successCallback) => {
+      fetchDailyChartData(symbol, (result) => {
         successCallback(result);
       });
     };
@@ -300,6 +307,7 @@ export function withGlobalContext(Component) {
       updateSettings,
       fetchChartDataFromApp,
       fetchTradesFromApp,
+      fetchDailyChartDataFromApp,
     };
 
     return (

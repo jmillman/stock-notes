@@ -2,6 +2,7 @@ import _ from 'lodash';
 import { default as React, useState } from 'react';
 import { Button, Divider } from 'semantic-ui-react';
 import ChartPage from './ChartPage';
+import DailyChartPage from './DailyChartPage';
 
 function TradeSelectionPage(props) {
   const [symbolAndDate, setSymbolAndDate] = useState({});
@@ -66,6 +67,11 @@ function TradeSelectionPage(props) {
   return (
     <>
       <ChartPage
+        {...props}
+        symbol={symbolAndDate.symbol}
+        date={symbolAndDate.date}
+      />
+      <DailyChartPage
         {...props}
         symbol={symbolAndDate.symbol}
         date={symbolAndDate.date}
