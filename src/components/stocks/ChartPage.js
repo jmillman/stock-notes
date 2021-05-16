@@ -6,11 +6,10 @@ import { Divider, Grid, Table } from 'semantic-ui-react';
 import GlobalContext from '../../store/GlobalContext';
 
 function ChartPage(props) {
-  const [, , api] = useContext(GlobalContext);
+  const [state, , api] = useContext(GlobalContext);
   const [data, setData] = useState(null);
   const [, setFormStatus] = useState(null);
 
-  console.log(props.trades);
   // get just the trades for the button clicked, which is that symbol and date
   const tradeKeys = _.keys(props.trades).filter((key) => {
     return (
@@ -79,8 +78,7 @@ function ChartPage(props) {
         if (trade.Side === 'B') {
           arrow = 'arrow-up';
           color = 'green';
-      }
-        else{
+        } else {
           marker2.offsetY(-20);
         }
         marker2.markerType(arrow);
@@ -96,6 +94,59 @@ function ChartPage(props) {
       `${props.date}T08:59:00.000Z`,
       `${props.date}T16:00:00.000Z`
     );
+
+    // create vertical range annotation on the both plots
+    plot
+      .annotations()
+      .verticalRange({
+        xAnchor: `${props.date}T01:00:00.000Z`,
+        secondXAnchor: `${props.date}T09:30:00.000Z`,
+      })
+      .allowEdit(false); // disable edit mode
+
+    plot
+      .annotations()
+      .verticalRange({
+        xAnchor: `${props.date}T16:00:00.000Z`,
+        secondXAnchor: `${props.date}T24:00:00.000Z`,
+      })
+      .allowEdit(false); // disable edit mode
+
+    plot
+      .annotations()
+      .verticalLine({
+        xAnchor: `${props.date}T09:45:00.000Z`,
+        stroke: {
+          thickness: 2,
+          color: '#60727B',
+          dash: '10 15',
+        },
+      })
+      .allowEdit(false);
+
+    plot
+      .annotations()
+      .verticalLine({
+        xAnchor: `${props.date}T10:00:00.000Z`,
+        stroke: {
+          thickness: 2,
+          color: '#60727B',
+          dash: '10 15',
+        },
+      })
+      .allowEdit(false);
+
+    plot
+      .annotations()
+      .verticalLine({
+        xAnchor: `${props.date}T11:00:00.000Z`,
+        stroke: {
+          thickness: 2,
+          color: '#60727B',
+          dash: '10 15',
+        },
+      })
+      .allowEdit(false);
 
     function getTable() {
       let ticketCount = 0;
@@ -152,6 +203,25 @@ function ChartPage(props) {
         </Grid>
 
         <Divider />
+        <Table celled striped size="small">
+          <Table.Header>
+            <Table.Row>
+              <Table.HeaderCell>Shs Float</Table.HeaderCell>
+              <Table.HeaderCell>Market Cap</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>
+                {_.get(state, `finviz.${props.symbol}['Shs Float']`)}
+              </Table.Cell>
+              <Table.Cell>
+                {_.get(state, `finviz.${props.symbol}['Market Cap']`)}
+              </Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+
         <AnyChart
           height={600}
           instance={chart}

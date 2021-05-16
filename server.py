@@ -136,6 +136,7 @@ def get_stock_notes():
                     symbol = m.group(2)
                     file_contents = myfile.read()
                     stock_note = json.loads(file_contents)
+                    stock_note["date"] = date
                     stock_notes[symbol] = stock_note
     return json.dumps({"status": "success", "data": stock_notes}), 200
 
@@ -212,22 +213,6 @@ def get_trades():
                     result = result.append(data)
     return (
         json.dumps({"status": "success", "data": result.to_json(orient="records")}),
-        200,
-    )
-
-
-@api.route("/xxx", methods=["GET"])
-def xxx():
-    files = sorted(glob.glob("{}/*.csv".format("trades")))
-    traded_symbols = []
-    for i in range(len(files)):
-        data = pd.read_csv(files[i])
-        traded_symbols = traded_symbols + data["Symb"].tolist()
-
-    traded_symbols = list(set(traded_symbols))
-
-    return (
-        json.dumps({"status": "success", "data": traded_symbols}),
         200,
     )
 

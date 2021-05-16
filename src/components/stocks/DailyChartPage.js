@@ -1,9 +1,7 @@
 import anychart from 'anychart';
 import AnyChart from 'anychart-react';
-import _ from 'lodash';
 import moment from 'moment';
 import { default as React, useContext, useEffect, useState } from 'react';
-import { Divider, Grid, Table } from 'semantic-ui-react';
 import GlobalContext from '../../store/GlobalContext';
 
 function DailyChartPage(props) {
@@ -27,10 +25,6 @@ function DailyChartPage(props) {
     const chart = anychart.stock();
 
     var dataTable = anychart.data.table();
-    const filteredData = data.filter((row) => {
-      const rowDate = moment(row[0]);
-      const propDate = moment(props.date);
-    });
 
     dataTable.addData(data);
 
@@ -49,7 +43,6 @@ function DailyChartPage(props) {
     series.fallingStroke('red');
 
     var plot = chart.plot(0);
-    var controller = plot.annotations();
 
     var volumeMapping = dataTable.mapAs({ value: 5 });
     chart.scroller().area(volumeMapping);

@@ -20,6 +20,7 @@ function PageMobile() {
 
   useEffect(() => {
     api.fetchTradesFromApp(date, tradesCallback);
+    api.fetchFinvizFromApp();
   }, []);
 
   async function tradesCallback(result) {
