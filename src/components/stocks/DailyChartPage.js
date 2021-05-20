@@ -29,6 +29,8 @@ function DailyChartPage(props) {
   function MyChart(props) {
     if (!data) return null;
 
+    const lastGapUp = data ? data[data.length - 1][6] : ''; 
+
     const chart = anychart.stock();
     var plotCandlestick = chart.plot(0);
 
@@ -42,6 +44,7 @@ function DailyChartPage(props) {
     mapping.addField('low', 3);
     mapping.addField('close', 4);
     mapping.addField('volume', 5);
+    mapping.addField('gap_up', 6);
 
     var series = plotCandlestick.candlestick(mapping);
     series.name(`${props.symbol}`);
@@ -63,6 +66,9 @@ function DailyChartPage(props) {
     var volumeSeries = volumePlot.column(dataTable.mapAs({ value: 5 }));
     volumeSeries.name('Volume');
 
+    var gapSeries = plotCandlestick.column(dataTable.mapAs({ value: 6 }));
+    gapSeries.name('Gap Up');
+
     // create EMA indicators with period 20
     var ema20 = plotCandlestick.sma(mapping, 20).series();
     ema20.stroke('#bf360c');
@@ -80,7 +86,7 @@ function DailyChartPage(props) {
         <AnyChart
           height={600}
           instance={chart}
-          title={`${props.symbol} Daily`}
+          title={`${props.symbol} (Gapped ${lastGapUp})`}
           key={`${props.symbol} Daily`}
         />
       </>

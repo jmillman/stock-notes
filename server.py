@@ -150,7 +150,9 @@ def daily_data():
     # with open(file_name, "r") as myfile:
     file = pd.read_csv(file_name)
     data = []
+    yesterdays_close = file.iloc[0]["close"]
     for index, row in file.iterrows():
+        todays_open = row["open"]
         current_row = [
             row["datetime"],
             row["open"],
@@ -158,8 +160,12 @@ def daily_data():
             row["low"],
             row["close"],
             row["volume"],
+            # gap up
+            format((todays_open - yesterdays_close) / yesterdays_close * 100, ".2f")
+            + "%",
         ]
         data.append(current_row)
+        yesterdays_close = file.iloc[index]["close"]
 
     #     for row in reader:
     return json.dumps({"status": "success", "data": data}), 200
