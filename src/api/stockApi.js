@@ -49,7 +49,13 @@ export async function fetchDailyChartData(symbol, callback) {
   const url = `${domain}/daily_data?symbol=${symbol}`;
   const response = await axios.get(url);
   if (response.status === 200) {
-    callback(response.data.data);
+    // There is an issue on the chart date conversoin where it sets it to the next day so strip it for daily
+    const scrubbed = response.data.data.map((row)=>{
+      const newDate = row[0].split(' ')[0];
+      row[0] = newDate
+      return row;
+    })
+    callback(scrubbed);
   }
 }
 
