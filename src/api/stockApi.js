@@ -63,7 +63,12 @@ export async function fetchTrades(date, callback) {
     // Buy 20 SPY 10:10:11, BUY 80 SPY 10:10:12 would make one row of BUY 100 SPY 10:10:11
     let trades = JSON.parse(response.data.data);
     // trades = _.sortBy(trades, ['Symb', 'DateTime']);
-    trades = _.sortBy(trades, ['Date', 'Symb', 'Time']);
+    // trades = _.sortBy(trades, ['Date', 'Symb', 'Time']);
+    trades = _.orderBy(
+      trades,
+      ['Date', 'Symb', 'Time'],
+      ['desc', 'asc', 'asc']
+    );
 
     let lastTrade = null;
     trades = trades.reduce((accum, trade) => {

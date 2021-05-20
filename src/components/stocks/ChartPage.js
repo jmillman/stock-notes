@@ -39,6 +39,8 @@ function ChartPage(props) {
       return row[0].includes(props.date);
     });
 
+    var plotCandlestick = chart.plot(0);
+
     var dataTable = anychart.data.table();
     dataTable.addData(scrubbedData);
 
@@ -49,21 +51,33 @@ function ChartPage(props) {
     mapping.addField('close', 4);
     mapping.addField('volume', 5);
 
-    var series = chart.plot(0).candlestick(mapping);
-    series.name(`${props.symbol} ${props.date} minute`);
+    var series = plotCandlestick.candlestick(mapping);
+    series.name(`${props.symbol}`);
     series.risingFill('green');
     series.risingStroke('green');
     series.fallingFill('red');
     series.fallingStroke('red');
 
-    var plot = chart.plot(0);
-    var controller = plot.annotations();
+    chart.scroller().area(dataTable.mapAs({ value: 5 }));
 
-    var valueMapping = dataTable.mapAs({ value: 5 });
-    chart.scroller().area(valueMapping);
+    var plot = chart.plot(0);
+
+    // create second plot
+    var volumePlot = chart.plot(1);
+    // set yAxis labels formatter
+    volumePlot.yAxis().labels().format('{%Value}{scale:(1000)(1)|(k)}');
+    // set crosshair y-label formatter
+    volumePlot.crosshair().yLabel().format('{%Value}{scale:(1000)(1)|(k)}');
+
+    // create volume series on the plot
+    var volumeSeries = volumePlot.column(dataTable.mapAs({ value: 5 }));
+    // set series settings
+    volumeSeries.name('Volume');
 
     var vwap = plot.vwap(mapping);
     vwap.series().stroke('#1976d2', 3);
+
+    var controller = plot.annotations();
 
     let total = 0;
     tradeKeys.forEach((tradeKey) => {
@@ -91,8 +105,8 @@ function ChartPage(props) {
     });
 
     chart.selectRange(
-      `${props.date}T08:59:00.000Z`,
-      `${props.date}T16:00:00.000Z`
+      `${props.date}T06:00:00.000Z`,
+      `${props.date}T16:10:00.000Z`
     );
 
     // create vertical range annotation on the both plots
@@ -128,6 +142,17 @@ function ChartPage(props) {
       .annotations()
       .verticalLine({
         xAnchor: `${props.date}T10:00:00.000Z`,
+        stroke: {
+          thickness: 2,
+          color: '#60727B',
+          dash: '10 15',
+        },
+      })
+      .allowEdit(false);
+    plot
+      .annotations()
+      .verticalLine({
+        xAnchor: `${props.date}T10:30:00.000Z`,
         stroke: {
           thickness: 2,
           color: '#60727B',

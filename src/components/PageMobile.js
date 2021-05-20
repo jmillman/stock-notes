@@ -10,7 +10,7 @@ const tabs = {
 };
 
 function PageMobile() {
-  const [state, , api] = useContext(GlobalContext);
+  const [, , api] = useContext(GlobalContext);
 
   const [selectedTab, setSelectedTab] = useState(tabs.CHART);
   const [trades, setTrades] = useState([]);
@@ -39,21 +39,18 @@ function PageMobile() {
     }
   }
   function getMenu() {
-    if (state.loggedInUser) {
-      return (
-        <>
-          <Menu.Item
-            name={tabs.STOCK_NOTES_PAGE}
-            onClick={() => setSelectedTab(tabs.STOCK_NOTES_PAGE)}
-          />
-          <Menu.Item
-            name={tabs.CHART}
-            onClick={() => setSelectedTab(tabs.CHART)}
-          />
-        </>
-      );
-    }
-    return null;
+    return (
+      <>
+        <Menu.Item
+          name={tabs.STOCK_NOTES_PAGE}
+          onClick={() => setSelectedTab(tabs.STOCK_NOTES_PAGE)}
+        />
+        <Menu.Item
+          name={tabs.CHART}
+          onClick={() => setSelectedTab(tabs.CHART)}
+        />
+      </>
+    );
   }
 
   return (
