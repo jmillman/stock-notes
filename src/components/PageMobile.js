@@ -12,7 +12,7 @@ const tabs = {
 function PageMobile() {
   const [, , api] = useContext(GlobalContext);
 
-  const [selectedTab, setSelectedTab] = useState(tabs.CHART);
+  const [selectedTab, setSelectedTab] = useState(tabs.STOCK_NOTES_PAGE);
   const [trades, setTrades] = useState([]);
 
   // const date = '2021-05-10';

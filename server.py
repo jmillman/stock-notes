@@ -340,12 +340,13 @@ def get_data_finviz(symbol):
 
 @api.route("/lookup_symbol", methods=["GET"])
 def lookup_symbol():
-    try:
-        symbols = request.args.get("symbol").upper()
-        symbols = symbols.split(",")
-
-        # for loop to iterate over words array
-        for symbol in symbols:
+    symbols = request.args.get("symbol").upper()
+    symbols = symbols.split(",")
+    symbols_remaining = symbols.copy()
+    allSuccessful = True
+    # for loop to iterate over words array
+    for symbol in symbols:
+        try:
             print(symbol.strip().upper())
             data = None
             if source == "data_filings_pro":
@@ -361,17 +362,26 @@ def lookup_symbol():
             if data:
                 check_dir(directory_name)
                 file_name = "{}/{}-{}.json".format(
-                    directory_name, datetime.datetime.now().strftime("%Y-%m-%d"), symbol
+                    directory_name,
+                    datetime.datetime.now().strftime("%Y-%m-%d"),
+                    symbol,
                 )
-
                 with open(file_name, "w") as json_file:
                     json.dump(data, json_file, indent=4)
+                symbols_remaining.remove(symbol)
+            else:
+                allSuccessful = False
+        except Exception as err:
+            # no data found
+            allSuccessful = False
 
-        return json.dumps({"status": "success", "message": "Symbol Saved"}), 200
-    except Exception as err:
-        return json.dumps({"status": "error", "message": repr(err)}), 200
-
-    return json.dumps({"status": "error", "message": "No Symbol"}), 200
+    if allSuccessful:
+        return json.dumps({"status": "success", "message": "All Symbols Saved"}), 200
+    else:
+        return (
+            json.dumps({"status": "error", "message": ",".join(symbols_remaining)}),
+            200,
+        )
 
 
 @api.route("/", methods=["GET"])

@@ -16,9 +16,18 @@ function AddSymbol(props) {
   }
 
   async function saveCallback(result) {
-    setFormStatus({ status: result.status, message: result.message });
     if (result.status === 'success') {
+      setFormStatus({ status: result.status, message: result.message });
       setTimeout(resetForm, 1000);
+    } else {
+      setSymbol(result.message);
+      setFormStatus({
+        status: result.status,
+        message: 'Not all Symbols Found',
+      });
+      setTimeout(() => {
+        setFormStatus(null);
+      }, 1000);
     }
   }
 

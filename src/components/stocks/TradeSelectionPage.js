@@ -5,11 +5,11 @@ import ChartPage from './ChartPage';
 import DailyChartPage from './DailyChartPage';
 
 function TradeSelectionPage(props) {
-  // const [symbolAndDate, setSymbolAndDate] = useState({});
-  const [symbolAndDate, setSymbolAndDate] = useState({
-    symbol: 'AGEN',
-    date: '2021-05-18',
-  });
+  const [symbolAndDate, setSymbolAndDate] = useState({});
+  // const [symbolAndDate, setSymbolAndDate] = useState({
+  //   symbol: 'AGEN',
+  //   date: '2021-05-18',
+  // });
 
   function getData() {
     let trades = [];
