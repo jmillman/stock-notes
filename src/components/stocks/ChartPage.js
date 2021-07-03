@@ -164,6 +164,18 @@ function ChartPage(props) {
     plot
       .annotations()
       .verticalLine({
+        xAnchor: `${props.date}T10:15:00.000Z`,
+        stroke: {
+          thickness: 2,
+          color: '#60727B',
+          dash: '10 15',
+        },
+      })
+      .allowEdit(false);
+
+    plot
+      .annotations()
+      .verticalLine({
         xAnchor: `${props.date}T11:00:00.000Z`,
         stroke: {
           thickness: 2,

@@ -50,11 +50,11 @@ export async function fetchDailyChartData(symbol, callback) {
   const response = await axios.get(url);
   if (response.status === 200) {
     // There is an issue on the chart date conversoin where it sets it to the next day so strip it for daily
-    const scrubbed = response.data.data.map((row, index, array)=>{
+    const scrubbed = response.data.data.map((row, index, array) => {
       const newDate = row[0].split(' ')[0];
-      row[0] = newDate
+      row[0] = newDate;
       return row;
-    })
+    });
     callback(scrubbed);
   }
 }

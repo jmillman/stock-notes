@@ -29,7 +29,7 @@ function DailyChartPage(props) {
   function MyChart(props) {
     if (!data) return null;
 
-    const lastGapUp = data ? data[data.length - 1][6] : ''; 
+    const lastGapUp = data ? data[data.length - 1][6] : '';
 
     const chart = anychart.stock();
     var plotCandlestick = chart.plot(0);

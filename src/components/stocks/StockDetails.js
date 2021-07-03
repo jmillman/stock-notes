@@ -78,7 +78,7 @@ function StockDetails(props) {
               <tr>
                 <td>
                   <a
-                    href={`https://finance.yahoo.com/quote/${props.symbol}`}
+                    href={`https://finance.yahoo.com/quote/${props.symbol.trim()}`}
                     target="_blank"
                     rel="noreferrer"
                   >

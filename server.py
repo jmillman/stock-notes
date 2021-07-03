@@ -144,9 +144,7 @@ def get_stock_notes():
 @api.route("/daily_data", methods=["GET"])
 def daily_data():
     symbol = request.args.get("symbol").upper()
-    file_name = "../udacity/ameritradepython2020/local_stock_history/{}.csv".format(
-        symbol
-    )
+    file_name = "../quotes/stock_history/{}.csv".format(symbol)
     # with open(file_name, "r") as myfile:
     file = pd.read_csv(file_name)
     data = []
@@ -175,9 +173,7 @@ def daily_data():
 def minute_data():
     symbol = request.args.get("symbol").upper()
     date = request.args.get("date").upper()
-    file_name = "../udacity/ameritradepython2020/trade_quotes/{}/{}.csv".format(
-        date, symbol
-    )
+    file_name = "../ameritradepython2020/trade_quotes/{}/{}.csv".format(date, symbol)
     # with open(file_name, "r") as myfile:
     file = pd.read_csv(file_name)
     data = []
