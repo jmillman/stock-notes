@@ -120,6 +120,19 @@ source = "finviz"
 directory_name = source
 
 
+@api.route("/get_data", methods=["GET"])
+def get_data():
+    file_name = "../quotes/summary/gapped_up-2021-11-06.csv"
+    # file = pd.read_csv(file_name, header=0).head().to_json(orient="records")
+    file = pd.read_csv(file_name, header=0).head().to_json(orient="records")
+    print(file)
+    data = []
+    return (
+        file,
+        200,
+    )
+
+
 @api.route("/stock_notes", methods=["GET"])
 def get_stock_notes():
     check_dir(directory_name)

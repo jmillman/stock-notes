@@ -28,6 +28,7 @@ import {
   fetchTrades,
   fetchDailyChartData,
   fetchFinviz,
+  fetchData,
 } from '../api/stockApi';
 import { useCookies } from 'react-cookie';
 import moment from 'moment';
@@ -163,6 +164,12 @@ export function withGlobalContext(Component) {
     const fetchFinvizFromApp = () => {
       fetchFinviz((data) => {
         dispatch({ type: 'finvizLoaded', data });
+      });
+    };
+
+    const fetchDataFromApp = (successCallback) => {
+      fetchData((data) => {
+        successCallback(data);
       });
     };
 
@@ -316,6 +323,7 @@ export function withGlobalContext(Component) {
       fetchTradesFromApp,
       fetchDailyChartDataFromApp,
       fetchFinvizFromApp,
+      fetchDataFromApp,
     };
 
     return (

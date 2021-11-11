@@ -3,16 +3,18 @@ import GlobalContext from '../store/GlobalContext';
 import { Menu } from 'semantic-ui-react';
 import StockNotesPage from './stocks/StockNotesPage';
 import TradeSelectionPage from './stocks/TradeSelectionPage';
+import DataPage from './stocks/DataPage';
 
 const tabs = {
   STOCK_NOTES_PAGE: 'Stonks',
   CHART: 'Chart',
+  DATA_PAGE: 'Data',
 };
 
 function PageMobile() {
   const [, , api] = useContext(GlobalContext);
 
-  const [selectedTab, setSelectedTab] = useState(tabs.STOCK_NOTES_PAGE);
+  const [selectedTab, setSelectedTab] = useState(tabs.DATA_PAGE);
   const [trades, setTrades] = useState([]);
 
   // const date = '2021-05-10';
@@ -31,6 +33,8 @@ function PageMobile() {
     switch (selectedTab) {
       case tabs.STOCK_NOTES_PAGE:
         return <StockNotesPage />;
+      case tabs.DATA_PAGE:
+        return <DataPage />;
       case tabs.CHART:
         return <TradeSelectionPage trades={trades} />;
 
@@ -41,6 +45,10 @@ function PageMobile() {
   function getMenu() {
     return (
       <>
+        <Menu.Item
+          name={tabs.DATA_PAGE}
+          onClick={() => setSelectedTab(tabs.DATA_PAGE)}
+        />
         <Menu.Item
           name={tabs.STOCK_NOTES_PAGE}
           onClick={() => setSelectedTab(tabs.STOCK_NOTES_PAGE)}

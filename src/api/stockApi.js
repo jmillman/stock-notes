@@ -145,6 +145,15 @@ export async function fetchFinviz(callback) {
   }
 }
 
+export async function fetchData(callback) {
+  if (typeof callback !== 'function') throw new Error('fetchData input Error');
+  const url = `${domain}/get_data`;
+  const response = await axios.get(url);
+  if (callback) {
+    callback(response.data);
+  }
+}
+
 export async function saveNote(symbol, title, body, date, callback) {
   const bodyFormData = new FormData();
   bodyFormData.set('symbol', symbol);
