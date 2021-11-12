@@ -124,7 +124,7 @@ directory_name = source
 def get_data():
     file_name = "../quotes/summary/gapped_up-2021-11-06.csv"
     # file = pd.read_csv(file_name, header=0).head().to_json(orient="records")
-    file = pd.read_csv(file_name, header=0).head().to_json(orient="records")
+    file = pd.read_csv(file_name, header=0).to_json(orient="records")
     print(file)
     data = []
     return (
