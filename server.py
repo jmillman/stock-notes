@@ -15,7 +15,9 @@ import pandas as pd
 import numpy
 
 api = Flask(__name__)
-driver = webdriver.Chrome("./chromedriver")
+# driver = webdriver.Chrome("/usr/bin/chromedriver")
+# driver = webdriver.Chrome()
+driver = None
 
 
 def check_dir(directory_name):
@@ -399,8 +401,11 @@ def lookup_symbol():
 
 @api.route("/", methods=["GET"])
 def index():
+    print('get /');
     return render_template("index.html")
 
 
 if __name__ == "__main__":
-    api.run()
+    print('start app');
+    # api.run()
+    api.run(host='0.0.0.0')
