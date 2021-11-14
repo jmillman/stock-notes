@@ -200,7 +200,7 @@ function DataPage() {
           <Grid.Column width={5} key="filtermenu">
             {getFiltersMenu(state.hidden)}
           </Grid.Column>
-          <Grid.Column width={5} key="summaryy">
+          <Grid.Column width={5} key="summary">
             {getSummary(state.summary)}
           </Grid.Column>
           <Grid.Column width={5} key="stocks">
